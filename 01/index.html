@@ -8,8 +8,18 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Introducing yourself </title>
 
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
     <!-- Bootstrap -->
-    <link href="../template/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
     <link href="../template/css/cores.css" rel="stylesheet">
     <link href="../template/css/modal-100.css" rel="stylesheet">
@@ -18,12 +28,25 @@
       <link rel="stylesheet" href="../template/css/extras.css">
     <link href="../template/css/sncload.css" rel="stylesheet">
     <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
     <!-- referencia ao arquivo css com estilos especificos da pagina -->
     <link href="css/custom.css" type="text/css" rel="stylesheet">
     <!-- css necessario para o print -->
     <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
     <link href="../template/css/print.css" type="text/css" rel="stylesheet">
     <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -94,9 +117,9 @@
               <div class="container">
                 <p>You are going to participate in a summit in Houston, TX in a month. Before you go, you have to learn some basic vocabulary and structures in English to introduce yourself and the company you work for. </p>
                 
-                <img src="imgs/img01.png" class="img-responsive center-block hiddem-sm hidden-xs imprime-menor html1-fig4 print" alt="Photograph of a woman presenting at a conference. ">
+                <img src="img/img01.png" class="img-responsive center-block hiddem-sm hidden-xs imprime-menor html1-fig4 print" alt="Photograph of a woman presenting at a conference. ">
                 <p class="no-print visible-sm visible-xs" aria-hidden="true">Toque na imagem para ampliá-la.</p>
-                <a href="imgs/img01.png" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="imgs/img01.png" class="center-block img-responsive" alt="Photograph of a woman presenting at a conference. "></a>
+                <a href="img/img01.png" target="_blank" class="no-print visible-sm visible-xs" aria-hidden="true"><img src="img/img01.png" class="center-block img-responsive" alt="Photograph of a woman presenting at a conference. "></a>
                 <p class="legenda-imagem">
                   Summit <br>
                   Accessed on: 15 dec. 2023
@@ -112,7 +135,10 @@
               <div class="container">
                 <h3>Introductions</h3>
                 <p>Watch the video of Giselle arriving at the summit in Houston, TX. Who are they talking to? </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/iOB7NO1hjeE?si=jPH_zaSEFAfzwWDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/iOB7NO1hjeE?si=jPH_zaSEFAfzwWDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
                 <div class="acessivel no-print">
                   <p>Receptionist: Good morning and welcome to Houston Summit! How can I help you? </p>
                   <p>Giselle: Good morning! My name is Giselle and I would like to register for the summit and get my badge. </p>
@@ -148,12 +174,416 @@
                 <p>Where is Giselle from? </p>
                 <p> And you, where are you from? </p>
                 <h4>Match the countries and nationalities on the map </h4>
+                <p>Match the names of the countries with the places indicated on the map. </p>
+                
+                <div aria-hidden="true">
+                  <h3>Countries and nationalities</h3>
+                  <p>Match the names of the countries with the places indicated on the map.</p>
+                  <div class="d-none d-lg-block overflow-auto">
+                      <img src="img/mapa_mundi.png" class="img-fluid my-5">
+                  </div>
+                  <div class="d-block d-lg-none overflow-auto my-5">
+                      <img src="img/mapa_mundi.png">
+                  </div>
+
+                  <div class="game-body no-print">
+                      <div id="slots">
+                          <div class="d-flex flex-wrap justify-content-around">
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>1</p>
+                                  </div>
+                                  <div id="slot-1" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>2</p>
+                                  </div>
+                                  <div id="slot-2" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>3</p>
+                                  </div>
+                                  <div id="slot-3" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>4</p>
+                                  </div>
+                                  <div id="slot-4" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>5</p>
+                                  </div>
+                                  <div id="slot-5" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>6</p>
+                                  </div>
+                                  <div id="slot-6" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>7</p>
+                                  </div>
+                                  <div id="slot-7" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>8</p>
+                                  </div>
+                                  <div id="slot-8" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>9</p>
+                                  </div>
+                                  <div id="slot-9" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>10</p>
+                                  </div>
+                                  <div id="slot-10" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>11</p>
+                                  </div>
+                                  <div id="slot-11" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>12</p>
+                                  </div>
+                                  <div id="slot-12" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>13</p>
+                                  </div>
+                                  <div id="slot-13" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>14</p>
+                                  </div>
+                                  <div id="slot-14" class="slot"></div>
+                              </div>
+                              <div class="box">
+                                  <div class="game-titulo">
+                                      <p>15</p>
+                                  </div>
+                                  <div id="slot-15" class="slot"></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div id="cardPile" class="game-itens-container">
+                          <div id="card-13" class="card" data-target="slot-13">
+                              China
+                          </div>
+                          <div id="card-11" class="card" data-target="slot-11">
+                              Egypt
+                          </div>
+                          <div id="card-2" class="card"  data-target="slot-2">
+                              The United States
+                          </div>
+                          <div id="card-6" class="card" data-target="slot-6">
+                              Australia
+                          </div>
+                          <div id="card-9" class="card" data-target="slot-9">
+                              Russia
+                          </div>
+                          <div id="card-1" class="card" data-target="slot-1">
+                              Brazil
+                          </div>
+                          <div id="card-4" class="card" data-target="slot-4">
+                              Argentina
+                          </div>
+                          <div id="card-5" class="card" data-target="slot-5">
+                              South Africa
+                          </div>
+                          <div id="card-14" class="card" data-target="slot-14">
+                              Chile
+                          </div>
+                          <div id="card-7" class="card" data-target="slot-7">
+                              Japan  
+                          </div>
+                          <div id="card-8" class="card" data-target="slot-8">
+                              Germany
+                          </div>
+                          <div id="card-3" class="card" data-target="slot-3">
+                              The United Kingdom
+                          </div>
+                          <div id="card-10" class="card" data-target="slot-10">
+                              Canada
+                          </div>
+                          <div id="card-15" class="card" data-target="slot-15">
+                              Turkey
+                          </div>
+                          <div id="card-12" class="card" data-target="slot-12">
+                              Italy
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Parabéns, resposta correta! </h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <p>Muito bem!</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                              <div class="modal-header bg-danger">
+                                  <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Atenção! </h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <p>Tente novamente.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
 
               </div>
             </div>
             <div class="bloco5">
               <div class="container">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit facere quaerat repudiandae iure consectetur quasi quam eum ipsa, accusamus maxime fugiat voluptatibus similique, eligendi doloribus odit adipisci quisquam neque.</p>
+                <h3>The alphabet </h3>
+                <p>How do you spell your first name?  </p>
+                <p>How do you spell your email address? </p>
+                <p>Click on the buttons below each letter to hear its pronunciation. Then, practice saying the letters yourself.</p>
+                <div class="ODA_ingles_letters">
+                    <div class="wrapper">                                    
+                        <div class="all-letter-container">
+                            <button class="play-all-btn">
+                                <img src="odas/ingles_letters/assets/img/play-all.svg" class="play-ico" alt="">
+                            </button>
+                            <button class="pause-all-btn disabled">
+                                <img src="odas/ingles_letters/assets/img/pause.svg" class="play-ico" alt="">
+                            </button>
+                            <button class="reset-all-btn disabled">
+                                <img src="odas/ingles_letters/assets/img/previous.svg" class="play-ico" alt="">
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/A.png" alt="The letter A" title="A">
+                                <h3 class="letter">A</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/B.png" alt="The letter B" title="B">
+                                <h3 class="letter">B</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/C.png" alt="The letter C" title="C">
+                                <h3 class="letter">C</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/D.png" alt="The letter D" title="D">
+                                <h3 class="letter">D</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/E.png" alt="The letter E" title="E">
+                                <h3 class="letter">E</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/F.png" alt="The letter F" title="F">
+                                <h3 class="letter">F</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/G.png" alt="The letter G" title="G">
+                                <h3 class="letter">G</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/H.png" alt="The letter H" title="H">
+                                <h3 class="letter">H</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/I.png" alt="The letter I" title="I">
+                                <h3 class="letter">I</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/J.png" alt="The letter J" title="J">
+                                <h3 class="letter">J</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/K.png" alt="The letter K" title="K">
+                                <h3 class="letter">K</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/L.png" alt="The letter L" title="L">
+                                <h3 class="letter">L</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/M.png" alt="The letter M" title="M">
+                                <h3 class="letter">M</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/N.png" alt="The letter N" title="N">
+                                <h3 class="letter">N</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/O.png" alt="The letter O" title="O">
+                                <h3 class="letter">O</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/P.png" alt="The letter P" title="P">
+                                <h3 class="letter">P</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/Q.png" alt="The letter Q" title="Q">
+                                <h3 class="letter">Q</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/R.png" alt="The letter R" title="R">
+                                <h3 class="letter">R</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/S.png" alt="The letter S" title="S">
+                                <h3 class="letter">S</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/T.png" alt="The letter T" title="T">
+                                <h3 class="letter">T</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/U.png" alt="The letter U" title="U">
+                                <h3 class="letter">U</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/V.png" alt="The letter V" title="V">
+                                <h3 class="letter">V</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/W.png" alt="The letter W" title="W">
+                                <h3 class="letter">W</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/X.png" alt="The letter X" title="X">
+                                <h3 class="letter">X</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/Y.png" alt="The letter Y" title="Y">
+                                <h3 class="letter">Y</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                            <div class="letter-container">
+                                <img class="letter-img" src="img/alfabeto/Z.png" alt="The letter Z" title="Z">
+                                <h3 class="letter">Z</h3>
+                                <button class="play-btn">
+                                    <img src="odas/ingles_letters/assets/img/play.svg" class="play-ico" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>The sound of each letter </h4>
+                <figure class="my-5">
+                  <div class="figure-img mb-4">
+                      <img class="img-fluid d-block mx-auto" src="img/img02.png">
+                  </div>
+              </figure>
+              <p>As you learned the sounds of each letter of the alphabet, now you are going to practice them with some acronyms of the IT language in a hangman activity. </p>
+              <div class="espera"></div>
+              
+
               </div>
             </div>
             <div class="bloco6">
@@ -189,6 +619,45 @@
             <div class="bloco12">
               <div class="container">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit facere quaerat repudiandae iure consectetur quasi quam eum ipsa, accusamus maxime fugiat voluptatibus similique, eligendi doloribus odit adipisci quisquam neque.</p>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Item 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Item 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Item 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas turpis nisl, tristique et dui ac, convallis ullamcorper arcu. Ut finibus, elit eget ornare pharetra, dolor erat finibus nulla, nec efficitur sem nisi at nulla. Phasellus non pharetra tortor. Proin dictum ultrices ligula in finibus. Suspendisse id sem consectetur, venenatis ex vel, consectetur arcu. Cras vulputate quam in ultrices ornare. Donec gravida pharetra odio et ultrices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
               </div>
             </div>
 
@@ -295,15 +764,28 @@
     <!-- adicionar as imagens customizadas aqui abaixo -->
 </div>
 
-
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../template/js/jquery.min.js"></script>
-<script src="../template/js/bootstrap.min.js"></script>
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
 <script src="../template/js/jquery.magnific-popup.min.js"></script>
 <script src="../template/js/print.js"></script>
 <script src="../template/js/template.config.js"></script>
 <script src="../template/js/images.loader.js"></script>
 <script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
 <noscript>
   <style media="screen">
     .over-loader { display: none;}    
@@ -318,39 +800,7 @@
     });
   });
 	//inicializa zoom na imagem
-	$('.zoom-imagem').magnificPopup({
-	 type: 'image',
-  	 mainClass: 'mfp-with-zoom', // this class is for CSS animation below
- 	 zoom: {
-		enabled: true, // By default it's false, so don't forget to enable it
-
-		duration: 300, // duration of the effect, in milliseconds
-		easing: 'ease-in-out', // CSS transition easing function
-
-		// The "opener" function should return the element from which popup will be zoomed in
-		// and to which popup will be scaled down
-		// By defailt it looks for an image tag:
-		opener: function(openerElement) {
-		  // openerElement is the element on which popup was initialized, in this case its <a> tag
-		  // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-		  return openerElement.is('img') ? openerElement : openerElement.find('img');
-		}
-	  },
-	   image: {
-		  markup: '<div class="mfp-figure">'+
-					'<div class="mfp-close"></div>'+
-					'<div class="mfp-img"></div>'+ // Floated left
-					'<div class="mfp-bottom-bar">'+'<figcaption>'+'<div class="mfp-title" style="text-align:center"></div>'+
-					  '<div class="mfp-counter"></div>'+'</figcaption>'+
-					'</div>'+
-				  '</div>', // Popup HTML markup. `.mfp-img` div will be replaced with img tag, `.mfp-close` by close button
-
-		  cursor: 'mfp-zoom-out-cur', // Class that adds zoom cursor, will be added to body. Set to null to disable zoom out cursor.
-
-		  tError: '<a href="%url%">A imagem</a> não pode ser carregada.' // Error message
-	   }
-	});
-
+	
 	//inicializa popover
 	$(function () {
 	  $('[data-toggle="popover"]').popover()
@@ -428,6 +878,11 @@
 
 </script>
 
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
 <script>
   var scriptElem=document.createElement("script");
   scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",

@@ -716,8 +716,6 @@ ul.senac li{
 	padding-bottom:12px;
 }
 
-
-
 .ico-div-loader,.ico-div-loader img{
 	width:0;
 	height:0;
@@ -725,6 +723,24 @@ ul.senac li{
 	margin-left:-30000px;
 }
 
+/*  */
+.espera{
+	position: relative;
+	background-color: #ccc;
+	width: 500px;
+	height: 300px;
+	margin: 20px auto;
+}
+.espera::after{
+	content: 'Espera';
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 50px;
+}
+/*  */
 
 /* dispositivos moveis */
 @media screen and (max-width:1000px){
