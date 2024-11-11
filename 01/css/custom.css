@@ -191,7 +191,88 @@ li {
 	text-transform: unset;
 	font-family: rubik;
 }
-
+/* baloes */
+.balao-dir{
+  background: #a3c2ed;
+  border-radius: 15px;
+  width: 415px;
+  min-height: 62px;
+  position: relative;
+padding: 5px 10px;
+margin: 0 10px;
+}
+.balao-dir:after{
+  content: "";
+  width: 0; 
+  height: 0;
+  position: absolute;
+  right: -10px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #a3c2ed;
+bottom: -10px;
+  transform: rotate(-90deg);
+}
+.balao-esq{
+  background: #e3e5e9;
+  border-radius: 15px;
+  width: 415px;
+  min-height: 62px;
+  position: relative;
+padding: 5px 10px;
+margin: 0 10px;
+}
+.balao-esq:after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e3e5e9;
+bottom: 0;
+  left: -20px;
+  transform: rotate(180deg);
+}
+.balao-dir p, .balao-esq p{margin: 0;}
+.mautos{
+  margin: 0 auto;
+}
+/* fim baloes */
+/* gaitinha */
+.accordion-item {
+  background-color: transparent;
+}
+.accordion-header{margin-top: 0;}
+.accordion-button, .accordion-button.collapsed{
+  color: #fff;
+}
+.accordion-button, .accordion-button:not(.collapsed){
+    color: #000;
+    border-radius: 30px 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+.accordion-item, .accordion-item:first-of-type{
+    border: none;
+    margin-bottom: 15px;
+}
+.accordion-button{
+  background-color: #004b90;
+}
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='white' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='white' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-body{
+    margin-left: 20px;
+    border-left: 3px solid #1e8cb1;
+}
+/* fim gaitinha */
+.mgleft{margin-right: 15px;}
+.bloco-paragrafo{ margin-bottom: 20px}
+.bloco-paragrafo p{ margin: 0 !important;}
 @media screen and (max-width: 780px){
   
 }
