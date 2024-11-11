@@ -386,9 +386,9 @@ Para utilizar com botoes, colocar o nome do icone primeiro
 	background-repeat:no-repeat;
 }
 .icone-practice{
-	padding-left:140px;
+	padding-left:100px;
 	background-position:10px 10px;
-	background-size:120px 120px;
+	background-size:80px 80px;
 	background-image:url(../../01/img/practice.png);
 	background-repeat:no-repeat;
 }
