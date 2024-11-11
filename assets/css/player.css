@@ -35,7 +35,7 @@
     margin: 20px 0;
     max-width: 250px;
 }
-.audio-player::before{
+/* .audio-player::before{
     content:'';
     background: url('../images/podcast_1.svg') no-repeat;
     height: 260px;
@@ -53,7 +53,7 @@
     right: -20px;
     bottom: -2px;
     z-index: 2;
-}
+} */
 .audio-player .timestamp{
     display: inline-block;
     vertical-align: text-top;

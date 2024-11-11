@@ -124,14 +124,14 @@ li {
   margin-top: 80px;
   color: #fff;
 }
-.bloco2{
+.bloco2,.bloco4,.bloco6,.bloco8,.bloco10,.bloco12{
   background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
+  /* background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%); */
 }
-.bloco3{
-  background-color: #7b8fa6;
+.bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
+  background-color: #9eb5cc;
 }
-.bloco4{
+/* .bloco4{
   background: rgb(228,240,255);
   background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
 }
@@ -162,7 +162,7 @@ li {
 .bloco12{
   background: rgb(228,240,255);
   background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
+} */
 .marcador-seta li {
   list-style-image: url("../imgs/setas.png");
 }
@@ -254,6 +254,10 @@ bottom: 0;
     padding-bottom: 10px;
     padding-left: 40px;
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: #cae0ff;
+}
 .accordion-item, .accordion-item:first-of-type{
     border: none;
     margin-bottom: 15px;
@@ -270,6 +274,58 @@ bottom: 0;
     border-left: 3px solid #1e8cb1;
 }
 /* fim gaitinha */
+/* board-trello */
+/* board-trello */
+.board-trello{
+  margin: 0 auto;
+  background-color: #D9E4ED;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 410px;
+}
+.board-trello img{
+  display: block;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  border: 5px solid #D9E4ED;
+}
+
+.board-trello img:hover{
+  cursor: pointer;
+  border: 5px solid #2a5568;
+}
+.titulo-board{
+  position: relative;
+  width: 100%;
+  color: #004B90;
+  font-size: 1.55rem;
+  margin: 0;
+  font-weight: 900;
+}
+.titulo-board::after{
+  content: "...";
+  position: absolute;
+  right: 0;
+  font-size: 3rem;
+  margin-top: -10px;
+}
+.add-board{
+  color: #004B90;
+  margin: 0;
+}
+/* fim board-trello */
+
+.icone-practice{
+	padding-left:180px;
+	background-position:10px 10px;
+	background-size:140px 140px;
+  background-color: #004b90;
+  color: #fff;
+}
+.caixa-destaque {
+  width: 90%;
+}
 .mgleft{margin-right: 15px;}
 .bloco-paragrafo{ margin-bottom: 20px}
 .bloco-paragrafo p{ margin: 0 !important;}
