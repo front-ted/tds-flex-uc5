@@ -329,6 +329,37 @@ bottom: 0;
 .mgleft{margin-right: 15px;}
 .bloco-paragrafo{ margin-bottom: 20px}
 .bloco-paragrafo p{ margin: 0 !important;}
+
+.box-painel1{
+  display: block;
+  margin: 0 auto;
+  width: 440px;
+}
+.bt1-painel1{
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+.bt2-painel1{
+  margin-top: 140px;
+}
+.bt3-painel1{
+  margin-top: 240px;
+  margin-left: 40px;
+}
+.bt4-painel1{
+  margin-left: 40px;
+  margin-top: 140px;
+}
+.bt1-painel1:hover, .bt2-painel1:hover, .bt3-painel1:hover, .bt4-painel1:hover{
+  transition: all 0.3s;
+}
+.bt1-painel1:hover, .bt2-painel1:hover, .bt3-painel1:hover, .bt4-painel1:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 780px){
   
 }

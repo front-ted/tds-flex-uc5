@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Developing a website </title>
+
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+    <!-- Bootstrap -->
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/modal-100.css" rel="stylesheet">
+    <link href="../template/css/devibeans.min.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="../template/css/extras.css">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+        <!--Atividade jogo da memória-->
+        <link rel="stylesheet" href="atividades/jogo_memoria/jogoMemoria.css">
+
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/player.css" />
+
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+    <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <div class="bloco1">
+              <div class="container">
+                <h2>Developing a website </h2>
+                <p>Nesta situação de aprendizagem, você aprenderá a: </p>
+                <ul class="marcador-check">
+                      <li>Analisar o propósito de um <i>website</i> de uma empresa</li>
+                      <li>Identificar ferramentas de análise de tráfego de um <i>site</i></li>
+                      <li>Desenvolver um <i>website</i></li>
+                      <li>Descrever características e funções de <i>websites</i> usando adjetivos</li>
+                      <li>Entender as preferências de um cliente para seu <i>site</i></li>
+                </ul>
+              </div>
+            </div>
+            <div class="bloco2">
+              <div class="container">
+                <p>In this situation, you are going to talk about different websites purposes and which ones you use the most and why. Look at the image below and answer the following questions:
+                </p>
+                <p>
+                  Rodolph, who is the manager of a multinational company of computers, likes to read everything online and to be aware of the news around the world. 
+                </p>
+                <figure class="my-5">
+                  <div class="figure-img mb-4">
+                      <img class="img-fluid d-block mx-auto" src="img/fig01.png" alt="Picture of a person using a website">
+                  </div>
+                </figure>
+                <figcaption class="figure-caption text-center">
+                  <p>Accessed on: 26 dec. 2023.
+                  </p>
+                </figcaption>
+                <ul class="marcador-check">
+                  <li>What is he reading?</li>
+                  <li>Do you often read news online?</li>
+                  <li>What kind of websites do you like to use?</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bloco3">
+              <div class="container">
+                <h4>The purpose of a company’s website
+                </h4>
+                <p><strong>Let’s practice.</strong></p>
+                <p><strong> Match the words with their pictures. </strong></p>
+                
+                <div class="box-atividade no-print">
+                  <p class="titulo-ativ"><strong>Let’s practice.</strong></p>
+                  <p>Click on the correct information: </p>
+                  <div class="game-associar-colunas no-print nao-imprimir">
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-sm-8 flexs itens"> 
+                              <button data-resp="1" class="item item1">
+                                  <img src="img/imagens/img01.png" alt="">
+                              </button>
+                              <button data-resp="2" class="item item2">
+                                <img src="img/imagens/img02.png" alt="">
+                              </button>
+                              <button data-resp="3" class="item item3">
+                                <img src="img/imagens/img03.png" alt="">
+                              </button>
+                              <button data-resp="4" class="item item4">
+                                <img src="img/imagens/img04.png" alt="">
+                              </button>
+                              <button data-resp="5" class="item item5">
+                                <img src="img/imagens/img05.png" alt="">
+                              </button>
+                          </div>
+                          <div class="col-12 col-md-6 col-sm-4 flexs">
+                              <button type="button" data-resp="1" class="resp resp5">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>WEBSITE</p>
+                              </button>
+              
+                              <button type="button" data-resp="2" class="resp resp6">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>LAPTOP</p>
+                              </button>
+              
+                              <button type="button" data-resp="3" class="resp resp7">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>DESKTOP</p>
+                              </button>
+              
+                              <button type="button" data-resp="4" class="resp resp1">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>PURCHASE</p>
+                              </button>
+              
+                              <button type="button" data-resp="5" class="resp resp8">
+                                  <div class="txtacao"><i class="fas fa-question"></i></div>
+                                  <p>HUB</p>
+                              </button>
+                          </div>
+                      </div>
+              
+                      <!-- Modal -->
+                      <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                          aria-labelledby="associarColunasErrou" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+                                          </div>
+                                          <div class="col-12 col-lg-8">
+                                              <p>Ops, tente novamente!</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- Modal -->
+                      <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+                          tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-12 col-lg-4">
+                                              <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+                                          </div>
+                                          <div class="col-12 col-lg-8">
+                                              <p>Muito bem! Você acertou!</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              
+                  </div>
+                  <p>As you learned some words, watch the video of Rodolph talking about the purpose of his company’s website. 
+                  </p>
+                  <div class="espera"></div>
+                  <div class="visually-hidden">
+                    <p>"Hello, everyone! I'm Rodolph, the manager of a multinational computer company called Fergison, and I'm excited to share with you the key purpose behind our website.
+                      Our website serves as the digital gateway to our world of innovation and technology. First, it's a platform designed to showcase our latest products, from powerful laptops to high-performance desktops and everything in between. We believe in providing solutions that not only meet but exceed the evolving needs of our customers.
+                      Beyond product displays, our website acts as an interactive hub for our community. We have a dedicated section for customer support. The website features a resource center where users can access articles, guides, and tutorials of our technology. 
+                      E-commerce is integrated for a convenient shopping experience. Customers can explore our product range, read reviews, and make purchases with confidence. We’ve implemented measures to ensure a safe and secure online transaction environment.
+                      In essence, our website is more than just an online presence; it's a dynamic and inclusive space that reflects our commitment to innovation, customer satisfaction, and open communication.”
+                      </p>
+                  </div>
+                  
+                  <div class="box-atividade fundo-branco">
+                    <div class="caixa-destaque icone-practice">
+                      <p><strong>Practice it</strong></p>
+                      <p>As you have watched the video of Rodolph talking about his multinational company’s website, answer the following questions:
+                      </p>
+                      <ul>
+                        <li>What is the name of his company?
+                          </li>
+                        <li>In your opinion, is it a professional or a personal website? </li>
+                        <li>What are the purposes of his website?</li>
+                      </ul>
+                      <p>
+                        Describe the purposes of the professional and personal websites you use. After the discussion, choose the top 3 websites you have seen before (they can be professional or personal websites) and explain the following questions:
+                      </p>
+                      <ul>
+                        <li>What makes these websites the best?</li>
+                        <li>Why did you choose these three?</li>
+                        <li>Do you use them frequently?</li>
+                        <li>What are the purposes of these websites?</li>
+                        <li>Present your ideas for the big group.</li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              
+
+              </div>
+            </div>
+            <div class="bloco4">
+                <div class="container">
+                  <h3>Tools of traffic analysis</h3>
+                  <figure class="my-5">
+                    <div class="figure-img mb-4">
+                        <img class="img-fluid d-block mx-auto" src="img/nuvem.png">
+                    </div>
+                  </figure>
+                  <h4>Practice activity using the tools of traffic analysis</h4>
+                  <p>According to the content studied before about the traffic analysis tools, look at the picture below, and as a brainstorming of this topic answer the questions below:
+                  </p>
+                  <figure class="my-5">
+                    <div class="figure-img mb-4">
+                        <img class="img-fluid d-block mx-auto" src="img/fig01.png" alt="Picture of a traffic analysis.">
+                    </div>
+                  </figure>
+                <figcaption class="figure-caption text-center">
+                  <p>Accessed on: 4 jan. 2024.</p>
+                </figcaption>
+                <p>- Can you mention 3 tools of traffic analysis?</p>
+                <p>- What are their usages for the website?</p>
+                <h4>Instruction for the activity</h4>
+                <p>Traffic analysis helps in understanding patterns, trends, and behaviours of data as it moves between devices, servers, or other network components. You learned the tools of traffic analysis. Now, let’s practice it.
+                </p>
+                <p>You are going to see the traffic analysis of a website and you will have to interpret these data to discover which areas are the most visited and with more access. You can also present metatags and their importance to the SEO (search engine optimization). Make inferences writing and speaking.
+                </p>
+                <p>Look at the InnoTech Analytics Traffic Dashboard – report from December 2023 – picture below and analyse the following topics: 
+                </p>
+                <ul>
+                  <li>Pageviews.</li>
+                  <li>Mobile Traffic.</li>
+                  <li>Tablet Traffic.</li>
+                </ul>
+                <p>Top 5 Traffic sources:</p>
+                <p>What is the bounce rate for each one?</p>
+                <p>How many users did they have?</p>
+                <figure class="my-5">
+                  <img src="img/img_traffic.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+                  <a href="img/img_traffic_mob.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                      <img src="img/img_traffic_mob.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+                  </a>
+                </figure>
+                <figcaption class="figure-caption text-center">
+                  <p>Source: Senac EAD (2024) </p>
+                </figcaption>
+                <div class="caixa-destaque ">
+                  <p>As you are familiar with the details above about traffic analysis, look for this traffic analysis from a website that you use the most and present the site and the details for your class.
+                  </p>
+                </div>
+
+
+                </div>
+            </div>
+            <div class="bloco5">
+                <div class="container">
+                  <h3>Developing a website
+                  </h3>
+                  <p>
+                    Developing a website is a challenging activity. Unjumble the following words related to the topic and discover what their meanings are:
+                  </p>
+                  
+                  <div class="container-fluid">
+                    <div class="jogoMemoria" aria-hidden="true">
+                      
+                      
+                        <div class="cartaMemoria" data-par="2">
+                          <div class="ladoFrente">
+                              <img src="img/memoria/card.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria/02b.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                      
+                      <div class="cartaMemoria" data-par="3">
+                        <div class="ladoFrente">
+                            <img src="img/memoria/card.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="ladoTras">
+                            <img src="img/memoria/03.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                        <div class="cartaMemoria" data-par="1">
+                            <div class="ladoFrente">
+                                <img src="img/memoria/card.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria/avatar01.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="cartaMemoria" data-par="2">
+                            <div class="ladoFrente">
+                                <img src="img/memoria/card.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria/02.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="cartaMemoria" data-par="5">
+                          <div class="ladoFrente">
+                              <img src="img/memoria/card.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria/05b.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                        <div class="cartaMemoria" data-par="3">
+                            <div class="ladoFrente">
+                                <img src="img/memoria/card.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria/03b.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="cartaMemoria" data-par="1">
+                          <div class="ladoFrente">
+                              <img src="img/memoria/card.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="ladoTras">
+                              <img src="img/memoria/01b.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+                        <div class="cartaMemoria" data-par="4">
+                            <div class="ladoFrente">
+                                <img src="img/memoria/card.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria/04.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="cartaMemoria" data-par="4">
+                            <div class="ladoFrente">
+                                <img src="img/memoria/card.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria/04b.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="cartaMemoria" data-par="5">
+                            <div class="ladoFrente">
+                                <img src="img/memoria/card.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="ladoTras">
+                                <img src="img/memoria/05.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>The attendant Robert is developing a website for William’s company. Robert and William are discussing the purpose of the website, its characteristics, size and type of clients. Read the conversation below and answer the questions:
+                </p>
+                <ul>
+                  <li>What’s the purpose of the website?</li>
+                  <li>In terms of the website’s size, is the customer looking for a multi-page website or a one-page design?</li>
+                  <li>Is he looking for a specific type of clients or not?</li>
+                </ul>
+                
+                <div class="row">
+                  <div class="col-12 col-md-6 mautos">
+                      <h3>Where are you from?</h3>
+                      <div class="d-flex">
+                          <p>Read and listen to the dialogue below.</p>
+                          <div class="audio-player no-print mb-5 audio1">
+                              <audio>
+                                  <source src="audios/unit1-audio1.mp3" type="audio/mpeg">
+                              </audio>
+                              <button title="Tocar" class="btn-play btn-player"></button>
+                              <button title="Pause" class="btn-pause btn-player"></button>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Hello! I'm excited to see how the website is going on. Any progress updates?
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Hi there! Yes, I've been working on the initial stages. Before we dive in, could you remind me of the purpose of your website?
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Certainly! It's a portfolio website for my photography business. I want to showcase my work, attract potential clients, and provide a way for them to contact me for inquiries.
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Great! So, the main characteristics you're looking for are a clean design to highlight your photography, contact forms for potential clients, and a user-friendly layout, correct?
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Exactly. I want visitors to easily navigate through my portfolio and find the information they need without any hassle.
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Got it. In terms of size, are you thinking of a multi-page website, or do you prefer a more compact, one-page design?
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: I'd like to keep it concise. Let's go for a one-page design that flows from one section to another.
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Perfect. And regarding your target clients, are you focusing on a specific type, like individuals, events, or businesses?
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Primarily individuals for portrait sessions and events, but I'd also like to attract small businesses interested in professional photography services.
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Understood. I'll make sure to incorporate elements that appeal to both individuals and small businesses.
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Thanks! Also, I'd love to be able to test the website before it goes live. Is that possible?
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Absolutely. I'll set up a staging environment where you can preview the site and provide feedback. This way, we can make any necessary adjustments before the official launch.
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Perfect! I appreciate that. When do you think I can take a look at the initial version?
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: I aim to have the first draft ready for your review by the end of next week. This will give us room for any revisions or additions you might want.
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Sounds good. I'm looking forward to it. Let me know if you need anything from my end in the meantime.
+                            </p>
+                          </div>
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <div class="balao-dir">
+                            <p>Robert: Will do! If you think of any specific details you'd like to add, feel free to share them. I want to make sure the website reflects your vision.
+                            </p>
+                          </div>
+                          <img src="img/avatar02.png" class="img-fluid">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                          <img src="img/avatar01.png" class="img-fluid">
+                          <div class="balao-esq">
+                            <p>William: Thanks for being so attentive. I appreciate your hard work on this.
+                            </p>
+                          </div>
+                      </div>
+
+                      
+                      <div class="d-flex align-items-center justify-content-center mb-3">
+                        <div class="balao-dir">
+                          <p>Robert: My pleasure! I'll be in touch soon with the preview. If you have any questions in the meantime, don't hesitate to reach out.
+                          </p>
+                        </div>
+                        <img src="img/avatar02.png" class="img-fluid">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center mb-3">
+                        <img src="img/avatar01.png" class="img-fluid">
+                        <div class="balao-esq">
+                          <p>William: Will do. Thanks again!
+                          </p>
+                        </div>
+                    </div>
+                    </div>
+                  </div>
+                
+                  <div class="box-atividade fundo-escuro">
+                    <div class="caixa-destaque icone-practice">
+                      <div class="box-atividade">
+                    <p class="titulo-ativ"><strong>Let’s practice.</strong></p>
+                    <p>
+                    </p>
+                    <div class="esquemaDaBru verdadeiro-falso">
+                        <p class="enunciado" tabindex="0">William wants a multi-page website</p>
+                        <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                            <button class="alt-e botao hvr-grow-shadow">True</button>
+                            <button class="alt-c botao hvr-grow-shadow">False</button>
+                        </div>
+                        <div class="feedbacks">
+                            <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> The right answer is: William wants a one-page website</p>
+                            <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                        </div>
+                    </div>
+                    <div class="esquemaDaBru verdadeiro-falso">
+                        <p class="enunciado" tabindex="0">Robert aims to have the first draft ready by the end of the next week. </p>
+                        <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                            <button class="alt-c botao hvr-grow-shadow">True</button>
+                            <button class="alt-e botao hvr-grow-shadow">False</button>
+                        </div>
+                        <div class="feedbacks">
+                            <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                            <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                        </div>
+                    </div>
+                    <div class="esquemaDaBru verdadeiro-falso">
+                        <p class="enunciado" tabindex="0">Robert wants visitors to easily navigate through his portfolio.   </p>
+                        <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                            <button class="alt-e botao hvr-grow-shadow">True</button>
+                            <button class="alt-c botao hvr-grow-shadow">False</button>
+                        </div>
+                        <div class="feedbacks">
+                            <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> False. The right answer is: William wants visitors to easily navigate through his portfolio.</p>
+                            <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                        </div>
+                    </div>
+                    <div class="esquemaDaBru verdadeiro-falso">
+                        <p class="enunciado" tabindex="0">William wants individuals and small businesses clients </p>
+                        <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                            <button class="alt-c botao hvr-grow-shadow">True</button>
+                            <button class="alt-e botao hvr-grow-shadow">False</button>
+                        </div>
+                        <div class="feedbacks">
+                            <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                            <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                        </div>
+                    </div>
+                    <div class="esquemaDaBru verdadeiro-falso">
+                        <p class="enunciado" tabindex="0">William doesn’t want to test the website before it goes on.  </p>
+                        <div class="d-flex flex-wrap flex-md-nowrap justify-content-evenly">
+                            <button class="alt-e botao hvr-grow-shadow">True</button>
+                            <button class="alt-c botao hvr-grow-shadow">False</button>
+                        </div>
+                        <div class="feedbacks">
+                            <p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> False. He’d love to test the website before it goes live.</p>
+                            <p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="box-atividade fundo-branco" style="margin-top: 20px;">
+                    <div class="caixa-destaque icone-practice">
+                      <figure class="my-5">
+                        <div class="figure-img mb-4">
+                            <img class="img-fluid d-block mx-auto" src="img/fig02.png">
+                            <p>You learned what the main objectives to develop a website are. Now, you and your classmate are going to work together in a role play. One is going to be the customer and the other will be the attendant who is going to interview the customer to develop the website for a company. You can use the same grammar structure to ask the questions to your client. The information below must be included on your interview. Thus, it will help you to identify what kind of website your customer is looking for. After you ask and answer these questions, complete the form with the customer’s information:
+                            </p>
+                            <p>What’s the purpose and goals of your website?</p>
+                            <p>What’s the main characteristics for it?</p>
+                            <p>What’s the size of the website?</p>
+                            <p>Is it a multinational, national or regional website?</p>
+                            <p>What is the type of clients that you want to engage?</p>
+                            <p>We can also offer a staging environment for free. Would you like to include this on your package?</p>
+
+
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            <div class="bloco6">
+                <div class="container">
+                  <h3>Describing characteristics and functions of websites</h3>
+                  <p>Look at the next three pictures of websites:</p>
+                  
+                  <figure class="my-5">
+                    <img src="img/img03.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+                    <a href="img/img03_mob.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+                        <img src="img/img03_mob.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+                    </a>
+                  </figure>
+                  <p>What are the names of these three companies?
+                  </p>
+                  <h4>Describing objects – adjectives</h4>
+                  <p>Now, as you know the names of these companies, you are going to learn how to describe them and their characteristics looking at the image below. After that, you will describe the characteristics and the functions of these websites for your classmates. For this activity, you need to learn the specific vocabulary: adjectives to describe characteristics. 
+                  </p>
+                  
+                <div class="mainbox-cards">             				   			  
+                  <div class="boxbg-card card-color">
+                    <p><strong>COLOR</strong></p>
+                    <p>Red</p>
+                    <p>Brown</p>
+                    <p>Blue</p>
+                    <p>Black</p>
+                    <p>Green</p>
+                  </div>
+                  <div class="boxbg-card card-size">
+                    <p><strong>SIZE</strong></p>
+                    <p>Big</p>
+                    <p>Small</p>
+                    <p>Large</p>
+                    <p>Little</p>
+                    <p>Huge</p>
+                  </div>
+                  <div class="boxbg-card card-shape">
+                    <p><strong>SHAPE</strong></p>
+                    <p>Oval</p>
+                    <p>Round</p>
+                    <p>Square</p>
+                    <p>Triangular</p>
+                    <p>Boxy</p>
+                  </div>
+                  <div class="boxbg-card card-number">
+                    <p><strong>NUMBER</strong></p>
+                    <p>few</p>
+                    <p>three</p>
+                    <p>seventy</p>
+                    <p>many</p>
+                    <p>much</p>
+                  </div>
+                  <div class="boxbg-card card-sound">
+                    <p><strong>SOUND</strong></p>
+                    <p>loud</p>
+                    <p>pleasant</p>
+                    <p>quite</p>
+                    <p>faint</p>
+                    <p>harmonious</p>
+                  </div>
+                  <div class="boxbg-card card-opinion">
+                    <p><strong>OPINION</strong></p>
+                    <p>fantastic</p>
+                    <p>best</p>
+                    <p>awful</p>
+                    <p>boring</p>
+                    <p>awesome</p>
+                  </div>
+                  <div class="boxbg-card card-origin">
+                    <p><strong>ORIGIN</strong></p>
+                    <p>French</p>
+                    <p>American</p>
+                    <p>Brazilian</p>
+                    <p>Japanese</p>
+                    <p>Chinese</p>
+                  </div>
+                  <div class="boxbg-card card-age">
+                    <p><strong>AGE</strong></p>
+                    <p>Old</p>
+                    <p>Young</p>
+                    <p>New</p>
+                    <p>Elder</p>
+                    <p>Ancient</p>
+                  </div>
+                </div>
+                <h4>Adjectives wordsearch
+                </h4>
+                <div class="espera"></div>
+                  
+
+                </div>
+            </div>
+            <div class="bloco7">
+                <div class="container">
+                  <h3>Describing preferences of a client’s website
+                  </h3>
+                  <p>Click or tap to view content.
+                  </p>
+                  <figure class="my-5">
+                    <div class="figure-img mb-4">
+                        <img class="img-fluid d-block mx-auto" src="img/website_layout.png">
+                    </div>
+                  </figure>
+
+                  <div class="box-atividade fundo-escuro">
+                    <div class="caixa-destaque icone-practice">
+                      <p><strong>Practice it
+                      </strong></p>
+                      <p>You are going to analyze a company’s website. The name of the company is SonicLearn Education. On the website you will have to identify the main features as Home, Courses, About Us, Contact. Also, you have to describe the neccessities and the prefferences of the site’s creator in relation to interactivity, audio and speed optimization.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- <div class="bloco8">
+                <div class="container">
+
+                </div>
+            </div> -->
+          </div>
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">ODBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">JDBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+    $(".card").click(function() {
+      if ($(this).hasClass("exibe-frente")) {
+        $(this)
+          .children()
+          .first()
+          .hide();
+        $(this)
+          .children()
+          .last()
+          .show();
+        $(this).removeClass("exibe-frente");
+      } else {
+        $(".card .verso").hide();
+        $(".card .frente").show();
+        $(this).addClass("exibe-frente");
+      }
+    });
+  });
+
+  $( document ).ready(function() {
+    $(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function() {
+    var $target = $('.animeStart'),
+        $target2 = $('.animeStop'),
+        targetBox = $('.box'),
+        animationClass = 'anime-init',
+        windowHeight = $(window).height(),
+        offset = windowHeight - (windowHeight / 4);
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function() {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        } 
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function() {
+      animeScroll();
+    });
+  });
+
+
+</script>
+
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!--Atividade de jogo da memória-->
+        <script src="atividades/jogo_memoria/jogoMemoria.js"></script>
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                          actionsAlign:"top",
+                          customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                          }
+          });        
+      $('.ht-skip').attr("aria-hidden","true")
+    },
+  document.body.appendChild(scriptElem);
+</script>

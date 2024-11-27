@@ -747,8 +747,65 @@ ul.senac li{
 	margin: 0 auto;
 	width: 50px;
 }
+.marcador-check li {
+    background: url(../images/marcador_check.svg) no-repeat left top 5px / 20px;
+    list-style: none;
+    padding-left: 30px;
+}
+.fundo-branco{
+	background-color: #fff;
+	padding: 10px 30px;
+	border-radius: 15px;
+	color: #000;
+  }
+  .fundo-escuro{
+	background-color: #004b90;
+	color: #fff;
+	padding-bottom: 20px;
+	border-radius: 15px;
+  }
+  .fundo-escuro .icone-practice{
+	  background-position:10px 50px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+  }
+  .fundo-branco .icone-practice{
+	background-color: #fff;
+	color: #000;
+  }
 /*  */
-
+/*FLIP CARDS*/
+.flip-card {
+    background-color: transparent;
+    width: 234px;
+    height: 423px;
+    perspective: 1000px;
+    cursor: pointer;
+    margin: 20px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    /* background: #ccc; */
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+/*FIM FLIP CARDS*/
 /* dispositivos moveis */
 @media screen and (max-width:1000px){
 	#nome-curso.titulo-longo{

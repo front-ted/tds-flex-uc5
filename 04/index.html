@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Purpose and characteristics of databases and stages of data processing
+    </title>
+
+    
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/fa/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <!-- hover.css https://ianlunn.github.io/Hover/ -->
+    <link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+    <!-- Bootstrap -->
+    <!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+    <link href="../template/css/cores.css" rel="stylesheet">
+    <link href="../template/css/modal-100.css" rel="stylesheet">
+    <link href="../template/css/devibeans.min.css" rel="stylesheet">
+      <!--Extras - novas classes para facilitar-->
+      <link rel="stylesheet" href="../template/css/extras.css">
+    <link href="../template/css/sncload.css" rel="stylesheet">
+    <link href="../template/css/magnific-popup.css" rel="stylesheet">
+    
+        <!-- Atividade de verdadeiro ou falso -->
+        <link rel="stylesheet" href="atividades/perguntas/perguntas.css">
+        <!--Atividade arrasta e solta-->
+        <link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+        <link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+        <!--Atividade relacionar colunas-->
+        <link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+    <!-- referencia ao arquivo css com estilos especificos da pagina -->
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/player.css" />
+
+    <!-- css necessario para o print -->
+    <link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="../template/css/print.css" type="text/css" rel="stylesheet">
+    <link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+    <!--  bots5 -->
+        <!-- ODAs -->
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+        <link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+        <!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+        <link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+    <!-- MARCA D´ÁGUA -->
+    <img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+    <!-- /MARCA D´ÁGUA -->
+
+    <div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+    <header id="topo" class="senac no-print">
+        <div  class="header-tecnicos container">
+        	  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+            <div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+        </div>
+        <div id="sombra"></div>
+    </header>
+
+    <div id="booklet" class="fundo-tecnicos">
+        <header class="no-print">
+          <!-- BTO IMPRIMIR -->
+          <div class="grupo-imprimir no-print">
+            <button type="button" data-pdf="true" class="bto-imprimir" name="button">
+                <span class="fa fa-print"></span> <span>Imprimir</span>
+            </button>
+          </div>
+          <!-- /BTO IMPRIMIR -->
+        </header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+        <section class="paginas">
+
+          <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+          <div class="pagina">
+            <div class="bloco1">
+              <div class="container">
+                <h2>Purpose and characteristics of databases and stages of data processing
+                </h2>
+                <p>Nesta situação de aprendizagem, você aprenderá a: </p>
+                <ul class="marcador-check">
+                    <li>Interpretar bancos de dados e seus conceitos básicos</li>
+                    <li>Discutir cada etapa do processamento de dados</li>
+                    <li>Identificar a gramática correta nas frases</li>
+                    <li>Observar diferentes dispositivos de armazenamento e backup</li>
+                    <li>Interpretar o funcionamento de cada departamento de uma empresa e como eles coletam e armazenam as informações e os dados da empresa</li>
+                    <li>Usar habilidades de pensamento crítico e dar soluções de TI para as empresas utilizarem na organização de seus sites</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bloco2">
+              <div class="container">
+                <p>In this situation, you are going to learn the process of databases, including the characteristics and the purposes. Also, it may include the storage and usage of databases. 
+                </p>
+                <p>
+                  Have a look at the picture below. Diana works for a multinational company in Chicago, IL. She is working on different stages of process in databases.
+                </p>
+                <figure class="my-5">
+                  <div class="figure-img mb-4">
+                      <img class="img-fluid d-block mx-auto" src="img/img01.png" alt="Picture of databases.">
+                  </div>
+                </figure>
+                <figcaption class="figure-caption text-center">
+                  <p>Accessed on: 2 jan. 2024.
+                  </p>
+                </figcaption>
+                <p><strong>As you analysed the picture, answer the questions below:</strong></p>
+                <ul>
+                  <li>Where is the woman?</li>
+                  <li>What is she doing?</li>
+                  <li>What kind of system is she looking at?</li>
+                </ul>
+              </div>
+            </div>
+            <div class="bloco3">
+              <div class="container">
+                <h3>Databases processes
+                </h3>
+                <p>Look at the wordsearch below and find the 5 words related to databases. Do you know the meaning of all these words? If the answer is no, look for the meaning of the words in the dictionary. 
+                </p>
+                <div class="espera"></div>
+                <p>Now that you know the names of the main database processes, read the steps for each process below:
+                </p>
+                <p>Click or tap to view content. 
+                </p>
+                
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Databases 
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p>
+                              Are organized collections of data. They help keep data easy to find. They are used to store, organize, and manage large volumes of data. The basic concepts include fields, records (lines or rows), and columns. 
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Fields 
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                             <p>A field represents a specific characteristic of an institution. For example, in a database of employees, fields could include "Name," "Employee ID," "Salary," and "Department."
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                               Records (Lines or Rows):
+ 
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p>A record, also known as a row or line, is a collection of fields that represent a single institution. Using the employee database example, a record would contain all the information about an employee, such as their name, employee ID, salary, and department.
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingfor">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefor" aria-expanded="false" aria-controls="collapsefor">
+                              <img src="img/quest.png" class="mgleft" alt=""> Columns
+                          </button>
+                      </h2>
+                      <div id="collapsefor" class="accordion-collapse collapse" aria-labelledby="headingfor" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p>A column represents a specific type of information across all records. In the employee database example, "Name," "Employee ID," "Salary," and "Department" would be columns.
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingfive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                            Example 
+                          </button>
+                      </h2>
+                      <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingfive" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <p>Consider a simple table representing employee information:
+                            </p>
+                            <div class="">
+                              <table class="table-responsive table">
+                                  <thead>
+                                      <tr>
+                                          <th>Employee ID</th>
+                                          <th>Name</th>
+                                          <th>Salary</th>
+                                          <th>Department</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>001</td>
+                                      <td>John Peterson</td>
+                                      <td>50000</td>
+                                      <td>HR</td>
+                                    </tr>
+                                    <tr>
+                                      <td>002</td>
+                                      <td>Jane Smith</td>
+                                      <td>60000</td>
+                                      <td>IT</td>
+                                    </tr>
+                                    <tr>
+                                      <td>003</td>
+                                      <td>Bob Johnson</td>
+                                      <td>55000</td>
+                                      <td>Finance</td>
+                                    </tr>
+                                  </tbody>
+                              </table>
+                            </div>
+                            <p>In this example:</p>
+                            <ul>
+                              <li>"Employee ID," "Name," "Salary," and "Department" are columns.</li>
+                              <li>Each row represents a unique employee, and together, they form records.</li>
+                              <li>For instance, the record for John Peterson is (001, John Peterson, 50000, HR).</li>
+                            </ul>
+
+                            <p>In business activities, databases play a crucial role.</p>
+                            <ul>
+                              <li>They organize information in tables, making it easy to locate and manage;</li>
+                              <li>Businesses can easily get specific information; </li>
+                              <li>Databases make sure information is correct;</li>
+                              <li>Databases offer user authentication and access control, to protect business information;</li>
+                              <li>Businesses can share information using databases;</li>
+                              <li>Databases support transactions, allowing multiple operations to be grouped together.</li>
+                            </ul>
+
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <p>Perfect! Now you know the basic concepts of databases and their role in business activities. 
+                </p>
+                <div class="box-atividade fundo-escuro">
+                  <div class="caixa-destaque icone-practice">
+                    <p><strong>Let’s practice</strong></p>
+                    <p>Let’s review the information with a practice exercise:</p>
+                    <p>Complete the following sentences using the words that you read before on the book. They will help you to understand more about databases concepts:
+                    </p>
+                  </div>
+                  <div class="box-atividade no-print" style="padding: 15px;">
+                      <!-- <p class="titulo-ativ"><strong>Let’s practice</strong></p> -->
+                      <div class="game-associar-colunas no-print nao-imprimir">
+                          <div class="row">
+                              <div class="col-12 col-sm-8 flexs itens"> 
+                                  <button data-resp="1" class="item item1">
+                                      <p>1. The basic concepts of databases are _____________, _____________ and _____________.</p>
+                                  </button>
+                  
+                                  <button data-resp="2" class="item item2">
+                                      <p>2. Field is the ___________________ unit of data in a database.</p>
+                                  </button>
+                  
+                                  <button data-resp="3" class="item item3">
+                                      <p>3. _______________ are collections of related fields that represent a single institution.</p>
+                                  </button>
+                  
+                                  <button data-resp="4" class="item item4">
+                                      <p>4. ________________ represent a specific type of information across all records.</p>
+                                  </button>
+                  
+                                  <button data-resp="5" class="item item5">
+                                      <p>5. _________________ offer user authentication and access control, to protect business information.</p>
+                                  </button>
+                  
+                              </div>
+                              <div class="col-12 col-sm-4 flexs">
+                                  <button type="button" data-resp="1" class="resp resp5">
+                                      <div class="txtacao"><i class="fas fa-question"></i></div>
+                                      <p>fields, records and columns</p>
+                                  </button>
+                                  <button type="button" data-resp="2" class="resp resp6">
+                                      <div class="txtacao"><i class="fas fa-question"></i></div>
+                                      <p>the smallest</p>
+                                  </button>
+                                  <button type="button" data-resp="3" class="resp resp7">
+                                      <div class="txtacao"><i class="fas fa-question"></i></div>
+                                      <p>records, lines or rows</p>
+                                  </button>
+                                  <button type="button" data-resp="4" class="resp resp1">
+                                      <div class="txtacao"><i class="fas fa-question"></i></div>
+                                      <p>columns</p>
+                                  </button>
+                                  <button type="button" data-resp="5" class="resp resp8">
+                                      <div class="txtacao"><i class="fas fa-question"></i></div>
+                                      <p>databases</p>
+                                  </button>
+                              </div>
+                          </div>
+                  
+                          <!-- Modal -->
+                          <div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+                              aria-labelledby="associarColunasErrou" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="row">
+                                              <div class="col-12 col-lg-4">
+                                                  <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+                                              </div>
+                                              <div class="col-12 col-lg-8">
+                                                  <p>Ops, tente novamente!</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- Modal -->
+                          <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+                              tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                          <div class="row">
+                                              <div class="col-12 col-lg-4">
+                                                  <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+                                              </div>
+                                              <div class="col-12 col-lg-8">
+                                                  <p>Muito bem! Você acertou!</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                  
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="bloco4">
+                <div class="container">
+                  <h3>Data processing</h3>
+                  <p>In the previous studies, you learned what the basic concepts of databases are. However, in this section, you will learn about data processing and its relation to databases. 
+                  </p>
+                  <p>A database helps data processing by storing and organizing it in a structured form. It's la well-organized storage space that makes it easy to manage and find information, especially when there are a lot of data.
+                  </p>
+                  <p>
+                    Find the definition of these terms and explain them to the big group:
+                  </p>
+                  
+                  <figure class="my-5">
+                    <div class="figure-img mb-4">
+                        <img class="img-fluid d-block mx-auto" src="img/nuvem01.png">
+                    </div>
+                  </figure>
+                  <p>Data processing refers to the conversion of raw data into information through a series of activities. Look at the infographic below to understand more about these steps and their definition and processes.
+                  </p>
+                  <p>Click or tap to view content.
+                  </p>
+                  <div class="mainbox-infografico">
+                    <img src="img/bt01.png" data-bs-toggle="modal" data-bs-target="#modal-bt1-painel1" alt=""> 
+                    <img src="img/bt02.png" data-bs-toggle="modal" data-bs-target="#modal-bt2-painel1" alt="">
+                    <img src="img/bt03.png" data-bs-toggle="modal" data-bs-target="#modal-bt3-painel1" alt="">
+                    <img src="img/bt04.png" data-bs-toggle="modal" data-bs-target="#modal-bt4-painel1" alt="">
+                    <img src="img/bt05.png" data-bs-toggle="modal" data-bs-target="#modal-bt5-painel1" alt="">
+                    <img src="img/bt06.png" data-bs-toggle="modal" data-bs-target="#modal-bt6-painel1" alt="">
+                    <img src="img/bt07.png" data-bs-toggle="modal" data-bs-target="#modal-bt7-painel1" alt="">
+                    <img src="img/bt08.png" data-bs-toggle="modal" data-bs-target="#modal-bt8-painel1" alt="">
+                    <img src="img/bt09.png" data-bs-toggle="modal" data-bs-target="#modal-bt9-painel1" alt="">
+                    <img src="img/bt10.png" data-bs-toggle="modal" data-bs-target="#modal-bt10-painel1" alt="">
+                  </div> 
+                  <div class="modal fade no-print" id="modal-bt1-painel1" tabindex="-1"
+                  aria-labelledby="modal-bt1-painel1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Collection</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p><strong>Definition</strong>: Collecting raw data from various sources, which include surveys, databases, forms, or other data input methods.
+                              </p>
+                            <p><strong>Process</strong>: Data is collected in its raw form.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt2-painel1" tabindex="-1"
+                  aria-labelledby="modal-bt2-painel1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Preparation</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p><strong>Definition</strong>: Cleaning and organizing raw data to ensure consistency, and completeness.</p>
+                            <p><strong>Process</strong>: This step involves managing erroneous data and converting data into a consistent structure.
+                              </p>
+                            
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt3-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Input
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Entering prepared data into the computer system.</p>
+                            <p>Process: Data is input into databases, spreadsheets, or other software applications that facilitate processing.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt4-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Processing</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Performing operations on the input data to convert it into information.</p>
+                            <p>
+                              Process: It involves computational tasks, such as filtering and performing calculations on the data. Algorithms and programming scripts are used for more processing.
+                              </p>
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt5-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Storage</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Storing processed data for future analysis</p>
+                            <p>Process: Processed data is stored in databases or other storage systems to ensure accessibility and data preservation.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt6-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Analysis
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Examining and interpreting the processed data to identify patterns.</p>
+                            <p>Process: Statistical analysis, machine learning, and data visualization are applied to conclusions and make informed decisions.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt7-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Output</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Presenting the results of data analysis in a format.</p>
+                            <p>Process: It involves generating reports, charts, graphs, or other visualizations.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt8-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Interpretation</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Extracting meaning from the analysed data.</p>
+                            <p>Process: Interpreting the results and making informed decisions based on the findings.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt9-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Data Storage (Archiving)
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Archiving data for long-term storage and future reference.</p>
+                            <p>Process: Archiving is essential for historical analysis and maintaining a record of past data.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt10-painel1" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Feedback</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Definition: Receiving feedback on the processed data and its interpretation.</p>
+                            <p>Process:  Stakeholders provide feedback, that lead to adjustments in data processing methods or analysis.
+                              </p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="espera"></div>
+ 
+                </div>
+            </div>
+            <div class="bloco5">
+                <div class="container">
+                  <h3>Storage and backup devices 
+                  </h3>
+                  <p>Do you know how to say the names of the pictures below?
+                  </p>
+                  <div class="box-atividade fundo-escuro">
+                    <div class="caixa-destaque icone-practice">
+                      <p><strong>Let’s practice.</strong></p>
+                      <p><strong>Complete the blanket spaces above the images with the words below:
+                      </strong></p><br><br>
+
+                    </div>
+                    
+                  <div class="box-atividade d-none d-lg-block">
+                    <!-- <p class="titulo-ativ"><strong>Arrasta e solta</strong></p> -->
+                    <div id="content-game">
+                        <div class="container-fluid game-body no-print" style="padding:0;">
+                            <div class="row">
+                                <div id="slots" class="col-12">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>FLASH DRIVE
+                                                </p>
+                                            </div>
+                                            <div id="slot-1" class="slot">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4 mt-3 mb-3">
+                                            <div class="game-titulo">
+                                                <p>EXTERNAL HARD DRIVE
+                                                </p>
+                                            </div>
+                                        <div id="slot-2" class="slot">
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                        <div class="game-titulo">
+                                            <p>NETWORK ATTACHED STORAGE (NAS).
+                                            </p>
+                                        </div>
+                                        <div id="slot-3" class="slot">
+                                        
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mt-3 mb-3">
+                                        <div class="game-titulo">
+                                            <p>CLOUD STORAGE
+                                            </p>
+                                        </div>
+                                        <div id="slot-4" class="slot">
+                                        
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                </div>
+                    
+                                <div id="cardPile" class="game-itens-container">
+                                    <div id="card-1" class="card" data-target="slot-4">
+                                        <img src="img/img02.png" alt="">
+                                    </div>
+                                    
+                                    <div id="card-2" class="card"  data-target="slot-1">
+                                      <img src="img/flashdr.png" alt="">
+                                    </div>
+                                    
+                                    <div id="card-3" class="card" data-target="slot-2">
+                                      <img src="img/hd.png" alt="">
+                                    </div>
+                                    
+                                    <div id="card-4" class="card" data-target="slot-3">
+                                      <img src="img/nas.png" alt="">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>                           
+                    
+                    <div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Resposta correta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/arrasta_solta/resposta_pos.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Muito bem! Você acertou.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-danger">
+                                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Resposta incorreta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-4">
+                                            <img src="../assets/atividades/arrasta_solta/resposta_neg.svg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-12 col-lg-8">
+                                            <p>Ops, tente novamente!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  </div>
+
+                  <p>There are various types of storage solutions, each serving different purposes and preferences. Here are examples of different kinds of storage, including online storage, external hard drives, and flash USB drives:
+                  </p>
+                  <h4>Online Storage or Cloud Storage </h4>
+                  <ul>
+                    <li>Their advantages are accessibility from any device with an internet connection; collaboration features for sharing and editing files with others and automatic synchronization for real-time updates.</li>
+                    <li>Their considerations are dependence on internet connectivity and limited storage capacity for free plans, with options for additional paid storage.
+                      </li>
+                  </ul>
+                  <p>As examples of <strong>Online Storage or Cloud Storage</strong> we have:
+                  </p>
+                  <p>Click or tap to view content.
+                  </p>
+                  <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/card01.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/card_back.png" alt="">
+                                <p>Google Drive, that provides cloud storage for files, documents, and photos. Users can access their data from any device with internet connectivity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner radius">
+                            <div class="flip-card-front">
+                                <img src="img/card02.png" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                              <img src="img/card_back.png" alt="">
+                                <p><strong>Dropbox</strong>: A cloud storage service that allows users to store and share files. It offers synchronization across devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                <h4>External Hard Drive
+                </h4>
+                <ul>
+                  <li>Their advantages are high storage capacity for large files and backups; no reliance on internet connectivity for data access and portable options for storage.
+                    </li>
+                  <li>Their Considerations are vulnerable to physical damage as it is a physical device and has limited accessibility compared to cloud storage.
+                  </li>
+                </ul>
+                <p>As examples of <strong>External Hard Drive</strong>, we have:
+                </p>
+                <p>Click or tap to view content.
+                </p>
+                <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                  <div class="flip-card">
+                      <div class="flip-card-inner radius">
+                          <div class="flip-card-front">
+                              <img src="img/card03.png" alt="">
+                          </div>
+                          <div class="flip-card-back">
+                            <img src="img/card_back.png" alt="">
+                            <p>Seagate Backup Plus: An external hard drive with storage capacities for backing up large amounts of data.
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="flip-card">
+                      <div class="flip-card-inner radius">
+                          <div class="flip-card-front">
+                              <img src="img/card04.png" alt="">
+                          </div>
+                          <div class="flip-card-back">
+                            <img src="img/card_back.png" alt="">
+                            <p>Western Digital (WD) My Passport: Compact external drives suitable for portable storage needs.
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <h4>Flash USB Drive (Thumb Drive, Flash Disk)
+              </h4>
+              <ul>
+                <li>Their advantages are small and portable for easy transportation; no moving parts, making them more durable and quick data transfer speeds for small to medium-sized files.</li>
+                <li>Their Considerations are limited storage capacity compared to external hard drives and possible to physical damage or loss as it has a small size.
+                  </li>
+              </ul>
+              <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/card05.png" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/card_back.png" alt="">
+                            <p><strong>SanDisk Cruzer</strong>: A popular USB flash drive for portable storage.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner radius">
+                        <div class="flip-card-front">
+                            <img src="img/card06.png" alt="">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/card_back.png" alt="">
+                            <p><strong>Kingston DataTraveler</strong>: USB drives with various storage capacities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4></h4>
+            <ul>
+              <li>Their advantages are shared storage accessible by multiple users on a network; it can serve as a backup solution.</li>
+              <li>Their considerations may require technical knowledge and higher cost compared to single-user storage solutions</li>
+            </ul>
+            <p>As examples of Network Attached Storage (NAS) we have:
+            </p>
+            <p>Click or tap to view content.
+            </p>
+            <div class="d-flex flex-wrap justify-content-around no-print" aria-hidden="true">
+              <div class="flip-card">
+                  <div class="flip-card-inner radius">
+                      <div class="flip-card-front">
+                          <img src="img/card07.png" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="img/card_back.png" alt="">
+                          <p>Synology DiskStation: A NAS solution that provides storage and file sharing for a network.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="flip-card">
+                  <div class="flip-card-inner radius">
+                      <div class="flip-card-front">
+                          <img src="img/card08.png" alt="">
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="img/card_back.png" alt="">
+                          <p>QNAP TS-451+: A NAS device with multiple compartments able to storage.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="caixa-destaque">
+              <p>Each type of storage solution has its advantages and considerations, and the choice depends on factors such as storage needs, accessibility and preferences for physical or cloud-based storage.</p>
+            </div>
+          
+            <div class="box-atividade fundo-branco">
+              <div class="caixa-destaque icone-practice">
+                <p><strong>Practice it</strong></p>
+                <p>As you learned some examples of storage and backup, can you answer the following questions about this topic?
+                </p>
+                <ul>
+                  <li>Tell 2 examples of Cloud Storage</li>
+                  <li>Tell 2 examples of USB</li>
+                  <li>Tell 2 examples of External Hard Drive</li>
+                  <li>Tell 2 examples of NAS</li>
+                  <li>Tell an advantage of a Cloud Storage</li>
+                </ul>
+              </div>
+            </div>
+
+                </div>
+            </div>
+            <div class="bloco6">
+                <div class="container">
+                  <h3>Different parts of a company</h3>
+                  <p>You are visiting a company that works with IT to do a benchmarking with your company about how information is collected and stored in each sector. The name of this company is TechSolutions Inc. It operates in the technology sector and provides various IT solutions.
+                  </p>
+                  <figure class="my-5">
+                    <div class="figure-img mb-4">
+                        <img class="img-fluid d-block mx-auto" src="img/img02.png" alt="Picture of a company.">
+                    </div>
+                  </figure>
+                  <figcaption class="figure-caption text-center">
+                    <p>Accessed on: 3 jan. 2024.
+                    </p>
+                  </figcaption>
+                  <p>
+                    Here are the different parts of the company and the types of information they need for informed business decisions:
+                  </p>
+                  <p>Click or tap to view content.
+                  </p>
+                  <div class="painel_layout">
+                    <img src="img/painel01/bt01_1.png" class="bt01_1" data-bs-toggle="modal" data-bs-target="#modal-bt1-painel2" alt="">
+                    <img src="img/painel01/bt02_1.png" class="bt02_1" data-bs-toggle="modal" data-bs-target="#modal-bt2-painel2" alt="">
+                    <img src="img/painel01/bt03_1.png" class="bt03_1" data-bs-toggle="modal" data-bs-target="#modal-bt3-painel2" alt="">
+                    <img src="img/painel01/bt04_1.png" class="bt04_1" data-bs-toggle="modal" data-bs-target="#modal-bt4-painel2" alt="">
+                    <img src="img/painel01/bt05_1.png" class="bt05_1" data-bs-toggle="modal" data-bs-target="#modal-bt5-painel2" alt="">
+                    <img src="img/painel01/bt06_1.png" class="bt06_1" data-bs-toggle="modal" data-bs-target="#modal-bt6-painel2" alt="">
+                    <img src="img/painel01/bt07_1.png" class="bt07_1" data-bs-toggle="modal" data-bs-target="#modal-bt7-painel2" alt="">
+                    <img src="img/painel01/bt08_1.png" class="bt08_1" data-bs-toggle="modal" data-bs-target="#modal-bt8-painel2" alt="">
+                  </div>  
+                  
+                  <div class="modal fade no-print" id="modal-bt1-painel2" tabindex="-1"
+                  aria-labelledby="modal-bt1-painel1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Management Department</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Financial reports and forecasts for financial planning. Market trends and industry analyses to make strategic decisions. Employee performance data for effective workforce management.</p>
+                            <p><strong>How Information is Collected:</strong></p>
+                            <p>Financial reports and forecasts are collected through accounting software and financial management systems. </p>
+                            <p>Market trends and industry analyses are collected through research, industry reports, and subscription services that provide data.</p>
+                            <p>Employee performance data is often collected through performance reviews, project management tools, and employee feedback surveys.</p>
+                            <p><strong>How Information is Stored:</strong></p>
+                            <p>Financial data is stored in financial databases or enterprise resource planning (ERP) systems.</p>
+                            <p>Market trends and industry analyses may be stored in a database for strategic planning.</p>
+                            <p>Employee performance data can be stored in human resources management systems (HRMS).</p>
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt2-painel2" tabindex="-1"
+                  aria-labelledby="modal-bt2-painel1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Sales and Marketing Department</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Customer data, including demographics and preferences, for targeted marketing campaigns. Sales performance metrics and conversion rates for evaluating marketing strategies. Competitor analysis to identify market opportunities and threats.</p>
+                            <p><strong>How Information is Collected:</strong></p>
+                            <p>Customer data is collected through customer relationship management (CRM) systems, online surveys, and social media interactions.</p>
+                            <p>Sales performance metrics and conversion rates are tracked using sales management software and tools.</p>
+                            <p>Competitor analysis involves monitoring competitors' activities, market research, and subscription services.</p>
+                            <p><strong>How Information is Stored:</strong></p>
+                            <p>Customer data is stored in a secure CRM database or marketing platform.</p>
+                            <p>Sales performance metrics and conversion rates are stored in sales tools or integrated into CRM systems.</p>
+                            <p>Competitor analysis data may be stored in a dedicated database or shared through collaborative platforms.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt3-painel2" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Product Development Department
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Customer feedback and surveys for improving existing products and new ones. Technological advancements and innovations in the industry. </p>
+                            <p><strong>How Information is Collected:</strong></p>
+                            <p>Customer feedback and surveys are collected through feedback forms, product reviews, and customer interviews.</p>
+                            <p>Technological advancements and innovations are identified through industry publications, tech forums, and partnerships.</p>
+                            <p><strong>How Information is Stored:</strong></p>
+                            <p>Customer feedback can be stored in product development databases or shared through tools.</p>
+                            <p>Information on technological advancements may be stored in a knowledge base.</p>
+
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt4-painel2" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Customer Support Department</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Customer service registers and feedback to address problems and improve service quality. Data on common customer queries and concerns for proactive support. Performance metrics to assess customer satisfaction levels.</p>
+                            <p>How Information is Collected:</p>
+                            <p>It is collected through customer support platforms, systems, and feedback forms.</p>
+                            <p>Data are gathered through customer interactions and support databases.</p>
+                            <p>Performance metrics for customer satisfaction are collected through surveys and feedback.</p>
+                            <p>How Information is Stored:</p>
+                            <p>Customer service registers and feedback data are stored in customer support databases.</p>
+                            <p>Data on common customer queries may be stored in knowledge bases or support documentation systems.</p>
+                            <p>Performance metrics for customer satisfaction are often stored in analytics tools or customer feedback platforms.</p>
+                            
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt5-painel2" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Human Resources Department
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Employee performance data for evaluations and career development. Workforce demographics and diversity statistics. Training and development needs to improve employee skills. </p>
+                            <p><strong>How Information is Collected:</strong></p>
+                            <p>Employee performance data is collected through reviews, goal systems, and employee surveys.</p>
+                            <p>Workforce demographics and diversity statistics are gathered through HR systems and employee databases.</p>
+                            <p>Training and development needs are identified through performance assessments, skill gap analyses, and employee feedback.</p>
+                            <p><strong>How Information is Stored:</strong></p>
+                            <p>Employee performance data is typically stored in HRMS or performance systems.</p>
+                            <p>Workforce demographics and diversity statistics may be stored in HR databases.</p>
+                            <p>Training and development needs can be stored in learning management systems (LMS) or training databases.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt6-painel2" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">IT Department
+                              </h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Data on network performance and security to ensure an IT infrastructure. Information on software and hardware updates to keep system efficiency. Cybersecurity threat intelligence to protect against risks.</p>
+                            <p><strong>How Information is Collected</strong>:</p>
+                            <p>Data on network performance and security is collected through monitoring tools, security information and event management (SIEM) systems, and registers.</p>
+                            <p>Information on software and hardware updates is collected through management systems and vendor communications.</p>
+                            <p>Cybersecurity threat intelligence is collected through threat feeds, incident reports, and security research.</p>
+                            <p><strong>How Information is Stored</strong>:</p>
+                            <p>Network performance and security data are stored in secure databases or SIEM systems.</p>
+                            <p>Information on software and hardware updates may be stored in configuration management databases (CMDB) or documentation systems.</p>
+                            <p>Cybersecurity threat intelligence can be stored in threat intelligence platforms or shared through secure communication channels.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt7-painel2" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Finance Department</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Financial statements, including income statements and balance sheets. Cash flow reports for management. Tax updates for legal admission.</p>
+                            <p><strong>How Information is Collected</strong>:</p>
+                            <p>Financial statements are generated through accounting software and audits.</p>
+                            <p>Cash flow reports are through banking statements, and financial software.</p>
+                            <p>Tax and regulatory compliance updates are obtained through legal consultations, tax software, and regulatory databases.</p>
+                            <p><strong>How Information is Stored</strong>:</p>
+                            <p>Financial statements are typically stored in secure financial databases and ERP systems.</p>
+                            <p>Cash flow reports may be stored in financial databases.</p>
+                            <p>Tax and regulatory compliance updates can be stored in legal databases or compliance management systems.</p>
+
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="modal fade no-print" id="modal-bt8-painel2" tabindex="-1"
+                  aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content no-print">
+                          <div class="modal-header">
+                              <h5 class="modal-title">Supply Chain and Logistics Department</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                  aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <p>Information Needed: Supplier performance data for vendor management. Inventory levels and demand forecasts for supply chain operations. Shipping and logistics data for product deliveries.</p>
+                            <p><strong>How Information is Collected</strong>:</p>
+                            <p>Supplier performance data is collected through supplier evaluations and performance metrics.</p>
+                            <p>Inventory levels and demand forecasts are obtained through inventory management systems, sales data, and demand planning tools.</p>
+                            <p>Shipping and logistics data is gathered through shipping management systems, logistics providers, and tracking information.</p>
+                            <p><strong>How Information is Stored</strong>:</p>
+                            <p>Supplier performance data can be stored in management systems or databases.</p>
+                            <p>Inventory levels and demand forecasts may be stored in management systems or shared through collaboration platforms.</p>
+                            <p>Shipping and logistics data is often stored in logistics databases or into supply chain management systems.</p>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary"
+                                  data-bs-dismiss="modal">Fechar</button>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="box-atividade fundo-escuro">
+                    <div class="caixa-destaque icone-practice">
+                      <p>As you learned the different departments of a company and how information is collected and stored, answer the following questions:
+                      </p>
+                      <ul>
+                        <li>How many departments does the company have?</li>
+                        <li>How is information collected and stored in the IT department?</li>
+                        <li>What’s the meaning of the acronyms below:</li>
+                      </ul>
+                      <p>a) CRM 	  b) LMS       	  c) HMRS	 d) CMDB
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            <div class="bloco7">
+                <div class="container">
+                  <h3>Practice activity: giving an IT solution</h3>
+                  <p>Working with IT sometimes involves solving enigmas. You are going to see pictures of two different objects, and they will form a compound word in English.</p>
+                  <p>Compound words are formed by combining two or more words to create a new word with a distinct meaning. </p>
+                  <p>You have to solve these enigmas to discover these words. Can you figure out what the following pictures mean?</p>
+                  
+                  <div class="box-atividade fundo-escuro">
+                    <div class="caixa-destaque icone-practice">
+                      <p class="titulo-ativ"><strong>Let’s practice.
+                      </strong></p>
+                      <br>
+                      <br><br>
+                    </div>
+                    
+                    <div class="box-atividade" style="padding: 30px;">
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">1. What’s the word?
+                          </p>
+                          <div class="row">
+                            <div class="col">
+                              <img src="img/bookstore.png" style="" alt="">
+                            </div>
+                            <div class="col">
+                              <button class="alt-c" style="max-width: 300px;">Book</button>
+                              <button class="alt-e" style="max-width: 300px;">Reading room</button>
+                              <button class="alt-e" style="max-width: 300px;">Bookstore</button>
+                              <div class="feedbacks">
+                                  <p class="f-positivo"><i
+                                          class="fas fa-check"></i> Acertou! Você escolheu a resposta correta. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                                  <p class="f-negativo"><i
+                                          class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="esquemaDaBru multipla-escolha">
+                          <p class="enunciado" tabindex="0">2. What’s the word?</p>
+                          <div class="row">
+                            <div class="col">
+                              <img src="img/solving.png" style="" alt="">
+                            </div>
+                            <div class="col">
+                              <button class="alt-e" style="max-width: 300px;">Problem-solving</button>
+                              <button class="alt-c" style="max-width: 300px;">Doubts</button>
+                              <button class="alt-e" style="max-width: 300px;">Idea</button>
+                              <div class="feedbacks">
+                                  <p class="f-positivo"><i
+                                          class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+                                  <p class="f-negativo"><i
+                                          class="fas fa-times"></i> Errou! Você escolheu a resposta errada. Phasellus non pharetra tortor, nec efficitur sem nisi at nulla Phasellus non pharetra tortor, nec efficitur sem nisi at nulla</p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                <p>Congratulations! You solved both enigmas. The first is bookstore and the second problem-solving. But do you know what are their relations with this activity?
+                </p>
+                <p>Click and check on the bookstore below:
+                </p>
+                <h3 style="text-align: center;">Welcome to Book Haven bookstore!
+                </h3>
+                <div class="painel_book">
+                  <img src="img/painel02/bt01_2.png" class="bt01_3" data-bs-toggle="modal" data-bs-target="#modal-bt1-painel3" alt="">
+                  <img src="img/painel02/bt02_2.png" class="bt02_3" data-bs-toggle="modal" data-bs-target="#modal-bt2-painel3" alt="">
+                  <img src="img/painel02/bt03_2.png" class="bt03_3" data-bs-toggle="modal" data-bs-target="#modal-bt3-painel3" alt="">
+                  <img src="img/painel02/bt04_2.png" class="bt04_3" data-bs-toggle="modal" data-bs-target="#modal-bt4-painel3" alt="">
+                  <img src="img/painel02/bt05_2.png" class="bt05_3" data-bs-toggle="modal" data-bs-target="#modal-bt5-painel3" alt="">
+                </div>                   
+                <div class="modal fade no-print" id="modal-bt1-painel3" tabindex="-1"
+                aria-labelledby="modal-bt1-painel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Book 1
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>A famous bookstore called “Book Haven” is having problems with keeping the control of its books and making sure its employees can talk to each other. Help them to find a solution for these problems using databases and storage.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt2-painel3" tabindex="-1"
+                aria-labelledby="modal-bt2-painel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Book 2 
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>The manager of Book Haven, Jane Locker, is having some problems with Keeping the control of the Books: They don’t know exactly how many books it has. Sometimes, books get moved around, and it's hard to discover how many copies of a book are left. This causes some clients to feel unhappy when they can't find the books they want. The bookstore is also worried that they lose money because they're not organizing their stock well.
+                          </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt3-painel3" tabindex="-1"
+                aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Book 3
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Communication problem among Employees: On top of that, the workers at the bookstore aren't communicating well. It's difficult for them to share information about restocking, answering customer questions about the books, or changes in their schedules. This lack of communication leads to confusion sometimes, and it makes it harder to get tasks done, affecting how well they serve customers.
+                          </p>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt4-painel3" tabindex="-1"
+                aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Book 4
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>To solve these problems, Book Haven is thinking about using new software. This software can help them keep better organization of their books and make it easier for the workers to talk to each other. It would give updates on how many books are available, making it simpler for the workers to find and manage books. The software would also include a way for employees to communicate more, so everyone knows about important updates, schedules.
+                          </p>
+                          
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="modal fade no-print" id="modal-bt5-painel3" tabindex="-1"
+                aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content no-print">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Book 5 
+
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                         <p>Using new system, Book Haven wants to be more efficient, solve stock problems, and make it easier for employees to work together. They hope this solution will make customers happier and bring more money for the bookstore.
+                        </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"
+                                data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="box-atividade fundo-escuro">
+                  <div class="caixa-destaque icone-practice">
+                    <p><strong>Practice it
+                    </strong></p>
+                    <p>Can you help the company to solve these problems?</p>
+                    <p>In groups, create a software to solve these problems and present to your class! </p>
+                  </div>
+                </div>
+
+
+                </div>
+            </div>
+            <!-- <div class="bloco8">
+                <div class="container">
+                </div>
+            </div> -->
+          </div>
+        </section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+        <footer class="text-center no-print">
+          <!--
+          <ul class="pagination">
+
+          </ul>
+          -->
+        </footer>
+
+      </div>
+
+    </div>
+
+
+    <!-- Modais -->
+    <div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">ODBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">JDBC</h4>
+          </div>
+          <div class="modal-body">
+            <p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+    <footer>
+    </footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+    <img src="../template/images/bg-content.jpg">
+    <img src="../template/images/bg-topo.jpg">
+    <img src="../template/images/black-zoom-in-256.png">
+    <img src="../template/images/concluindo.png">
+    <img src="../template/images/curtir.png">
+    <img src="../template/images/desafio.png">
+    <img src="../template/images/dica.png">
+    <img src="../template/images/doc.png">
+    <img src="../template/images/fundamental.png">
+    <img src="../template/images/icon-03.png">
+    <img src="../template/images/importante.png">
+    <img src="../template/images/lightbulb.png">
+    <img src="../template/images/link.png">
+    <img src="../template/images/link_pdf_hover.png">
+    <img src="../template/images/link_pdf_normal.png">
+    <img src="../template/images/logo-senac.png">
+    <img src="../template/images/mark-icon.png">
+    <img src="../template/images/mark-icon02.png">
+    <img src="../template/images/midia.png">
+    <img src="../template/images/monitor.png">
+    <img src="../template/images/nao_curtir.png">
+    <img src="../template/images/pergunta.png">
+    <img src="../template/images/pesquisa.png">
+    <img src="../template/images/play.png">
+    <img src="../template/images/radio_flat.png">
+    <img src="../template/images/refletir.png">
+    <img src="../template/images/saiba_mais.png">
+    <img src="../template/images/senac_loader.png">
+    <img src="../template/images/tanamidia.png">
+    <img src="../template/images/transcricao.png">
+    <img src="../template/images/transcricao_small.png">
+    <img src="../template/images/tv.png">
+    <img src="../template/images/tv_bottom.png">
+    <img src="../template/images/zoom.png">
+    <img src="../template/images/zoom_ie.cur">
+    <img src="../template/images/zoom_ie.png">
+    <!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+        <!--Jquery-->
+        <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <!--Áudio customizado-->
+        <script src="../assets/js/audio-player.js"></script>
+        
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+
+        <!--Atividade de verdadeiro ou falso-->
+        <script src="atividades/perguntas/perguntas.js"></script>
+        <!--Atividade arrasta e solta-->
+        <script src='atividades/arrasta_solta/dragula.min.js'></script>
+        <script src="atividades/arrasta_solta/game-custom.js"></script>
+        <!--Atividade associar colunas-->
+        <script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+<noscript>
+  <style media="screen">
+    .over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((el) => {
+      hljs.highlightElement(el);
+    });
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+    $(".card").click(function() {
+      if ($(this).hasClass("exibe-frente")) {
+        $(this)
+          .children()
+          .first()
+          .hide();
+        $(this)
+          .children()
+          .last()
+          .show();
+        $(this).removeClass("exibe-frente");
+      } else {
+        $(".card .verso").hide();
+        $(".card .frente").show();
+        $(this).addClass("exibe-frente");
+      }
+    });
+  });
+
+  $( document ).ready(function() {
+    $(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+    var boxOffset = $(idBox).offset().top;
+    return boxOffset;
+  }
+
+  $(document).ready(function() {
+    var $target = $('.animeStart'),
+        $target2 = $('.animeStop'),
+        targetBox = $('.box'),
+        animationClass = 'anime-init',
+        windowHeight = $(window).height(),
+        offset = windowHeight - (windowHeight / 4);
+
+    function animeScroll() {
+      var documentTop = $(document).scrollTop();
+      $target.each(function() {
+        if (documentTop > boxTop(this) - offset) {
+          targetBox.addClass(animationClass);
+        } else {
+          targetBox.removeClass(animationClass);
+        }
+        if (documentTop > boxTop($target2) - offset) {
+          targetBox.removeClass(animationClass);
+        } 
+      });
+    }
+    animeScroll();
+
+    $(document).scroll(function() {
+      animeScroll();
+    });
+  });
+
+
+</script>
+
+        <!-- ODAS -->
+        <!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+        <script src="odas/ingles_letters/assets/js/script.js"></script>
+        <!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+        <!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+        window.ht = new HT({
+            token:"bf5b7efb148a829a126a0e0c9fd533bf",
+            align:"top",
+            videoEnabled: true,
+            ytEmbedReplace: true,           
+            mobileConfig:{align:"right",
+                          actionsAlign:"top",
+                          customButtonStyle:{
+                                borderRadius:"6px",
+                                size:"38px",
+                                horizontalMargin:"13px",
+                                bottomMargin:"140px",
+                                rightMargin:"40px"}
+                          }
+          });        
+      $('.ht-skip').attr("aria-hidden","true")
+    },
+  document.body.appendChild(scriptElem);
+</script>
