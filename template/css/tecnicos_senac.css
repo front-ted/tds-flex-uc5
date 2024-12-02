@@ -806,6 +806,45 @@ ul.senac li{
     transform: rotateY(180deg);
 }
 /*FIM FLIP CARDS*/
+/* check */
+.botaoCheck{position: relative;
+	display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;}
+.botaoCheck.visitado::after{
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 24px;
+    top: 5px;
+    right: 8px;
+    background: url('../images/check.png') no-repeat;
+	background-size: cover;
+}
+/*  */
+/* 
+$('.botaoCheck').click(function(){
+	$(this).addClass('visitado');
+  });
+  
+.board-trello > div{
+display: block;
+margin: 10px auto;
+transition: all 0.3s ease-in-out;
+border-radius: 20px;
+border: 5px solid #D9E4ED;
+}
+.trello-bt01{background-image: url('../img/painel/bt01.png');
+width: 367px;
+height: 168px;
+} */
+/*  */
 /* dispositivos moveis */
 @media screen and (max-width:1000px){
 	#nome-curso.titulo-longo{

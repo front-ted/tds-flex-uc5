@@ -964,22 +964,22 @@
                     <div class="md-12 col-6">
                         <div class="board-trello">
                             <p class="titulo-board">To do</p>
-                            <img src="img/painel/bt01.png" data-bs-toggle="modal" data-bs-target="#modal1" class="trello-bt01" alt="">
-                            <img src="img/painel/bt02.png" data-bs-toggle="modal" data-bs-target="#modal2" class="trello-bt02" alt="">
-                            <img src="img/painel/bt03.png" data-bs-toggle="modal" data-bs-target="#modal3" class="trello-bt03" alt="">
-                            <img src="img/painel/bt04.png" data-bs-toggle="modal" data-bs-target="#modal4" class="trello-bt04" alt="">
-                            <img src="img/painel/bt05.png" data-bs-toggle="modal" data-bs-target="#modal5" class="trello-bt05" alt="">
+                            <div src="img/painel/bt01.png" data-bs-toggle="modal" data-bs-target="#modal1" class="trello-bt01 botaoCheck"></div>
+                            <div src="img/painel/bt02.png" data-bs-toggle="modal" data-bs-target="#modal2" class="trello-bt02 botaoCheck"></div>
+                            <div src="img/painel/bt03.png" data-bs-toggle="modal" data-bs-target="#modal3" class="trello-bt03 botaoCheck"></div>
+                            <div src="img/painel/bt04.png" data-bs-toggle="modal" data-bs-target="#modal4" class="trello-bt04 botaoCheck"></div>
+                            <div src="img/painel/bt05.png" data-bs-toggle="modal" data-bs-target="#modal5" class="trello-bt05 botaoCheck"></div>
                             <p class="add-board">+ Add a card</p>
                         </div>
                     </div>
                     <div class="md-12 col-6">
                         <div class="board-trello">
                             <p class="titulo-board">To do</p>
-                            <img src="img/painel/bt06.png" data-bs-toggle="modal" data-bs-target="#modal6" class="trello-bt06" alt="">
-                            <img src="img/painel/bt07.png" data-bs-toggle="modal" data-bs-target="#modal7" class="trello-bt07" alt="">
-                            <img src="img/painel/bt08.png" data-bs-toggle="modal" data-bs-target="#modal8" class="trello-bt08" alt="">
-                            <img src="img/painel/bt09.png" data-bs-toggle="modal" data-bs-target="#modal9" class="trello-bt09" alt="">
-                            <img src="img/painel/bt10.png" data-bs-toggle="modal" data-bs-target="#modal10" class="trello-bt10" alt="">
+                            <div src="img/painel/bt06.png" data-bs-toggle="modal" data-bs-target="#modal6" class="trello-bt06 botaoCheck"></div>
+                            <div src="img/painel/bt07.png" data-bs-toggle="modal" data-bs-target="#modal7" class="trello-bt07 botaoCheck"></div>
+                            <div src="img/painel/bt08.png" data-bs-toggle="modal" data-bs-target="#modal8" class="trello-bt08 botaoCheck"></div>
+                            <div src="img/painel/bt09.png" data-bs-toggle="modal" data-bs-target="#modal9" class="trello-bt09 botaoCheck"></div>
+                            <div src="img/painel/bt10.png" data-bs-toggle="modal" data-bs-target="#modal10" class="trello-bt10 botaoCheck "></div>
                             <p class="add-board">+ Add a card</p>
                         </div>
                     </div>
@@ -1358,6 +1358,9 @@
   }
 
   $(document).ready(function() {
+    $('.botaoCheck').click(function(){
+      $(this).addClass('visitado');
+    });
     var $target = $('.animeStart'),
         $target2 = $('.animeStop'),
         targetBox = $('.box'),

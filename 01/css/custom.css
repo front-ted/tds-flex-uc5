@@ -134,6 +134,11 @@ li {
 .bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
   color: #fff;
 }
+
+.bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
+  color: black;
+
+}
 .bloco3 h3,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
 .bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
   color: #fff;
@@ -289,7 +294,7 @@ bottom: 0;
   padding: 20px;
   max-width: 410px;
 }
-.board-trello img{
+.board-trello > div{
   display: block;
   margin: 10px auto;
   transition: all 0.3s ease-in-out;
@@ -297,7 +302,7 @@ bottom: 0;
   border: 5px solid #D9E4ED;
 }
 
-.board-trello img:hover{
+.board-trello  > div:hover{
   cursor: pointer;
   border: 5px solid #2a5568;
 }
@@ -319,6 +324,61 @@ bottom: 0;
 .add-board{
   color: #004B90;
   margin: 0;
+}
+.trello-bt01{background-image: url('../img/painel/bt01.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt02{background-image: url('../img/painel/bt02.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt03{background-image: url('../img/painel/bt03.png');
+  width: 367px;
+  height: 104px;
+}
+.trello-bt04{background-image: url('../img/painel/bt04.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt05{background-image: url('../img/painel/bt05.png');
+  width: 367px;
+  height: 141px;
+}
+.trello-bt06{background-image: url('../img/painel/bt06.png');
+  width: 367px;
+  height: 104px;
+}
+.trello-bt07{background-image: url('../img/painel/bt07.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt08{background-image: url('../img/painel/bt08.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt09{background-image: url('../img/painel/bt09.png');
+  width: 367px;
+  height: 105px;
+}
+.trello-bt10{background-image: url('../img/painel/bt10.png');
+  width: 367px;
+  height: 102px;
+}
+
+.trello-bt01,
+.trello-bt02,
+.trello-bt03,
+.trello-bt04,
+.trello-bt05,
+.trello-bt06,
+.trello-bt07,
+.trello-bt08,
+.trello-bt09,
+.trello-bt10{
+
+
+
 }
 /* fim board-trello */
 
