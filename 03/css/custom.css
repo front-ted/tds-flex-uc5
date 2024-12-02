@@ -126,10 +126,17 @@ li {
 }
 .bloco2,.bloco4,.bloco6,.bloco8,.bloco10,.bloco12{
   background: rgb(228,240,255);
-  /* background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%); */
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%);
 }
 .bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
-  background-color: #9eb5cc;
+  background-color: #7B8FA6;
+}
+.bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
+  color: #fff;
+}
+.bloco3 h3,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
+.bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
+  color: #fff;
 }
 /* .bloco4{
   background: rgb(228,240,255);
