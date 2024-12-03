@@ -139,6 +139,9 @@ li {
 .bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
   color: #fff;
 }
+.modal-body{
+  color: #333;
+}
 /* .bloco4{
   background: rgb(228,240,255);
   background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
