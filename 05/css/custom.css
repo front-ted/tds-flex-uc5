@@ -420,6 +420,9 @@ bottom: 0;
 .game-associar-colunas2{
   padding: 40px;
 }
+.bloco7 .table{
+  color: #fff;
+}
 @media screen and (max-width: 780px){
   
 }

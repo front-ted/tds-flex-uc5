@@ -8,6 +8,13 @@
 
 */
 /* ESTRUTURA PARA ELEMENTOS RELACIONADOS AOS BOTÕES E AJUDA DA IMPRESSÃO */
+/*  */
+
+.mautos, .img-fluid{
+  margin: 0 auto !important;
+  display: block !important;
+}
+/*  */
 #marcadaguaLogo { display: none !important; }
 
 .grupo-imprimir {

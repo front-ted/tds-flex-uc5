@@ -389,6 +389,58 @@ bottom: 0;
 .card-origin{background-image: url(../img/07.png);}
 .card-age{background-image: url(../img/08.png);}
 
+/* pulse */
+.bg-website{
+  position: relative;
+  width: 855px;
+  height: 506px;
+  margin: 0 auto;
+  background-image: url('../img/website_layout.png');relative;
+}
+.bt1-pulse{top: 31px; left: 330px;}
+.bt2-pulse{top: 32px; left: 769px;}
+.bt3-pulse{top: 92px; left: 164px;}
+.bt4-pulse{top: 285px;left: 267px;}
+.bt5-pulse{top: 461px;left: 349px;}
+.pulse-button {
+  position: relative;
+  width: 37px;
+  height: 37px;
+  border: none;
+  box-shadow: 0 0 0 0 rgba(102, 164, 243, 0.702);
+  border-radius: 50%;
+  /* background-color: #e84c3d; */
+  background-image: url('../img/bt_mais.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+.pulse-button:hover 
+{
+  -webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none;
+}
+.pulse-button.visitado{
+  background-image: none;
+  background-color: #66a4f3;
+  animation: none;
+}
+.botaoCheck.pulse-button.visitado::after {
+  top: 9px;
+  right: 7px;
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 35px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 35px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 35px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 35px rgba(232, 76, 61, 0);}}
+
+
+.bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
+  color: black;
+}
 @media screen and (max-width: 780px){
   
 }

@@ -137,7 +137,6 @@ li {
 
 .bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
   color: black;
-
 }
 .bloco3 h3,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
 .bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
@@ -210,8 +209,8 @@ li {
   width: 415px;
   min-height: 62px;
   position: relative;
-padding: 5px 10px;
-margin: 0 10px;
+  padding: 5px 10px;
+  margin: 0 10px;
 }
 .balao-dir:after{
   content: "";
@@ -222,7 +221,7 @@ margin: 0 10px;
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-left: 20px solid #a3c2ed;
-bottom: -10px;
+  bottom: -10px;
   transform: rotate(-90deg);
 }
 .balao-esq{
@@ -231,8 +230,8 @@ bottom: -10px;
   width: 415px;
   min-height: 62px;
   position: relative;
-padding: 5px 10px;
-margin: 0 10px;
+  padding: 5px 10px;
+  margin: 0 10px;
 }
 .balao-esq:after{
   content: "";
@@ -242,13 +241,14 @@ margin: 0 10px;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 20px solid #e3e5e9;
-bottom: 0;
+  bottom: 0;
   left: -20px;
   transform: rotate(180deg);
 }
 .balao-dir p, .balao-esq p{margin: 0;}
 .mautos{
-  margin: 0 auto;
+  margin: 0 auto !important;
+  display: block !important;
 }
 /* fim baloes */
 /* gaitinha */

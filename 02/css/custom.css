@@ -368,6 +368,14 @@ bottom: 0;
   cursor: pointer;
 }
 
+.bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
+  color: black;
+}
+
+.bloco3 .table,.bloco5 .table,.bloco7 .table,.bloco9 .table,.bloco11 .table{
+  color: #fff;
+}
+.balao-esq, .balao-dir{color: black}
 @media screen and (max-width: 780px){
   
 }
