@@ -121,7 +121,7 @@ li {
   position: relative;
 }
 .bloco1{
-  background: url('../img/bloco1.png') no-repeat bottom 20px right 15px, linear-gradient(2250deg, #004B90, #2875C6);
+  background: url('../img/bloco1.png') no-repeat bottom 25px right 15px, linear-gradient(2250deg, #004B90, #2875C6);
   background-size: 12%, 100%;
   margin-top: 80px;
   padding-top: 80px;
@@ -131,15 +131,26 @@ li {
   background-color: #FFF;
 }
 .bloco3{
-  background: url('../img/bloco3_1.png') no-repeat top 20px right 15px, url('../img/bloco3_2.png') no-repeat bottom 20px left 15px, linear-gradient(2250deg, #7B8FA6, #A9B6C5);
+  background: url('../img/bloco3_1.png') no-repeat top 20px right 15px, url('../img/bloco3_2.png') no-repeat bottom 40px left 15px, linear-gradient(2250deg, #7B8FA6, #A9B6C5);
   background-size: 12%, 12%, 100%;
 }
+.bloco4{
+  background: url('../img/bloco_5.png') no-repeat bottom 25px right 15px, linear-gradient(2250deg, #004B90, #2875C6);
+  color: #fff;
+}
+.bloco5{
+  background: linear-gradient(2250deg, #7B8FA6, #A9B6C5);
+}
 
-.bloco4,.bloco6,.bloco8,.bloco10,.bloco12{
+.bloco3 figcaption, .bloco5 figcaption{
+  color: #fff;
+}
+
+.bloco6,.bloco8,.bloco10,.bloco12{
   background: rgb(228,240,255);
   background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%);
 }
-.bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
+.bloco7,.bloco9,.bloco11{
   background-color: #7B8FA6;
 }
 .bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
@@ -150,7 +161,7 @@ li {
   color: black;
 
 }
-.bloco1 h2, .bloco3 h3,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
+.bloco1 h2, .bloco3 h3,.bloco4 h3,.bloco4 h4,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
 .bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
   color: #fff;
 }
@@ -377,21 +388,78 @@ bottom: 0;
   height: 102px;
 }
 
-.trello-bt01,
-.trello-bt02,
-.trello-bt03,
-.trello-bt04,
-.trello-bt05,
-.trello-bt06,
-.trello-bt07,
-.trello-bt08,
-.trello-bt09,
-.trello-bt10{
-
-
-
-}
 /* fim board-trello */
+
+/*-------- CARDS --------*/
+.flip-card {
+  background-color: transparent;
+  width: 175px;
+  height: 260px;
+  perspective: 1000px;
+  margin: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  border: 3px solid #fff;
+  background: #004b90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.flip-card-front h4{
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin: auto;
+}
+.flip-card-back {
+  color: #000;
+  transform: rotateY(180deg);
+  font-family: roboto;
+  text-align: left;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 3px solid #004b90;
+  background: #fff;
+  border-radius: 20px;
+}
+.flip-card-back b{
+  color: #004B90;
+}
+.flip-card-back p{
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+
+/*-------- /CARDS --------*/
+
 
 .icone-practice{
 	padding-left:180px;
@@ -407,6 +475,9 @@ bottom: 0;
 .bloco-paragrafo{ margin-bottom: 20px}
 .bloco-paragrafo p{ margin: 0 !important;}
 
+.figure-caption{
+  margin-bottom: 50px;
+}
 
 
 .linha-pontilhada-top{
@@ -437,6 +508,57 @@ bottom: 0;
   padding: 5px 20px !important;
 }
 
+.bg-escuro{
+  background-color: #004b90;
+  color: #fff !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-escuro .feedbacks p{
+  color: #fff !important;
+}
+.feedbacks i{
+  font-size: 30px !important;
+}
+
+.bg-claro{
+  background-color: #fff;
+  color: #333 !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-claro .multipla-escolha button::before{
+  color: #333;
+}
+
+.div-situacoes{
+  margin: 0px;
+}
+
+
+.espera-video{
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  display: block;
+}
+
+.radius{
+  border-radius: 20px;
+}
+figcaption{
+  margin-top: -25px;
+}
 
 
 @media screen and (max-width: 820px){
@@ -445,5 +567,10 @@ bottom: 0;
 @media screen and (max-width: 480px){
   .caixa-destaque code{
     word-break: break-word;
+  }
+
+  .video-youtube, .espera-video {
+    width: 320px;
+    height: 180px;
   }
 }
