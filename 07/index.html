@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Difficulties with computers and software problems</title>
+
+	
+	<!-- Bootstrap CSS v5.0.2 -->
+	<link rel="stylesheet" href="../assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/fa/css/all.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../assets/css/animate.min.css" />
+	<!-- hover.css https://ianlunn.github.io/Hover/ -->
+	<link rel="stylesheet" href="../assets/css/hover-min.css" />
+
+
+	<!-- Bootstrap -->
+	<!-- <link href="../template/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link href="../template/css/tecnicos_senac.css" rel="stylesheet">
+	<link href="../template/css/cores.css" rel="stylesheet">
+	<link href="../template/css/modal-100.css" rel="stylesheet">
+	<link href="../template/css/devibeans.min.css" rel="stylesheet">
+	<!--Extras - novas classes para facilitar-->
+	<link rel="stylesheet" href="../template/css/extras.css">
+	<link href="../template/css/sncload.css" rel="stylesheet">
+	<link href="../template/css/magnific-popup.css" rel="stylesheet">
+	
+	<!-- Atividade de verdadeiro ou falso -->
+	<link rel="stylesheet" href="atividades/perguntas/perguntas.css">
+	<!--Atividade arrasta e solta-->
+	<link rel="stylesheet" href="atividades/arrasta_solta/dragula.css">
+	<link rel="stylesheet" href="atividades/arrasta_solta/game-custom.css">
+	<!--Atividade relacionar colunas-->
+	<link rel="stylesheet" href="atividades/relacionar_colunas/relacionar-colunas.css">
+	<!-- referencia ao arquivo css com estilos especificos da pagina -->
+	<link href="css/custom.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/player.css" />
+
+	<!-- css necessario para o print -->
+	<link href="../template/css/fa/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<link href="../template/css/print.css" type="text/css" rel="stylesheet">
+	<link href="../template/fonts/roboto.css" type="text/css" rel="stylesheet">
+	<!--  bots5 -->
+		<!-- ODAs -->
+		<!-- <link rel="stylesheet" href="odas/ingles_viagens_cartas/assets/css/styles.css"> -->
+		<link rel="stylesheet" href="odas/ingles_letters/assets/css/styles.css">
+		<!-- <link rel="stylesheet" href="odas/ingles_viagens_form/assets/css/styles.css">
+		<link rel="stylesheet" href="odas/ingles_viagens_write_numbers/assets/css/styles.css"> -->
+	
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="js/html5shiv.min.js"></script>
+	  <script src="js/respond.min.js"></script>
+	<![endif]-->
+
+  
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">46914400.0000000</mso:Order>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Paulo Ricardo Soveral Junior</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100393332CEE5C5294F9D2C3CF7CCDACBE5</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body onLoad="Javascript:document.getElementById('sncloader').style.display='none';">
+	<!-- MARCA D´ÁGUA -->
+	<img src="../template/images/logo_senac_colorido.png" id="marcadaguaLogo">
+	<!-- /MARCA D´ÁGUA -->
+
+	<div id='sncloader' class='over-loader'><div class="over-cell"><div id="sncload"></div></div></div>
+	<header id="topo" class="senac no-print">
+		<div  class="header-tecnicos container">
+			  <h1 id="nome-curso">Desenvolvimento de Sistemas</h1>
+			<div id="logo-senac"><img src="../template/images/logo-senac.png" alt="logo do senac"></div>
+		</div>
+		<div id="sombra"></div>
+	</header>
+
+	<div id="booklet" class="fundo-tecnicos">
+		<header class="no-print">
+		  <!-- BTO IMPRIMIR -->
+		  <div class="grupo-imprimir no-print">
+			<button type="button" data-pdf="true" class="bto-imprimir" name="button">
+				<span class="fa fa-print"></span> <span>Imprimir</span>
+			</button>
+		  </div>
+		  <!-- /BTO IMPRIMIR -->
+		</header>
+<!-- - - - - - - - - - - - - - - - não alterar acima - - - - - - - - - - - - -->
+		<section class="paginas">
+
+		  <!-- - - - - - - - cada página é independente  - - - - - - - - - - -->
+		  <div class="pagina">
+				<div class="bloco1">
+					<div class="container">
+						<h2>Difficulties with computers and software problems</h2>
+						<p><b>Nesta situação de aprendizagem, você aprenderá a:</b></p>
+						<ul class="marcador-check">
+							<li>Praticar o uso do present perfect para falar sobre ações recentes</li>
+							<li>Solucionar problemas técnicos de computadores</li>
+							<li>Identificar e registrar problemas de software em tickets</li>
+							<li>Recuperar arquivos excluídos e lidar com anexos em e-mails </li>
+							<li>Atualizar programas para resolver problemas de software e usar a lixeira para remover arquivos do computador</li>
+							<li>Usar as ferramentas físicas e de diagnóstico para consertar hardware de computador</li>
+							<li>Aprimorar suas habilidades de solução de problemas, pensamento crítico e comunicação</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="bloco3">
+					<div class="linha-pontilhada-top"></div>
+					<div class="container">
+						<p>This learning situation focuses on helping non-IT colleagues with difficulties with their computers and software problems, as well as hardware and tool problems. It also covers the use of the present perfect to talk about recent actions in the context of customer service.</p>
+						<figure class="my-5 no-print">
+							<img src="img/img1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+							<a href="img/img1.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+								<img src="img/img1.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+							</a>
+						</figure>
+						<figcaption class="figure-caption text-center">
+							Accessed on: 30 jan. 2024.
+						</figcaption>
+						<p class="acessivel no-print">picture of a computer technical problem.</p>
+						<ul>
+							<li>What kind of situation is happening here? </li>
+							<li>Have you ever had the same problems with computers?</li>
+							<li>What do you usually do in these situations?</li>
+						</ul>
+						<h4>Computer technical problems</h4>
+						<p>How many names for computers technical problems do you know? </p>
+						<p>Lily has some technical problems with her computer. Joseph is going to help her in the computer technical assistance shop. Watch the video and observe: What is the real problem with the computer?</p>
+						
+						<iframe class="video-youtube no-print" src="https://www.youtube.com/embed/1aA96LyaYPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<div class="acessivel print">
+							<p>
+								Lily: Hi, can you help me? My computer is not working. <br>
+								Joseph: Sure, I'll do my best. What seems to be the problem? <br>
+								Lily: I don't know. It's not turning on. I press the power button, but nothing happens. <br>
+								Joseph: Hmm, let's check a few things. Is the power cable plugged in? <br>
+								Lily: Yes, it is. <br>
+								Joseph: Okay, next, can you see if there is a light on the power button or anywhere on the computer? <br>
+								Lily: No, there's no light at all. <br>
+								Joseph: Got it. It could be a power supply issue. Have you tried using a different electrical outlet? <br>
+								Lily: No, let me try that. [Aqui nessa cena a Lily tenta uma tomada diferente] <br>
+								Joseph: Can you see if there’s a change? <br>
+								Lily: nothing. No lights. <br>
+								Joseph: Alright, it might be a hardware problem. Have you recently added any new components or made changes inside the computer? <br>
+								Lily: No, I haven't touched anything inside. <br>
+								Joseph: Okay. One more thing to check. Can you see if the power cable is connected to the back of the computer? <br>
+								Lily: Oh, wait. It was a bit loose. Let me push it in properly. [Nessa cena a Lily ajeita o carregador]. <br>
+								Joseph: Great! Now, try turning it on. <br>
+								Lily: [Lily pressiona o botão de ligar] Hey, it's working! The lights are on. <br>
+								Joseph: Excellent! It looks like it was just a loose power cable. Anything else I can help you with? <br>
+								Lily: No, that's it. Thank you so much for your help! <br>
+								Joseph: You're welcome! If you have any more issues, feel free to ask.
+							</p>
+						</div>
+
+						<div class="caixa-practice no-print" aria-hidden="true">
+							<p><b>Let’s practice.</b></p>
+							<p>Joseph helped Lily to fix her computer problem giving some suggestions. Now, based on the situation presented in the video, read the chart below with the suggestions and requests Joseph offered to Lily and complete the missing information:</p>
+
+							<div class="game-associar-colunas no-print nao-imprimir">
+								<div class="row">
+									<div class="col-12 col-md-6 col-sm-8 flexs itens"> 
+										<button data-resp="1" class="item item1">
+											<p>Can you see if the power cable is connected__________?</p>
+										</button>
+										<button data-resp="2" class="item item2">
+											<p>Can you see if there’s ________________?</p>
+										</button>
+										<button data-resp="3" class="item item3">
+											<p>Can you see if there is a light _________?</p>
+										</button>
+										<button data-resp="4" class="item item4">
+											<p>Let me ____________ in properly.</p>
+										</button>
+										<button data-resp="5" class="item item5">
+											<p>Have you tried_________?</p>
+										</button>
+										<button data-resp="6" class="item item6">
+											<p>It __________a power supply issue.</p>
+										</button>
+									</div>
+									<div class="col-12 col-md-6 col-sm-4 flexs">
+										<button type="button" data-resp="1" class="resp resp1">
+											<div class="txtacao"><i class="fas fa-question"></i></div>
+											<p>the back of the computer</p>
+										</button>
+										<button type="button" data-resp="2" class="resp resp2">
+											<div class="txtacao"><i class="fas fa-question"></i></div>
+											<p>a change</p>
+										</button>
+										<button type="button" data-resp="3" class="resp resp3">
+											<div class="txtacao"><i class="fas fa-question"></i></div>
+											<p>on the power button or anywhere on the computer</p>
+										</button>
+										<button type="button" data-resp="4" class="resp resp4">
+											<div class="txtacao"><i class="fas fa-question"></i></div>
+											<p>push it</p>
+										</button>
+										<button type="button" data-resp="5" class="resp resp5">
+											<div class="txtacao"><i class="fas fa-question"></i></div>
+											<p>using a different electrical outlet</p>
+										</button>
+										<button type="button" data-resp="6" class="resp resp6">
+											<div class="txtacao"><i class="fas fa-question"></i></div>
+											<p>could be</p>
+										</button>
+									</div>
+								</div>
+						
+								<!-- Modal Erro -->
+								<div class="modal fade associar_colunas_modal  no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
+									aria-labelledby="associarColunasErrou" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-12 col-lg-4">
+														<img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
+													</div>
+													<div class="col-12 col-lg-8">
+														<p>Ops, tente novamente!</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal Acerto -->
+								<div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
+									tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<div class="row">
+													<div class="col-12 col-lg-4">
+														<img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
+													</div>
+													<div class="col-12 col-lg-8">
+														<p>Muito bem! Você acertou!</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+
+					</div>
+					<div class="linha-pontilhada-bottom"></div>
+				</div>
+
+				<div class="bloco2">
+					<div class="container">
+						<h3>Present Perfect</h3>
+						<p>The present perfect is formed from the present tense of the verb <i>have</i> and the past participle of a verb. We use the present perfect to refer to events in the past, but which connect to the present.</p>
+						<p>
+							<b>
+								Have you ever experienced a blue screen error on your computer? <br>
+								Have you ever forgotten the password to your computer? <br>
+								Have you ever found a virus on your computer? <br>
+								Have you ever had trouble connecting your computer to the internet? <br>
+								Have you ever dealt with a slow performance on your computer?
+							</b>
+						</p>
+						<p>Look at the chart below to see how this tense is conjugated:</p>
+						<div class='table-responsive'>
+							<table class='senac borda-destaque'>
+								<tbody>
+									<tr>
+										<th>AFFIRMATIVE</th>
+										<th>NEGATIVE</th>
+										<th>INTERROGATIVE</th>
+									</tr>
+									<tr>
+										<td>I HAVE / I’VE</td>
+										<td>I HAVE NOT / HAVEN’T </td>
+										<td>HAVE I?</td>
+									</tr>
+									<tr>
+										<td>YOU HAVE / YOU’VE</td>
+										<td>YOU HAVE NOT / HAVEN’T</td>
+										<td>HAVE YOU?</td>
+									</tr>
+									<tr>
+										<td>HE HAS / HE’S</td>
+										<td>SHE HAS NOT / HASN’T</td>
+										<td>HAS HE?</td>
+									</tr>
+									<tr>
+										<td>SHE HAS / SHE’S</td>
+										<td>HE HAS NOT / HASN’T</td>
+										<td>HAS SHE?</td>
+									</tr>
+									<tr>
+										<td>IT HAS / IT’S</td>
+										<td>IT HAS NOT / HASN’T</td>
+										<td>HAS IT?</td>
+									</tr>
+									<tr>
+										<td>WE HAVE / WE’VE</td>
+										<td>WE HAVE NOT / HAVEN’T</td>
+										<td>HAVE WE?</td>
+									</tr>
+									<tr>
+										<td>THEY HAVE / THEY’VE</td>
+										<td>THEY HAVE NOT / HAVEN’T</td>
+										<td>HAVE THEY?</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p>We often use general time expressions like <i>just, already, yet, since, for ever, never, before, in the past, so far and others</i> with this use of the present perfect simple. </p>
+						<p>Read the examples below:</p>
+						<p>
+							<b>Just</b>: I have just finished my homework. <br>
+							<b>Already</b>: She has already eaten breakfast. <br>
+							<b>Yet</b>: Have you finished your work yet? <br>
+							<b>Recently</b>: I have recently moved to a new city. <br>
+							<b>So far</b>: We have made good progress so far. <br>
+							<b>Since</b>: I have known her since childhood. <br>
+							<b>For</b>: They have been married for ten years. <br>
+							<b>In the past few days/weeks/months/years</b>: She has received many awards in the past few years. <br>
+							<b>Ever</b>: Have you ever been to Paris? <br>
+							<b>Never</b>: She has never travelled outside the country.
+						</p>
+
+						<div class="caixa-practice no-print" aria-hidden="true">
+							<p><b>Let’s practice.</b></p>
+							<!-- ESPERA ODA -->
+							<div class="espera-video">ESPERA ODA</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="bloco5">
+					<div class="linha-pontilhada-top"></div>
+					<div class="container">
+						<h3>Identify and log software problems</h3>
+						<p>Find five common software problems in the wordsearch.</p>
+
+						<div class="caixa-practice no-print" aria-hidden="true">
+							<!-- ESPERA ODA -->
+							<div class="espera-video">ESPERA ODA</div>
+						</div>
+
+						<ul>
+							<li>What are the problems you found?</li>
+							<li>Have you heard about these problems before?</li>
+						</ul>
+						<p>Software problems refer to malfunctions that occur within computer software, causing it to operate incorrectly. </p>
+						<p>As you know what software problems are, you are going to learn how to identify and log these problems in tickets. As well as you are going to learn how to recover deleted files, deal with attachments in emails, learn about the importance of updating programs to solve software problems and how to use the Recycle Bin to remove files from the computer. Look:</p>
+						<div class="no-print" aria-hidden="true">
+							<p>Click or tap to view content.</p>
+							<div class='panel-group' id='accordion' role='tablist' aria-multiselectable='true'>
+								<div class='panel panel-default'>
+								  <div class='panel-heading' role='tab' id='heading01'>
+									<h3 class='panel-title'>
+									  <a role='button' data-toggle='collapse' data-parent='#accordion' href='#collapse01' aria-expanded='false' aria-controls='collapse01'>
+										Identify and Log software problems in tickets
+									  </a>
+									</h3>
+								  </div>
+								  <div id='collapse01' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='heading01'>
+									<div class='panel-body'>
+										<p>Identifying the software problems by reading or listening to the problem description. Attempt to reproduce the problem on a test environment if possible. This helps in confirming the reported issue and understanding its impact. Examine system logs and error logs for additional information. Categorize the software problem based on its nature (e.g., installation error, functionality issue, performance problem). Prioritize tickets based on the severity of the issue and its impact on users. Finally, assign a unique ticket ID.</p>
+									</div>
+								  </div>
+								</div>
+								<div class='panel panel-default'>
+								  <div class='panel-heading' role='tab' id='heading02'>
+									<h3 class='panel-title'>
+									  <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapse02' aria-expanded='false' aria-controls='collapse02'>
+										Recovering deleted files
+									  </a>
+									</h3>
+								  </div>
+								  <div id='collapse02' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading02'>
+									<div class='panel-body'>
+										<p>Recovering deleted files you need to check the recycle bin, restore the files from recycle bin. If you don’t find the file in the recycle bin, use file history or backup file recovery software.</p>
+									</div>
+								  </div>
+								</div>
+								<div class='panel panel-default'>
+								  <div class='panel-heading' role='tab' id='heading03'>
+									<h3 class='panel-title'>
+									  <a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapse03' aria-expanded='false' aria-controls='collapse03'>
+										Dealing with Attachments in Emails
+									  </a>
+									</h3>
+								  </div>
+								  <div id='collapse03' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading03'>
+									<div class='panel-body'>
+										<p>Dealing with attachments in emails involves some such as opening your email and downloading the attachments. After that, use antivirus software to scan email attachments before opening them. </p>
+										<p>Other options to deal with attachments in emails are uploading attachments or storage links in clouds.</p>
+									</div>
+								  </div>
+								</div>
+								<div class='panel panel-default'>
+									<div class='panel-heading' role='tab' id='heading04'>
+									  <h3 class='panel-title'>
+										<a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapse04' aria-expanded='false' aria-controls='collapse04'>
+											Updating programs to solve software problems
+										</a>
+									  </h3>
+									</div>
+									<div id='collapse04' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading04'>
+									  <div class='panel-body'>
+										  <p>Somes reasons to update programs to solve software problems are security fixes, bug fixes, new features, compatibility. There are two forms to update are automatic and manual. Most software allows users to set up automatic updates to ensure they are always running the latest version, but you can also choose the manual option.</p>
+									  </div>
+									</div>
+								</div>
+								<div class='panel panel-default'>
+									<div class='panel-heading' role='tab' id='heading05'>
+									  <h3 class='panel-title'>
+										<a class='collapsed' role='button' data-toggle='collapse' data-parent='#accordion' href='#collapse05' aria-expanded='false' aria-controls='collapse05'>
+											How to use the Recycle Bin to remove files from the computer
+										</a>
+									  </h3>
+									</div>
+									<div id='collapse05' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading05'>
+									  <div class='panel-body'>
+										  <p>
+											If you want to remove files from computers, follow these steps: <br>
+											select files, choose the delete option and it will move your files to the recycle bin. After that, review your recycle bin. If you want your files to be permanent deleted, just click on the option empty recycle bin.
+										  </p>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="acessivel print">
+							<h4>Identify and Log software problems in tickets</h4>
+							<p>Identifying the software problems by reading or listening to the problem description. Attempt to reproduce the problem on a test environment if possible. This helps in confirming the reported issue and understanding its impact. Examine system logs and error logs for additional information. Categorize the software problem based on its nature (e.g., installation error, functionality issue, performance problem). Prioritize tickets based on the severity of the issue and its impact on users. Finally, assign a unique ticket ID.</p>
+							<h4>Recovering deleted files</h4>
+							<p>Recovering deleted files you need to check the recycle bin, restore the files from recycle bin. If you don’t find the file in the recycle bin, use file history or backup file recovery software.</p>
+							<h4>Dealing with Attachments in Emails</h4>
+							<p>Dealing with attachments in emails involves some such as opening your email and downloading the attachments. After that, use antivirus software to scan email attachments before opening them. </p>
+							<p>Other options to deal with attachments in emails are uploading attachments or storage links in clouds.</p>
+							<h4>Updating programs to solve software problems</h4>
+							<p>Somes reasons to update programs to solve software problems are security fixes, bug fixes, new features, compatibility. There are two forms to update are automatic and manual. Most software allows users to set up automatic updates to ensure they are always running the latest version, but you can also choose the manual option.</p>
+							<h4>How to use the Recycle Bin to remove files from the computer</h4>
+							<p>
+								If you want to remove files from computers, follow these steps: <br>
+								select files, choose the delete option and it will move your files to the recycle bin. After that, review your recycle bin. If you want your files to be permanent deleted, just click on the option empty recycle bin.
+							</p>
+						</div>
+
+						<div class="caixa-practice no-print" aria-hidden="true">
+							<p><b>Let’s practice.</b></p>
+							<p><b>According to the information read before, click on the right answer to complete the sentences about software and hardware:</b></p>
+							<!-- V OU F -->
+							<!-- PÁGINA 9 -->
+						</div>
+
+						<h4>Physical and diagnostic tools used to repair computer hardware</h4>
+						<p>Do you know the difference between a physical and diagnostic tool? </p>
+						<p>Can you guess it from the pictures below? </p>
+						<p>See some examples, note their names in English and whether they are physical or diagnostic tools.</p>
+
+						<div class="no-print" aria-hidden="true">
+							<p>Click or tap to view content.</p>
+							<!-- SLIDESHOW -->
+
+						</div>
+
+
+					</div>
+					<div class="linha-pontilhada-bottom"></div>
+				</div>
+
+				<div class="bloco3">
+					<div class="linha-pontilhada-top"></div>
+					<div class="container">
+						<h3>Computer security threats</h3>
+						<p><b>Let’s practice.</b></p>
+						<p>Can you think of five computer security threats in English? Review some computer security threats by matching them with their definitions. </p>
+
+						<div class="caixa-practice no-print" aria-hidden="true">
+							<div class="game-body no-print">
+								<div id="slots">
+									<div class="d-flex flex-wrap justify-content-around">
+										<div class="box">
+											<div class="game-titulo">
+												<p>1) It shows unwanted ads on your computer, like pop-ups, banners, or sponsored links.</p>
+											</div>
+											<div class="game-resposta">Answer: </div><span id="slot-1" class="slot"></span>
+										</div>
+										<div class="box">
+											<div class="game-titulo">
+												<p>2) It collects sensitive information such as login credentials, personal details, and financial data.</p>
+											</div>
+											<div class="game-resposta">Answer: </div><div id="slot-2" class="slot"></div>
+										</div>
+										<div class="box">
+											<div class="game-titulo">
+												<p>3) It is made to disrupt computers and get into systems without permission. 	</p>
+											</div>
+											<div class="game-resposta">Answer: </div><div id="slot-3" class="slot"></div>
+										</div>
+										<div class="box">
+											<div class="game-titulo">
+												<p>4) It can delete, modify, or corrupt files and data on infected systems.</p>
+											</div>
+											<div class="game-resposta">Answer: </div><div id="slot-4" class="slot"></div>
+										</div>
+										<div class="box">
+											<div class="game-titulo">
+												<p>5) It is when bad code or software attaches itself to good programs or files.</p>
+											</div>
+											<div class="game-resposta">Answer: </div><div id="slot-5" class="slot"></div>
+										</div>
+									</div>
+								</div>
+								<div id="cardPile" class="game-itens-container">
+									<div id="card-2" class="card" data-target="slot-2">
+										Spyware
+									</div>
+									<div id="card-3" class="card" data-target="slot-3">
+										Malware
+									</div>
+									<div id="card-1" class="card" data-target="slot-1">
+										Adware
+									</div>
+									<div id="card-5" class="card" data-target="slot-5">
+										Piggybacking
+									</div>
+									<div id="card-4" class="card" data-target="slot-4">
+										Virus
+									</div>
+								</div>
+							</div>
+
+							<div class="modal fade" id="bgmodal-acerto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check"></i> Parabéns, resposta correta! </h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<p>Muito bem!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="modal fade" id="bgmodal-erro" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered">
+									<div class="modal-content">
+										<div class="modal-header bg-danger">
+											<h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times"></i> Atenção! </h5>
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<p>Tente novamente.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="caixa-practice">
+							<div class="row">
+								<div class="col-sm-3 col-xs-12">
+									<img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4">
+								</div>
+								<div class="col-sm-9 col-xs-12">
+									<p>Speaking activity in groups or in pairs:</p>
+									<p>You are working on a company that helps customers with computer system threats. You will see some situations that your clients were involved with. As you learned the names and characteristics of these computer system treats, you need to help these customers with solutions for their problems. But before you do that, you need to learn some probability expressions to help you to make good answers for these situations. Look at the chart below:</p>
+								</div>
+							</div>
+							<div class="borda-destaque">
+								<p><b>PROBABILITY:</b></p>
+								<p>We use probability modal verbs <b>may, might and could</b> – to say that something is possible, but not certain. Look at some examples:</p>
+								<p>
+									<i>They <b>may come</b> by car.</i> (= Maybe they will come by car.) <br>
+									<i>They <b>might be</b> at home.</i> (= Maybe they are at home.) <br>
+									<i>If we don't hurry, we <b>could be</b> late.</i> (= Maybe we will be late.)
+								</p>
+								<p>*Expressions that are often used to talk about probabilities:</p>
+								<ul>
+									<li>Probably</li>
+									<li>Likely / unlikely</li>
+									<li>It looks like</li>
+								</ul>
+							</div>
+							<p>Now, as you learned these probability modal verbs, you will see an example to guide you in the activity mentioned before. After that, you have to try to solve the situations below with your groups and share your ideas with the big group.</p>
+							<div class="row div-situacoes">
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 1:</b></p>
+									<p>Tom shared his computer login details with a friend, who accessed his sensitive work files without permission.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 2:</b></p>
+									<p>Jessica received a friend request from someone she didn't know on social media, and they later tried to trick her into sharing personal information.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 3:</b></p>
+									<p>Jake connected to a public Wi-Fi network at a café and later discovered unauthorized access to his online accounts.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 4:</b></p>
+									<p>Alex used a simple password for all his accounts, and someone hacked into his email, social media, and online shopping accounts.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 5:</b></p>
+									<p>Sarah received an email claiming to be from her bank, asking for her password. She provided the information and later found unauthorized transactions.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 6:</b></p>
+									<p>Mark lost his smartphone, which had personal photos and sensitive work documents. He's worried about someone accessing his private information.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 7:</b></p>
+									<p>Emma downloaded a free software claiming to enhance her computer's speed but ended up with malware.</p>
+								</div>
+								<div class="col-sm-6 col-xs-12 borda-destaque">
+									<p class="text-center"><b>SITUATION 8:</b></p>
+									<p>Emily's computer got infected with ransomware, and she can't access her important files. A message demands payment for their release.</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="linha-pontilhada-bottom"></div>
+				</div>
+
+				<div class="bloco2">
+					<div class="container">
+						<h3>Computer dos and don'ts</h3>
+						<p>You are participating in an IT course at Senac College. You are studying about the potential threats that can impair the functioning of the computer and how to use the computer healthily and safely. </p>
+						<p>Look the four different ways these people in the picture are sitting in front of the computers. </p>
+						<figure class="my-5 no-print">
+							<img src="img/img2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+							<a href="img/img2.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+								<img src="img/img2.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+							</a>
+						</figure>
+						<figcaption class="figure-caption text-center">
+							Accessed on: 1º feb. 2024.
+						</figcaption>
+						<p class="acessivel no-print">Picture of a people in front of a computer.</p>
+						<ul>
+							<li>Do you think that all these positions are healthy to your spine?</li>
+							<li>Are there comfortable positions to sit in front of the computer?</li>
+							<li>Describe a position that you use the most.</li>
+						</ul>
+						<p>Sometimes the way you behave in front of a computer can harm your body or even your organization. As well as the computer functions can be harmed by some potential threats. Read different terms related to computer issues below and after answer the question:</p>
+						<ul>
+							<li>Has it already happened to you?</li>
+						</ul>
+						<p><b>Potential threats to a computer function</b></p>
+						<p><b>Reflected glare</b> occurs when light from a source, such as a window or a bright lamp, reflects off a computer screen. It can cause discomfort, eye strain, and difficulty in reading or viewing content on the screen. Adjust the position of the screen or use anti-glare filters to minimize reflected glare.</p>
+						<p><b>Scandisk (or CHKDSK on Windows)</b> is a utility that checks and repairs file system errors on a computer's hard drive. It is typically used to address disk-related problems, such as bad sectors or file system corruption. Running Scandisk helps maintain the integrity of the file system and ensures the proper functioning of the hard drive.</p>
+						<p><b>Overvoltage</b> occurs when there is an excessive voltage or electrical potential difference in a circuit or electronic device. It can damage electronic components, including computer hardware, leading to malfunctions or permanent damage. Use surge protectors or voltage regulators to prevent overvoltage and protect electronic devices.</p>
+						<p><b>Unauthorized software</b> refers to programs or applications that are installed on a computer without proper permission. Using unauthorized software may violate copyright laws, compromise system security, and lead to software-related problems.<br>Ensure all software used on a computer is properly licensed.</p>
+						
+						<div class="caixa-practice bg-escuro no-print">
+							<p><b>Let’s practice.</b></p>
+							<p>According to the text, answer the following questions:</p>
+
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">1. Electronic components can be damaged by ______________.</p>
+								<button class="alt-c">overvoltage</button>
+								<button class="alt-e">software</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">2. ______________________ may violate copyright laws, compromise system security, and lead to software-related problems.</p>
+								<button class="alt-e">Scandisk</button>
+								<button class="alt-c">Unauthorized software</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">3. _______________________ can cause discomfort, eye strain, and difficulty in reading or viewing content on the screen.</p>
+								<button class="alt-c">Reflected glare</button>
+								<button class="alt-e">Overvoltage</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">4. _______________________ checks and repairs file system errors on a computer's hard drive. </p>
+								<button class="alt-e">Software</button>
+								<button class="alt-c">Scandisk</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="caixa-practice bg-escuro">
+							<div class="row">
+								<div class="col-sm-3 col-xs-12">
+									<img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4">
+								</div>
+								<div class="col-sm-9 col-xs-12">
+									<p><b>Practice it</b></p>
+									<p>You learned some harmful functions of a computer and how people should sit in front of these machines. Do you have any ideas of the dos and don’ts of a computer? In pairs or groups, make a list of 5 dos and 5 don’ts of a computer. After that, share your ideas with the big group.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-xs-12">
+									<div class="caixa-practice">
+										<p class="text-center"><b>DOS</b></p>
+										<p>
+											Example: <br>
+											“Install an antivirus software to protect your computer”
+										</p>
+										<p>1)</p>
+										<p>2)</p>
+										<p>3)</p>
+										<p>4)</p>
+										<p>5)</p>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-12">
+									<div class="caixa-practice">
+										<p class="text-center"><b>DON’TS</b></p>
+										<p>
+											Example: <br>
+											“Don't download suspicious files”
+										</p>
+										<p>1)</p>
+										<p>2)</p>
+										<p>3)</p>
+										<p>4)</p>
+										<p>5)</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="bloco4">
+					<div class="linha-pontilhada-top"></div>
+					<div class="container">
+						<h3>Information security</h3>
+						<p>What is happening in the picture below?</p>
+						<figure class="my-5 no-print">
+							<img src="img/img3.png" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+							<a href="img/img3.png" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+								<img src="img/img3.png" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+							</a>
+						</figure>
+						<figcaption class="figure-caption text-center">
+							Accessed on: 1º feb. 2024.
+						</figcaption>
+						<p class="acessivel no-print">Picture of a login.</p>
+						<ul>
+							<li>What is he trying to do?</li>
+							<li>Do you use different passwords for each card/website/app?</li>
+							<li>How many characters did your longest password have?</li>
+						</ul>
+
+						<div class="caixa-practice">
+							<div class="row">
+								<div class="col-sm-3 col-xs-12">
+									<img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4">
+								</div>
+								<div class="col-sm-9 col-xs-12">
+									<p><b>Practice it</b></p>
+									<p>You learned some harmful functions of a computer and how people should sit in front of these machines. Do you have any ideas of the dos and don’ts of a computer? In pairs or groups, make a list of 5 dos and 5 don’ts of a computer. After that, share your ideas with the big group.</p>
+								</div>
+							</div>
+							
+							<!-- ESPERA VÍDEO -->
+							<div class="espera-video no-print">ESPERA VÍDEO</div>
+						</div>
+
+						<div class="caixa-practice">
+							<div class="row">
+								<div class="col-sm-3 col-xs-12">
+									<img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4">
+								</div>
+								<div class="col-sm-9 col-xs-12">
+									<p><b>Practice it</b></p>
+									<p>Have a friendly competition to see who can come up with the strongest and most memorable password. Share your ideas with the big group.</p>
+								</div>
+							</div>
+						</div>
+						
+						<p>You are working for a big company called Tech Innovation where your position is to work with information security. You have to learn the rules and best practices for ensuring the security of sensitive data and information of the company. <span class="no-print">Watch the video below and pay attention to every single rule on it!</span></p>
+						<iframe class="video-youtube" src="https://www.youtube.com/embed/yfCUGAxzfKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<div class="acessivel print">
+							<p>
+								Video Title: Welcome to Tech Innovation! <br>
+								Hello and welcome to Tech Innovation! I'm Peter, the Director of this fantastic company, and I'm glad to have you as part of our team. <br>
+								I want to take a moment to ensure that you feel right at home and understand how important your role is here. Our company is built on trust, teamwork, and innovation, and each one of you plays an important part in our success. <br>
+								Now, let's talk about something important – the security of our sensitive data and information. We take this seriously to ensure the safety of our business and our clients. Just like how we lock our doors at home to keep our personal space secure, we have digital locks and best practices to protect our information. <br>
+								Here are a few simple rules and best practices: <br>
+								Keep Those Passwords Strong: use strong passwords. Think of them like your secret code. Don't share them! <br>
+								<br>
+								Be cautious with what you're looking at on your computer. If it's not related to work, it probably shouldn't be on your screen. <br>
+								<br>
+								Click Smart: Be careful with emails and links. If something seems wrong, it probably is. Always double-check before clicking. <br>
+								<br>
+								Shhh... It's a Secret: We're a team, but some information is just for certain eyes. Keep confidential info confidential. <br>
+								<br>
+								We're all here to support each other, so if you ever have questions or need guidance, don't hesitate to ask. We're like one big, happy Tech family. <br>
+								Again, welcome to Tech Innovation! We're excited to have you on board, and I look forward to seeing the incredible things we'll achieve together.
+							</p>
+						</div>
+
+						<div class="caixa-practice">
+							<div class="row">
+								<div class="col-sm-3 col-xs-12">
+									<img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4">
+								</div>
+								<div class="col-sm-9 col-xs-12">
+									<p>Read the words below. What did the director say about it? Talk about it with your classmates.</p>
+									<p><b>PASSWORD – SECRET – CLICK SMART – BE CAUTIOUS</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="linha-pontilhada-bottom"></div>
+				</div>
+
+				<div class="bloco2">
+					<div class="container">
+						<h3>Prohibition modal verbs</h3>
+						<p>In the unit before you learned some rules that the director Peter of Tech Innovation said you must not or cannot do during your work journey! In other words, you read what is prohibited to do in the company. Now you will learn about useful modal verbs to describe prohibition.</p>
+						<p><b>Pin 1</b>: Prohibition modal verbs are used to express a prohibition or a strong advice against doing something. The most common prohibition modal verbs in English are "must not" and "cannot."</p>
+						<p><b>Pin 2</b>: 'Can't' and 'mustn't' (must not) are used to show that something is prohibited (not allowed). 'Can't' usually gives the idea of something that is against the rules. Mustn’t usually means that it is the speaker who is setting the rule.</p>
+						<p>
+							<b>Pin 3</b>: Examples: <br>
+							You can't go into that restaurant without a tie. <br>
+							You can't drive in this country unless you are over eighteen. <br>
+							You mustn't use your phone in class.
+						</p>
+
+						<div class="caixa-practice bg-escuro no-print">
+							<p><b>Let’s practice.</b></p>
+							<p>Now, as you learned how to use the prohibition modal verbs, let’s practice them: must  mustn’t</p>
+							<p>Choose the correct prohibition modal verb to complete the sentences:</p>
+
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">1. <img src="img/sinal_dir.png" class="sinais-transito"> You ______________turn rigtht.</p>
+								<button class="alt-e">must</button>
+								<button class="alt-c">mustn’t</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">2. <img src="img/sinal_e.png" class="sinais-transito"> You______________turn left.</p>
+								<button class="alt-c">must</button>
+								<button class="alt-e">mustn’t</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">3. <img src="img/sinal_esq.png" class="sinais-transito"> You______________turn left.</p>
+								<button class="alt-e">must</button>
+								<button class="alt-c">mustn’t</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">4. <img src="img/sinal_parar.png" class="sinais-transito"> You__________stop here.</p>
+								<button class="alt-c">must</button>
+								<button class="alt-e">mustn’t</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">5. <img src="img/sinal_neg.png" class="sinais-transito"> You______enter.</p>
+								<button class="alt-e">must</button>
+								<button class="alt-c">mustn’t</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">6. <img src="img/sinal_proibido.png" class="sinais-transito"> You________stop here.</p>
+								<button class="alt-e">must</button>
+								<button class="alt-c">mustn’t</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="bloco5">
+					<div class="linha-pontilhada-top"></div>
+					<div class="container">
+						<h3>Security incidents</h3>
+						<p>Observe the picture and discuss the following questions:</p>
+
+						<figure class="my-5 no-print">
+							<img src="img/img4.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+							<a href="img/img4.jpg" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+								<img src="img/img4.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+							</a>
+						</figure>
+						<figcaption class="figure-caption text-center">
+							Accessed on: 1º feb. 2024.
+						</figcaption>
+						<p class="acessivel no-print">Picture of peer-to-peer software.</p>
+
+						<ul>
+							<li>How many computers can you see in the picture? </li>
+							<li>Why are they all connected?</li>
+							<li>Share your ideas with your classmates.</li>
+						</ul>
+						<ol type="1">
+							<li>Do you know what a P2P Software is?</li>
+							<li>Is the image showed before related to a P2P software?</li>
+						</ol>
+						<p>
+							Read the information below about this software: <br>
+							P2P software lets computers share files directly, not through a main server. Using it for illegal sharing at work can cause legal trouble, hurt the company's property rights, bring in viruses, slow down the network, break company rules, and damage the company's image. It's important to avoid these problems at work.
+						</p>
+						<p>P2P can help preventing a security incident at work. You and your partners are going to play a game that involves some words that are important to keep everybody’s data and information safe. Solve the riddles:</p>
+
+						<div class="caixa-practice no-print">
+							<p><b>Let’s practice.</b></p>
+							<p>Solve the riddles:</p>
+
+						</div>
+
+					</div>
+					<div class="linha-pontilhada-bottom"></div>
+				</div>
+
+				<div class="bloco2">
+					<div class="container">
+						<h3>Messy office</h3>
+						<p>Look at the pictures below:</p>
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								<figure class="my-5 no-print">
+									<img src="img/img5.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+									<a href="img/img5.jpg" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+										<img src="img/img5.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+									</a>
+								</figure>
+								<figcaption class="figure-caption text-center">
+									Accessed on: 1º feb. 2024.
+								</figcaption>
+								<p class="acessivel no-print">Picture of a messy office.</p>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								<figure class="my-5 no-print">
+									<img src="img/img6.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+									<a href="img/img6.jpg" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+										<img src="img/img6.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+									</a>
+								</figure>
+								<figcaption class="figure-caption text-center">
+									Accessed on: 1º feb. 2024.
+								</figcaption>
+								<p class="acessivel no-print">Picture of a messy office.</p>
+							</div>
+							<div class="col-sm-3 col-xs-12"></div>
+							<div class="col-sm-6 col-xs-12">
+								<figure class="my-5 no-print">
+									<img src="img/img7.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-none d-sm-none d-md-block d-lg-block radius" alt="Imagem">
+									<a href="img/img7.jpg" target="_blank" class="img-zoom d-sm-block d-md-none d-lg-none no-print">
+										<img src="img/img7.jpg" class="img-fluid d-block mx-auto p-2 mb-3 d-sm-block d-md-none d-lg-none radius" alt="Imagem">
+									</a>
+								</figure>
+								<figcaption class="figure-caption text-center">
+									Accessed on: 1º feb. 2024.
+								</figcaption>
+								<p class="acessivel no-print">Picture of an organized office.</p>
+							</div>
+							<div class="col-sm-3 col-xs-12"></div>
+						</div>
+
+						<ul>
+							<li>Where are these places?</li>
+							<li>With one word, how can you describe each picture? </li>
+							<li>Is that okay to eat in front of the computer?</li>
+						</ul>
+						<p>Is it possible to be organized in a messy desk?</p>
+						<p>It is very common to use laptops instead of desktops nowadays. However, do you know how to connect and plug all the cables to turn on and off your devices or even for your connection? </p>
+						<p>Do you know what DSL mean?</p>
+
+						<div class="caixa-practice bg-claro no-print">
+							<div class="esquemaDaBru multipla-escolha">
+								<p class="enunciado" tabindex="0">1) Read the definition of DSL below and choose which sentence could be the best title for this paragraph:</p>
+								<button class="alt-c">Advantages of DSL Modems in Internet</button>
+								<button class="alt-e">DSL: an equipment that doesn’t need cables.</button>
+								<button class="alt-e">A slow digital data: meet the DSL modem.</button>
+								<button class="alt-e">DSL: A non-essential modem for linking your computer to the big world of the internet.</button>
+								<div class="feedbacks">
+									<p class="f-positivo" style="display: none;"><i class="fas fa-check"></i> Acertou! Você escolheu a resposta correta.</p>
+									<p class="f-negativo" style="display: none;"><i class="fas fa-times"></i> Errou! Você escolheu a resposta errada.</p>
+								</div>
+							</div>
+						</div>
+
+						<p>DSL or (Digital Subscriber Line) modems connect your computer to the internet. They use regular phone lines to send digital data quickly, creating a constant connection that's always available. DSL can let you use the phone and the internet at the same time by separating them into different parts of the phone line. It's faster than old dial-up connections, which is why many people at homes and small businesses choose it. DSL modems are essential for linking your computer to the big world of the internet.</p>
+
+						<div class="caixa-practice no-print">
+							<p><b>Let’s practice.</b></p>
+							<p>Choose one of the cards below. Each card has one situation with a challenge. All you have to do is to find a solution for each situation. Present your ideas to the big group. </p>
+							<p>Click or tap to view content.</p>
+							<div class="cards text-center">
+								<div class="flip-card">
+								  <div class="flip-card-inner">
+									<div class="flip-card-front">
+									  <h4>1</h4>
+									</div>
+									<div class="flip-card-back">
+										<p><b>Cable Chaos:</b></p>
+										<p>You enter the office and notice a tangled mess of cables behind a computer workstation. It includes power cords, network cables, and charging cables.</p>
+									</div>
+								  </div>
+								</div>
+								<div class="flip-card">
+								  <div class="flip-card-inner">
+									<div class="flip-card-front">
+									  <h4>2</h4>
+									</div>
+									<div class="flip-card-back">
+										<p><b>Furniture Faux Pas:</b></p>
+										<p>A workstation is set up with a chair that is too high, causing the user to strain their wrists while typing on the keyboard.</p>
+									</div>
+								  </div>
+								</div>
+								<div class="flip-card">
+								  <div class="flip-card-inner">
+									<div class="flip-card-front">
+									  <h4>3</h4>
+									</div>
+									<div class="flip-card-back">
+										<p><b>Food and Drink Dilemma:</b></p>
+										<p> You observe an employee enjoying lunch at their desk, with a cup of coffee and a sandwich right next to the computer and keyboard.</p>
+									</div>
+								  </div>
+								</div>
+								<div class="flip-card">
+								  <div class="flip-card-inner">
+									<div class="flip-card-front">
+									  <h4>4</h4>
+									</div>
+									<div class="flip-card-back">
+										<p><b>Cable in the Danger Zone:</b></p>
+										<p>A computer workstation is set up with cables running across the floor in a busy walkway.</p>
+									</div>
+								  </div>
+								</div>
+								<div class="flip-card">
+								  <div class="flip-card-inner">
+									<div class="flip-card-front">
+									  <h4>5</h4>
+									</div>
+									<div class="flip-card-back">
+										<p><b>Mismatched Heights:</b></p>
+									  <p>The monitor on a workstation is positioned too low, requiring the user to hunch over while working.</p>
+									</div>
+								  </div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+
+		  </div>
+
+
+		</section>
+<!-- - - - - - - - - - - - - - - - não alterar abaixo- - - - - - - - - - - - -->
+		<footer class="text-center no-print">
+		  <!--
+		  <ul class="pagination">
+
+		  </ul>
+		  -->
+		</footer>
+
+	  </div>
+
+	</div>
+
+
+	<!-- Modais -->
+	<div class="modal fade" id="modal-ODBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			<h4 class="modal-title" id="myModalLabel">ODBC</h4>
+		  </div>
+		  <div class="modal-body">
+			<p><b>ODBC</b>, ou Open Database Connectivity, é um conjunto de classes-modelo para conexão disponível em qualquer linguagem de programação, diferindo-se da JDBC, que é exclusiva para Java.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="modal fade" id="modal-JDBC" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+			<h4 class="modal-title" id="myModalLabel">JDBC</h4>
+		  </div>
+		  <div class="modal-body">
+			<p><b>JDBC</b>, ou Java EE Database Connectivity, é uma <b>API (<i>application programming interfaces</i>) que possibilita a interação do código Java com um banco de dados</b>, na qual as instruções SQL são executadas por meio de um <i>driver</i>, composto por um grupo de classes e interfaces desenvolvido em Java. Esse processo possibilita a execução de instruções SQLs que se conectarão com a base de dados, permitindo a manipulação dos valores.</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+
+	<!--  Em caso de footer personalizado utilizar esse elemento e adicionar a classe customizada
+	<footer>
+	</footer>
+	-->
+<!-- carrega todas as imagens dos icones nesta div
+ caso queira adicionar mais imagens de novos icones do css,
+ ou qualquer imagem que deva ser contabilizada durante a fase
+ de loading, referenciar aqui.
+ -->
+<div class="ico-div-loader">
+	<img src="../template/images/atencao.png">
+	<img src="../template/images/bg-content.jpg">
+	<img src="../template/images/bg-topo.jpg">
+	<img src="../template/images/black-zoom-in-256.png">
+	<img src="../template/images/concluindo.png">
+	<img src="../template/images/curtir.png">
+	<img src="../template/images/desafio.png">
+	<img src="../template/images/dica.png">
+	<img src="../template/images/doc.png">
+	<img src="../template/images/fundamental.png">
+	<img src="../template/images/icon-03.png">
+	<img src="../template/images/importante.png">
+	<img src="../template/images/lightbulb.png">
+	<img src="../template/images/link.png">
+	<img src="../template/images/link_pdf_hover.png">
+	<img src="../template/images/link_pdf_normal.png">
+	<img src="../template/images/logo-senac.png">
+	<img src="../template/images/mark-icon.png">
+	<img src="../template/images/mark-icon02.png">
+	<img src="../template/images/midia.png">
+	<img src="../template/images/monitor.png">
+	<img src="../template/images/nao_curtir.png">
+	<img src="../template/images/pergunta.png">
+	<img src="../template/images/pesquisa.png">
+	<img src="../template/images/play.png">
+	<img src="../template/images/radio_flat.png">
+	<img src="../template/images/refletir.png">
+	<img src="../template/images/saiba_mais.png">
+	<img src="../template/images/senac_loader.png">
+	<img src="../template/images/tanamidia.png">
+	<img src="../template/images/transcricao.png">
+	<img src="../template/images/transcricao_small.png">
+	<img src="../template/images/tv.png">
+	<img src="../template/images/tv_bottom.png">
+	<img src="../template/images/zoom.png">
+	<img src="../template/images/zoom_ie.cur">
+	<img src="../template/images/zoom_ie.png">
+	<!-- adicionar as imagens customizadas aqui abaixo -->
+</div>
+
+		<!-- Bootstrap JavaScript Libraries -->
+		<script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+		<!--Jquery-->
+		<script src="../assets/js/jquery-3.6.0.min.js"></script>
+		<!--Áudio customizado-->
+		<script src="../assets/js/audio-player.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="../template/js/jquery.min.js"></script>
+<script src="../template/js/bootstrap.min.js"></script> -->
+<script src="../template/js/jquery.magnific-popup.min.js"></script>
+<script src="../template/js/print.js"></script>
+<script src="../template/js/template.config.js"></script>
+<script src="../template/js/images.loader.js"></script>
+<script src="../template/js/highlight.min.js"></script>
+<!-- bts5 -->
+
+		<!--Atividade de verdadeiro ou falso-->
+		<script src="../assets/atividades/perguntas/perguntas.js"></script>
+		<!--Atividade arrasta e solta-->
+		<script src='atividades/arrasta_solta/dragula.min.js'></script>
+		<script src="atividades/arrasta_solta/game-custom.js"></script>
+		<!--Atividade associar colunas-->
+		<script src="atividades/relacionar_colunas/relacionar-colunas.js"></script>
+<noscript>
+  <style media="screen">
+	.over-loader { display: none;}    
+  </style>
+</noscript>
+</body>
+</html>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+	document.querySelectorAll('pre code').forEach((el) => {
+	  hljs.highlightElement(el);
+	});
+  });
+	//inicializa zoom na imagem
+	
+	//inicializa popover
+	$(function () {
+	  $('[data-toggle="popover"]').popover()
+	})
+	//inicializa tooltip
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
+
+  $(function() {
+	$(".card").click(function() {
+	  if ($(this).hasClass("exibe-frente")) {
+		$(this)
+		  .children()
+		  .first()
+		  .hide();
+		$(this)
+		  .children()
+		  .last()
+		  .show();
+		$(this).removeClass("exibe-frente");
+	  } else {
+		$(".card .verso").hide();
+		$(".card .frente").show();
+		$(this).addClass("exibe-frente");
+	  }
+	});
+  });
+
+  $( document ).ready(function() {
+	$(".card .verso").hide();
+  });
+
+
+
+
+  /*------- Script de animação do botão -------*/
+  var root = document.documentElement;
+  root.className += ' js';
+
+  function boxTop(idBox) {
+	var boxOffset = $(idBox).offset().top;
+	return boxOffset;
+  }
+
+  $(document).ready(function() {
+	$('.botaoCheck').click(function(){
+	  $(this).addClass('visitado');
+	});
+	var $target = $('.animeStart'),
+		$target2 = $('.animeStop'),
+		targetBox = $('.box'),
+		animationClass = 'anime-init',
+		windowHeight = $(window).height(),
+		offset = windowHeight - (windowHeight / 4);
+
+	function animeScroll() {
+	  var documentTop = $(document).scrollTop();
+	  $target.each(function() {
+		if (documentTop > boxTop(this) - offset) {
+		  targetBox.addClass(animationClass);
+		} else {
+		  targetBox.removeClass(animationClass);
+		}
+		if (documentTop > boxTop($target2) - offset) {
+		  targetBox.removeClass(animationClass);
+		} 
+	  });
+	}
+	animeScroll();
+
+	$(document).scroll(function() {
+	  animeScroll();
+	});
+  });
+
+
+</script>
+
+		<!-- ODAS -->
+		<!-- <script src="odas/ingles_viagens_cartas/assets/js/scripts.js"></script> -->
+		<script src="odas/ingles_letters/assets/js/script.js"></script>
+		<!-- <script src="odas/ingles_viagens_form/assets/js/script.js"></script> -->
+		<!-- <script src="odas/ingles_viagens_write_numbers/assets/js/script.js"></script> -->
+<script>
+  var scriptElem=document.createElement("script");
+  scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+  scriptElem.charset="UTF-8",
+  scriptElem.onload=function(){
+		window.ht = new HT({
+			token:"bf5b7efb148a829a126a0e0c9fd533bf",
+			align:"top",
+			videoEnabled: true,
+			ytEmbedReplace: true,           
+			mobileConfig:{align:"right",
+						  actionsAlign:"top",
+						  customButtonStyle:{
+								borderRadius:"6px",
+								size:"38px",
+								horizontalMargin:"13px",
+								bottomMargin:"140px",
+								rightMargin:"40px"}
+						  }
+		  });        
+	  $('.ht-skip').attr("aria-hidden","true")
+	},
+  document.body.appendChild(scriptElem);
+</script>

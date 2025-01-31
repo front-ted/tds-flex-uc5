@@ -1,0 +1,635 @@
+body{
+  
+  background: url('../imgs/background.png') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  background-color: #fff;
+}
+
+.fundo-tecnicos{
+  border-bottom: none !important;
+}
+h1 i,
+h2 i,
+h3 i,
+h4 i {
+  font-weight: bold;
+}
+h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+h4 {
+  margin: 0px;
+  margin-top: 40px;
+}
+pre {
+  padding: 0;
+  background: transparent;
+  border: none;
+  margin: 0;
+}
+
+.mt-20{margin-top: 20px;}
+.mt-40{margin-top: 40px;}
+.mt-60{margin-top: 60px;}
+
+.painel-abas{padding: 40px;}
+.nav-tabs{
+  margin-left: 0;
+}
+
+.carousel{
+  padding: 20px 40px;
+}
+.carousel-control.left{
+  left: -90px;
+  background: none;
+  color: #000;
+}
+.carousel-control.right{
+  right: -90px;
+  background: none;
+  color: #000;
+}
+.carousel-indicators{
+  bottom: 0;
+  margin-bottom: 0px;
+}
+.carousel-indicators .active{
+  background-color: #2875C6;
+}
+.carousel-indicators li{
+  border: 1px solid #2875C6;
+}
+
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #2875C6;
+  border: 1px solid #1d5591;
+  border-bottom-color: transparent;
+}
+
+.codigo-destaque{
+  background: #000;
+  color: #a39e9b;
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+}
+.code-destaque{
+  background-color: #071772 !important;
+}
+
+
+.txt-popover{
+  text-decoration: underline;
+  cursor: pointer;
+  color: #2875C6;
+}
+/* 01 */
+ .grupo-imprimir {
+  display: block;
+  text-align: right;
+  top: 120px;
+  right: 60px;
+  position: absolute;
+}
+li {
+  margin-bottom: 0.8em;
+  list-style-image: url(../imgs/check.png);
+}
+
+.bloco1,
+.bloco2, 
+.bloco3, 
+.bloco4, 
+.bloco5, 
+.bloco6, 
+.bloco7, 
+.bloco8, 
+.bloco9, 
+.bloco10, 
+.bloco11,
+.bloco12{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+.bloco1{
+  background: url('../img/elemento1.png') no-repeat bottom 25px right 15px, linear-gradient(120deg, #2875C6, #004B90);
+  background-size: 12%, 100%;
+  margin-top: 80px;
+  padding-top: 80px;
+  color: #fff;
+}
+.bloco2{
+  background-color: #FFF;
+}
+.bloco3{
+  background: url('../img/elemento2.png') no-repeat bottom 40px left 15px;
+  background-size: 12%;
+  background-color: #6E849D;
+}
+.bloco4{
+  background: url('../img/bloco_5.png') no-repeat bottom 25px right 15px, linear-gradient(2250deg, #004B90, #2875C6);
+  color: #fff;
+}
+.bloco5{
+  background-color: #A9B6C5;
+}
+
+.bloco3 figcaption, .bloco5 figcaption{
+  color: #fff;
+}
+
+.bloco6,.bloco8,.bloco10,.bloco12{
+  background: rgb(228,240,255);
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%);
+}
+.bloco7,.bloco9,.bloco11{
+  background-color: #7B8FA6;
+}
+.bloco3,.bloco5,.bloco7,.bloco9,.bloco11{
+  color: #fff;
+}
+
+.bloco3 .modal-body,.bloco5 .modal-body,.bloco7 .modal-body,.bloco9 .modal-body,.bloco11 .modal-body{
+  color: black;
+
+}
+.bloco1 h2, .bloco3 h3,.bloco4 h3,.bloco4 h4,.bloco5 h3,.bloco7 h3,.bloco9 h3,.bloco11 h3,
+.bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
+  color: #fff;
+}
+/* .bloco4{
+  background: rgb(228,240,255);
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
+}
+.bloco5{
+  background-color: #7b8fa6;
+}
+.bloco6{
+  background: rgb(228,240,255);
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
+}
+.bloco7{
+  background-color: #7b8fa6;
+}
+.bloco8{
+  background: rgb(228,240,255);
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
+}
+.bloco9{
+  background-color: #7b8fa6;
+}
+.bloco10{
+  background: rgb(228,240,255);
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
+}
+.bloco11{
+  background-color: #7b8fa6;
+}
+.bloco12{
+  background: rgb(228,240,255);
+  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
+} */
+.marcador-seta li {
+  list-style-image: url("../imgs/setas.png");
+}
+
+#slots .box{
+	width: 100%;
+	margin: 7px;
+}
+.game-body .slot .card{width: 94%;}
+.game-body .slot{
+	border: 2px solid #004b90;
+	background: #dbe1ec;
+	padding: 0;
+  border-radius: 0px 5px 5px 0px;
+  display: inline-block;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  margin-left: -2px;
+}
+.game-resposta{
+  background-color: #004B90;
+  color: #fff;
+  padding: 12px 15px;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 5px 0px 0px 5px;
+  height: 50px;
+}
+.game-titulo{
+	background: transparent;
+	width: 100%;
+  max-width: 100%;
+	padding: 3px;
+  color: #333;
+  text-align: left;
+}
+.game-body .card{
+	background: #004b90;
+	border: none;
+	color: #fff;
+	text-transform: unset;
+  border-radius: 5px;
+}
+
+#cardPile{
+  margin-top: 40px !important;
+}
+
+.modal-header.bg-danger h5{
+  color: #fff;
+}
+
+
+/* baloes */
+.balao-dir{
+  background: #a3c2ed;
+  border-radius: 15px;
+  width: 415px;
+  min-height: 62px;
+  position: relative;
+padding: 5px 10px;
+margin: 0 10px;
+}
+.balao-dir:after{
+  content: "";
+  width: 0; 
+  height: 0;
+  position: absolute;
+  right: -10px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #a3c2ed;
+bottom: -10px;
+  transform: rotate(-90deg);
+}
+.balao-esq{
+  background: #e3e5e9;
+  border-radius: 15px;
+  width: 415px;
+  min-height: 62px;
+  position: relative;
+padding: 5px 10px;
+margin: 0 10px;
+}
+.balao-esq:after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #e3e5e9;
+bottom: 0;
+  left: -20px;
+  transform: rotate(180deg);
+}
+.balao-dir p, .balao-esq p{margin: 0;}
+.mautos{
+  margin: 0 auto;
+}
+/* fim baloes */
+/* gaitinha */
+.accordion-item {
+  background-color: transparent;
+}
+.accordion-header{margin-top: 0;}
+.accordion-button, .accordion-button.collapsed{
+  color: #fff;
+}
+.accordion-button, .accordion-button:not(.collapsed){
+    color: #000;
+    border-radius: 30px 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #cae0ff;
+}
+.accordion-item, .accordion-item:first-of-type{
+    border: none;
+    margin-bottom: 15px;
+}
+.accordion-button{
+  background-color: #004b90;
+}
+.accordion-button::after{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='white' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")
+}
+.accordion-button:not(.collapsed)::after{background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill='white' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");}
+.accordion-body{
+    margin-left: 20px;
+    border-left: 3px solid #1e8cb1;
+}
+/* fim gaitinha */
+/* board-trello */
+.board-trello{
+  margin: 0 auto;
+  background-color: #D9E4ED;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 410px;
+}
+.board-trello > div{
+  display: block;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 20px;
+  border: 5px solid #D9E4ED;
+}
+
+.board-trello  > div:hover{
+  cursor: pointer;
+  border: 5px solid #2a5568;
+}
+.titulo-board{
+  position: relative;
+  width: 100%;
+  color: #004B90;
+  font-size: 1.55rem;
+  margin: 0;
+  font-weight: 900;
+}
+.titulo-board::after{
+  content: "...";
+  position: absolute;
+  right: 0;
+  font-size: 3rem;
+  margin-top: -10px;
+}
+.add-board{
+  color: #004B90;
+  margin: 0;
+}
+.trello-bt01{background-image: url('../img/painel/bt01.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt02{background-image: url('../img/painel/bt02.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt03{background-image: url('../img/painel/bt03.png');
+  width: 367px;
+  height: 104px;
+}
+.trello-bt04{background-image: url('../img/painel/bt04.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt05{background-image: url('../img/painel/bt05.png');
+  width: 367px;
+  height: 141px;
+}
+.trello-bt06{background-image: url('../img/painel/bt06.png');
+  width: 367px;
+  height: 104px;
+}
+.trello-bt07{background-image: url('../img/painel/bt07.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt08{background-image: url('../img/painel/bt08.png');
+  width: 367px;
+  height: 168px;
+}
+.trello-bt09{background-image: url('../img/painel/bt09.png');
+  width: 367px;
+  height: 105px;
+}
+.trello-bt10{background-image: url('../img/painel/bt10.png');
+  width: 367px;
+  height: 102px;
+}
+
+/* fim board-trello */
+
+/*-------- CARDS --------*/
+.flip-card {
+  background-color: transparent;
+  width: 175px;
+  height: 260px;
+  perspective: 1000px;
+  margin: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  border: 3px solid #fff;
+  background: #004b90;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.flip-card-front h4{
+  color: #fff;
+  font-size: 32px;
+  text-align: center;
+  margin: auto;
+}
+.flip-card-back {
+  color: #000;
+  transform: rotateY(180deg);
+  font-family: roboto;
+  text-align: left;
+  font-size: 12px;
+  padding: 5px 10px;
+  border: 3px solid #004b90;
+  background: #fff;
+  border-radius: 20px;
+}
+.flip-card-back b{
+  color: #004B90;
+}
+.flip-card-back p{
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+
+/*-------- /CARDS --------*/
+
+
+.icone-practice{
+	padding-left:180px;
+	background-position:10px 10px;
+	background-size:140px 140px;
+  background-color: #004b90;
+  color: #fff;
+}
+.caixa-destaque {
+  width: 90%;
+}
+.mgleft{margin-right: 15px;}
+.bloco-paragrafo{ margin-bottom: 20px}
+.bloco-paragrafo p{ margin: 0 !important;}
+
+.figure-caption{
+  margin-bottom: 50px;
+}
+
+
+.linha-pontilhada-top{
+  border-bottom: #FFF dashed 5px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 10px;
+}
+.linha-pontilhada-bottom{
+  border-bottom: #FFF dashed 5px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  height: 10px;
+}
+
+.caixa-practice{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 40px auto;
+  color: #333;
+  font-size: 14px;
+}
+.borda-destaque{
+  border-color: #2875C6 !important;
+  padding: 5px 20px !important;
+}
+
+.bg-escuro{
+  background-color: #004b90;
+  color: #fff !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-escuro .feedbacks p{
+  color: #fff !important;
+}
+.feedbacks i{
+  font-size: 30px !important;
+}
+
+.bg-claro{
+  background-color: #fff;
+  color: #333 !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-claro .multipla-escolha button::before{
+  color: #333;
+}
+
+.div-situacoes{
+  margin: 0px;
+}
+
+
+.espera-video{
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  display: block;
+}
+
+.radius{
+  border-radius: 20px;
+}
+figcaption{
+  margin-top: -25px;
+}
+
+table.borda-destaque td{
+  text-align: center;
+  border: #2875C6 solid 1px;
+}
+
+
+@media screen and (max-width: 820px){
+
+  .bloco1, .bloco4{
+    background: linear-gradient(2250deg, #004B90, #2875C6);
+  }
+  .bloco3{
+    background: linear-gradient(2250deg, #7B8FA6, #A9B6C5);
+  }
+  
+}
+@media screen and (max-width: 480px){
+  .caixa-destaque code{
+    word-break: break-word;
+  }
+
+  .video-youtube, .espera-video {
+    width: 320px;
+    height: 180px;
+  }
+
+  .game-body .slot{
+    border-radius: 0px 5px 5px 5px;
+    display: inline-block;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 2px;
+  }
+  .game-resposta{
+    padding: 8px 15px;
+    border-radius: 5px 5px 0px 0px;
+    height: 40px;
+  }
+
+  .game-body .slot .card{
+    display: inline-block;
+    width: 90%;
+    max-width: 210px;
+  }
+}
