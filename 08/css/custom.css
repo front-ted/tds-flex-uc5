@@ -202,29 +202,55 @@ li {
 }
 
 #slots .box{
-	width: 210px;
+	width: 100%;
 	margin: 7px;
 }
 .game-body .slot .card{width: 94%;}
 .game-body .slot{
-	border: 5px solid #c0101a;
-	border-radius: 10px;
+	border: 2px solid #004b90;
 	background: #dbe1ec;
-	padding: 15px 0;
+	padding: 0;
+  border-radius: 0px 5px 5px 0px;
+  display: inline-block;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: -20px;
+  margin-left: -2px;
+}
+.game-resposta{
+  background-color: #004B90;
+  color: #fff;
+  padding: 12px 15px;
+  font-size: 16px;
+  display: inline-block;
+  border-radius: 5px 0px 0px 5px;
+  height: 50px;
 }
 .game-titulo{
-	background: #c0101a;
-	width: 30px;
-	border-radius: 30px;
+	background: transparent;
+	width: 100%;
+  max-width: 100%;
 	padding: 3px;
+  color: #333;
+  text-align: left;
 }
 .game-body .card{
-	background: #abc1eb;
+	background: #004b90;
 	border: none;
-	color: #000;
+	color: #fff;
 	text-transform: unset;
-	font-family: rubik;
+  border-radius: 5px;
 }
+
+#cardPile{
+  margin-top: 40px !important;
+}
+
+.modal-header.bg-danger h5{
+  color: #fff;
+}
+
+
 /* baloes */
 .balao-dir{
   background: #a3c2ed;
@@ -560,8 +586,20 @@ figcaption{
   margin-top: -25px;
 }
 
+.sinais-transito{
+  width: 60px;
+  margin: 0px 10px;
+}
+
 
 @media screen and (max-width: 820px){
+
+  .bloco1, .bloco4{
+    background: linear-gradient(2250deg, #004B90, #2875C6);
+  }
+  .bloco3{
+    background: linear-gradient(2250deg, #7B8FA6, #A9B6C5);
+  }
   
 }
 @media screen and (max-width: 480px){
@@ -572,5 +610,25 @@ figcaption{
   .video-youtube, .espera-video {
     width: 320px;
     height: 180px;
+  }
+
+  .game-body .slot{
+    border-radius: 0px 5px 5px 5px;
+    display: inline-block;
+    margin-top: -2px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 2px;
+  }
+  .game-resposta{
+    padding: 8px 15px;
+    border-radius: 5px 5px 0px 0px;
+    height: 40px;
+  }
+
+  .game-body .slot .card{
+    display: inline-block;
+    width: 90%;
+    max-width: 210px;
   }
 }
