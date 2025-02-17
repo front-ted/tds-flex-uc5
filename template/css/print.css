@@ -10,7 +10,7 @@
 /* ESTRUTURA PARA ELEMENTOS RELACIONADOS AOS BOTÕES E AJUDA DA IMPRESSÃO */
 /*  */
 
-.mautos, .img-fluid{
+.mautos{
   margin: 0 auto !important;
   display: block !important;
 }

@@ -322,3 +322,16 @@ p.legenda-imagem{
   display: block !important;
   text-align: center !important;
 }
+
+
+div.print table.senac{
+  width: 100%;
+}
+div.print table.senac th{
+  background-color: #004b90 !important;
+  color: #fff !important;
+  width: 50%;
+}
+div.print table.senac th p{
+  color: #fff !important;
+}
