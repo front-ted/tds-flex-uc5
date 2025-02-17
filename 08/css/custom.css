@@ -421,10 +421,10 @@ bottom: 0;
 /*-------- CARDS --------*/
 .flip-card {
   background-color: transparent;
-  width: 175px;
-  height: 260px;
+  width: 170px;
+  height: 270px;
   perspective: 1000px;
-  margin: 5px;
+  margin: 4px;
   margin-bottom: 20px;
   cursor: pointer;
   display: inline-block;
@@ -599,6 +599,7 @@ figcaption{
 }
 
 
+
 @media screen and (max-width: 820px){
 
   .bloco1, .bloco4{
@@ -607,9 +608,18 @@ figcaption{
   .bloco3{
     background: linear-gradient(2250deg, #7B8FA6, #A9B6C5);
   }
+
+  .flip-card {
+    width: 190px;
+    height: 290px;
+  }
   
 }
 @media screen and (max-width: 480px){
+  .bloco1 .container{
+    width: 100%;
+    max-width: 100%;
+  }
   .caixa-destaque code{
     word-break: break-word;
   }
