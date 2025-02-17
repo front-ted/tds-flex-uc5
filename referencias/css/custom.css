@@ -1,6 +1,9 @@
 body{
 	word-break: break-word;
 }
+.grupo-imprimir{
+	margin-top: 100px;
+}
 h1 i, h2 i, h3 i, h4 i {
 	font-weight: bold;
 }
