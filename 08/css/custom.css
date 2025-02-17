@@ -92,12 +92,13 @@ pre {
   color: #2875C6;
 }
 /* 01 */
- .grupo-imprimir {
+.grupo-imprimir {
   display: block;
   text-align: right;
   top: 120px;
   right: 60px;
   position: absolute;
+  z-index: 10;
 }
 li {
   margin-bottom: 0.8em;
@@ -233,6 +234,7 @@ li {
 	padding: 3px;
   color: #333;
   text-align: left;
+  text-transform: unset;
 }
 .game-body .card{
 	background: #004b90;
@@ -539,6 +541,11 @@ bottom: 0;
   color: #fff !important;
   padding: 10px 30px 20px 30px;
 }
+.bg-escuro .borda-destaque{
+  border-color: #fff !important;
+  padding: 5px 20px !important;
+}
+
 .bg-escuro .feedbacks p{
   color: #fff !important;
 }
