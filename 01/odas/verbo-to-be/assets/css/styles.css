@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  background-color: #28a745;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat, repeat;
+  padding: 5%;
+  border-radius: 15px;
+  margin: 1%;
+  height: 707px;
+  box-shadow: 10px 5px 5px #00000063;
+}
+
+.titulo {
+  width: 175px;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px black;
+  margin: 1%;
+}
+
+.frase {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.zona-soltar {
+  min-height: 200px;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.alerta {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-size: 23px;
+}
+
+.alerta-sucesso {
+  background-color: #28a745;
+}
+
+.alerta-erro {
+  background-color: #dc3545;
+}
+
+#proximaFrase {
+  display: none;
+}
+
+.palavra {
+  margin: 1%;
+  padding: 1%;
+  padding-inline: 2%;
+  border-radius: 10px;
+  border: none;
+  font-size: 2rem;
+  height: 69px;
+  cursor: move;
+}
+
+.certo {
+  background-color: #6CC66A;
+  pointer-events: none;
+}
+
+.errado {
+  background-color: #ED5B5B;
+}
+
+.quase {
+  background-color: #DFD82E;
+  color: black;
+}
+
+.infografico-container h2 {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.infografico-container .subtitulo {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+.tabela-verbo {
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.tabela-verbo thead {
+  color: black;
+  background-color: #9FEA7C;
+}
+
+.tabela-verbo th,
+.tabela-verbo td {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.tabela-verbo tbody tr {
+  border-bottom: 1px solid #7bf736;
+}
+
+.tabela-verbo tbody tr:hover {
+  background-color: #e0f0ff;
+}
+
+.modal-content {
+  border-radius: 15px;
+  padding: 20px;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat, repeat;
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+}
+
+.modal-title {
+  font-size: 2rem;
+  color: black;
+  text-align: center;
+}
+
+.estiloContador {
+  background-color: #9FEA7C;
+  margin: 2%;
+  padding: 1%;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.img-fluid.gif-modal {
+  border-radius: 20px 20px 0 0px;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1rem;
+  font-size: 23px;
+  margin: 2%;
+}
+
+#btnComecar {
+  background-color: #9ee97b;
+  border: 4px solid black;
+  color: black;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 23px;
+}
+
+#btnComecar:hover {
+  background-color: #27640a;
+  border: 4px solid white;
+  color: white;
+}
+
+#verificar {
+  background-color: #9ee97b;
+  border: 4px solid black;
+  color: black;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 23px;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+}
+
+#verificar:hover {
+  background-color: #27640a;
+  border: 4px solid white;
+  color: white;
+}
+
+#proximaFrase {
+  background-color: #DFD82E;
+  border: 4px solid black;
+  color: black;
+  border-radius: 10px;
+  padding: 1%;
+  font-size: 23px;
+  align-items: center;
+  text-align: center;
+  margin: 2%;
+}
+
+#proximaFrase:hover {
+  background-color: #ffbb01;
+  border: 4px solid white;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

@@ -119,6 +119,7 @@ li {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .bloco1{
   background-color: #004b90;
   margin-top: 80px;
@@ -142,38 +143,7 @@ li {
 .bloco3 h4,.bloco5 h4,.bloco7 h4,.bloco9 h4,.bloco11 h4{
   color: #fff;
 }
-/* .bloco4{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco5{
-  background-color: #7b8fa6;
-}
-.bloco6{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco7{
-  background-color: #7b8fa6;
-}
-.bloco8{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco9{
-  background-color: #7b8fa6;
-}
-.bloco10{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-}
-.bloco11{
-  background-color: #7b8fa6;
-}
-.bloco12{
-  background: rgb(228,240,255);
-  background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(123,143,166,1) 100%);
-} */
+
 .marcador-seta li {
   list-style-image: url("../imgs/setas.png");
 }
@@ -393,8 +363,20 @@ li {
   width: 90%;
 }
 .mgleft{margin-right: 15px;}
+
 .bloco-paragrafo{ margin-bottom: 20px}
+
 .bloco-paragrafo p{ margin: 0 !important;}
+
+.multipla-escolha button{
+ 
+  margin-left: 40px;
+  
+}
+
+.multipla-escolha button::before{
+  display: none;
+}
 @media screen and (max-width: 780px){
   
 }
