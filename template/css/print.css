@@ -224,6 +224,7 @@ h5 {
     orphans: 3;
     text-align: justify;
     text-align-last: left;
+    text-indent: 0;
   }
 
   p.legenda-imagem{
