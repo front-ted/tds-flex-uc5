@@ -149,9 +149,25 @@ li {
 }
 
 #slots .box{
-	width: 210px;
-	margin: 7px;
+	width: 150px;
+	margin-bottom: 25px;
+  scale: 0.8;
 }
+
+#slots{
+  margin-top: 50px;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+}
+
+.game-titulo p{
+  margin: unset;
+}
+
+
 .game-body .slot .card{width: 94%;}
 .game-body .slot{
 	border: 5px solid #c0101a;
@@ -159,11 +175,14 @@ li {
 	background: #dbe1ec;
 	padding: 15px 0;
 }
+
 .game-titulo{
 	background: #c0101a;
-	width: 30px;
+	width: 50px;
 	border-radius: 30px;
 	padding: 3px;
+  margin-right: -10px;
+  margin-top: -8px;
 }
 .game-body .card{
 	background: #abc1eb;
