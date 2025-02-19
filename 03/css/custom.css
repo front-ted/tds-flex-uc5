@@ -155,7 +155,7 @@ li {
   color: #fff;
 }
 
-.bloco2,
+/* .bloco2,
 .bloco4,
 .bloco6,
 .bloco8,
@@ -163,6 +163,14 @@ li {
 .bloco12 {
   background: rgb(228, 240, 255);
   background: linear-gradient(180deg, rgba(228, 240, 255, 1) 0%, rgba(158, 181, 204, 1) 100%);
+} */
+.bloco2,
+.bloco4,
+.bloco6,
+.bloco8,
+.bloco10,
+.bloco12 {
+  background: linear-gradient(to bottom, #e4f0ff, #9eb5cc);
 }
 
 .bloco3,
