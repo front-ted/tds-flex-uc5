@@ -7,6 +7,37 @@ body {
   background-color: #fff;
 }
 
+.div-podcast {
+  background-color: #d7e7f5;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.div-podcast audio {
+  width: 100%;
+  max-width: 450px;
+}
+
+.bt-transcricao {
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  border: none;
+  background: url('../../template/images/transcricao.png') no-repeat center;
+  background-size: 100%;
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+
+.bt-transcricao:hover {
+  background-color: #fff;
+}
+
 .fundo-tecnicos {
   border-bottom: none !important;
 }
