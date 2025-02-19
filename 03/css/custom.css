@@ -11,6 +11,19 @@ body {
   border-bottom: none !important;
 }
 
+
+table.senac td {
+  text-align: center !important;
+}
+
+figure {
+  margin: auto !important;
+}
+
+figcaption {
+  margin: auto !important;
+}
+
 h1 i,
 h2 i,
 h3 i,
@@ -536,7 +549,6 @@ li {
   height: 506px;
   margin: 0 auto;
   background-image: url('../img/website_layout.png');
-  relative;
 }
 
 .bt1-pulse {
@@ -633,10 +645,24 @@ li {
   color: black;
 }
 
-@media screen and (max-width: 780px) {}
+@media screen and (max-width: 768px) {
+  .bg-website {
+    scale: 0.8;
+    margin-left: -70px;
+    margin-top: -25px;
+    margin-bottom: -25px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .caixa-destaque code {
     word-break: break-word;
+  }
+
+  .bg-website {
+    scale: 0.46;
+    margin-left: -240px;
+    margin-bottom: -100px;
+    margin-top: -105px;
   }
 }
