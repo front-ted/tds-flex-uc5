@@ -20,7 +20,7 @@ h3 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
-h4 {
+h4, h5{
   margin: 0px;
   margin-top: 40px;
 }
@@ -419,19 +419,38 @@ bottom: 0;
 .game-associar-colunas2{
   padding: 40px;
 }
+
+
+/*-------- CARDS --------*/
+
 .flip-card {
-  width: 320px;
+  width: 240px;
+  height: 360px;
+  perspective: 1000px;
+  margin: 20px;
+  cursor: pointer;
+  display: inline-block;
 }
 .flip-card-back{
   position: relative;
 }
-.flip-card-back img{ width: 320px;}
-.flip-card-back p{
-  line-height: 1.8rem;
-  top: 0;
-  position: absolute;
-  padding: 13px;
+.flip-card-front img, .flip-card-back img{
+  width: 240px;
+  height: 360px;
 }
+.flip-card-back p{
+  line-height: 1.45rem;
+  top: 0;
+  margin: 0;
+  position: absolute;
+  padding: 10px 12px;
+  color: #000;
+  font-size: 15px;
+  text-align: left;
+}
+
+/*-------- /CARDS --------*/
+
 .box-info{
   margin: 0 auto;
   width: 100%;
@@ -461,6 +480,117 @@ bottom: 0;
 /* .card-info img{ width: 30%;}
 .card-info div{ width: 60%;} */
 
+
+/*-------- PODCAST --------*/
+
+.div-podcast{
+  background-color: #d7e7f5;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+}
+.div-podcast audio{
+  width: 100%;
+  max-width: 450px;
+}
+.bt-transcricao{
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  border: none;
+  background: url('../../template/images/transcricao.png') no-repeat center;
+  background-size: 100%;
+  margin-left: 20px;
+  transition: all 0.2s;
+}
+.bt-transcricao:hover{
+  background-color: #fff;
+}
+
+/*-------- /PODCAST --------*/
+
+
+.caixa-practice{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 40px auto;
+  color: #333;
+  font-size: 14px;
+}
+.borda-destaque{
+  border-color: #2875C6 !important;
+  padding: 5px 20px !important;
+}
+
+.bg-escuro{
+  background-color: #004b90;
+  color: #fff !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-escuro .borda-destaque{
+  border-color: #fff !important;
+  padding: 5px 20px !important;
+}
+
+div.caixa-practice.bg-escuro table{
+  color: #fff !important;
+}
+
+.bg-escuro .feedbacks p{
+  color: #fff !important;
+}
+
+.feedbacks i{
+  font-size: 30px !important;
+}
+
+.bg-claro{
+  background-color: #fff;
+  color: #333 !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-claro .multipla-escolha button::before{
+  color: #333;
+}
+
+table.borda-destaque td{
+  text-align: center;
+  border: #2875C6 solid 1px;
+}
+
+.espera-video{
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  margin: 50px auto;
+  display: block;
+}
+
+.img02{
+  border: #004B90 solid 4px;
+}
+.radius{
+  border-radius: 20px;
+}
+
+
+
 @media screen and (max-width: 780px){
   
 }
@@ -468,4 +598,19 @@ bottom: 0;
   .caixa-destaque code{
     word-break: break-word;
   }
+
+  div.flexs.itens{
+    margin-bottom: 30px;
+  }
+
+  .video-youtube, .espera-video {
+    width: 320px;
+    height: 180px;
+  }
+
+  .ico-practice{
+    max-width: 130px;
+  }
+
+
 }
