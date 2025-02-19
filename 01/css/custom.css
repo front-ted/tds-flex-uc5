@@ -397,9 +397,28 @@ li {
 .multipla-escolha button::before{
   display: none;
 }
-@media screen and (max-width: 780px){
+
+
+table.senac td {
   
+  text-align: center;
 }
+
+.espera{
+  width: 350px;
+}
+
+
+@media screen and (max-width: 700px){
+  .icone-practice {
+    padding-left: 38px;
+    background-position: unset;
+    background-size: unset;
+    background-image: none;
+    background-repeat: unset;
+}
+}
+
 @media screen and (max-width: 480px){
   .caixa-destaque code{
     word-break: break-word;

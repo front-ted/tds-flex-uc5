@@ -85,7 +85,7 @@ h1,h2,h3,h4,h5{
 }
 h4{
 	margin-top:1.5em;
-	margin-bottom:2.5em;
+	margin-bottom:1em;
 }
 ul,ol{
 	font-size:1.2em;
@@ -163,7 +163,11 @@ header.senac{
 
 /*----------------*/
 
-
+.conversation{
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 15px;
+}
 
 .postit {
   padding: 0px !important;
