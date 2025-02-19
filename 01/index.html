@@ -842,30 +842,12 @@
                 <p>- Which occupation does Sarah have?</p>
                 <p class="no-print">Click to listen to the audio. </p>
 
-                <div class="bg-podcast2">
-                    <div class="bg-podcast no-print audio">
-                      <div class="d-flex justify-content-center flex-column align-items-center">
-                          <div class="audio-player no-print">
-                              <audio>
-                                  <source src="podcasts/podcast1.mp3" type="audio/mpeg">
-                              </audio>
-                              <div class="row">
-                                  <div class="timestamp">00:00 | 00:00</div>
-                                  <div class="barra">
-                                      <input type="range" value="0" max="4140" step="any">
-                                  </div>
-                                  <div class="botoes">
-                                      <button title="Tocar" class="btn-play btn-player"></button>
-                                      <button title="Pause" class="btn-pause btn-player"></button>
-                                      <button title="Transcrição" data-bs-toggle="modal"
-                                          data-bs-target="#podcast1Modal"
-                                          class="btn-transcricao btn-player"></button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
+                <div class="div-podcast">
+                    <audio controls="controls">
+                      <source src="podcasts/podcast1.mp3" type="audio/mp3">
+                    </audio>
+                    <button class="bt-transcricao" title="Transcrição" data-bs-toggle="modal" data-bs-target="#podcast1Modal"></button>
+                  </div>
 
                 <div class="modal fade no-print" id="podcast1Modal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
@@ -957,30 +939,13 @@
                 <p>Now, listen to the second part of the interview with Sarah, who is going to talk about her routine as a Software developer. </p>
                 <p class="no-print">Click to listen to the audio. </p>
 
-                <div class="bg-podcast2">
-                    <div class="bg-podcast no-print audio">
-                      <div class="d-flex justify-content-center flex-column align-items-center">
-                          <div class="audio-player no-print">
-                              <audio>
-                                  <source src="podcasts/podcast2.mp3" type="audio/mpeg">
-                              </audio>
-                              <div class="row">
-                                  <div class="timestamp">00:00 | 00:00</div>
-                                  <div class="barra">
-                                      <input type="range" value="0" max="4140" step="any">
-                                  </div>
-                                  <div class="botoes">
-                                      <button title="Tocar" class="btn-play btn-player"></button>
-                                      <button title="Pause" class="btn-pause btn-player"></button>
-                                      <button title="Transcrição" data-bs-toggle="modal"
-                                          data-bs-target="#podcast2Modal"
-                                          class="btn-transcricao btn-player"></button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
+               
+                <div class="div-podcast">
+                    <audio controls="controls">
+                      <source src="podcasts/podcast2.mp3" type="audio/mp3">
+                    </audio>
+                    <button class="bt-transcricao" title="Transcrição" data-bs-toggle="modal" data-bs-target="#podcast2Modal"></button>
+                  </div>
 
 
                 <div class="modal fade no-print" id="podcast2Modal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
