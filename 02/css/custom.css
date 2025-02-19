@@ -510,3 +510,13 @@ li {
     word-break: break-word;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .box-painel1 {
+    display: block;
+    margin: 0 auto;
+    width: 440px;
+    scale: 0.8;
+    margin-left: -25px;
+  }
+}
