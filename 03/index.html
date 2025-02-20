@@ -128,12 +128,13 @@
               Rodolph, who is the manager of a multinational company of computers, likes to read everything online and
               to be aware of the news around the world.
             </p>
-            <figure class="my-5">
+            <figure class="my-5 no-print">
               <div class="figure-img mb-4">
                 <img class="img-fluid d-block mx-auto" src="img/imagem_redonda.png"
                   alt="Picture of a person using a website">
               </div>
             </figure>
+            <img class="mx-auto only-print" src="img/imagem_redonda.png" alt="" style="width: 350px;">
             <!-- <figcaption class="figure-caption text-center">
               <p>Accessed on: 26 dec. 2023.
               </p>
@@ -967,20 +968,25 @@
           <div class="container">
             <h3>Describing preferences of a client’s website
             </h3>
-            <p>Click or tap to view content.
+            <p class="no-print">Click or tap to view content.
             </p>
-            <div class="bg-website">
-              <div class='pulse-button bt1-pulse botaoCheck' data-bs-toggle="modal" data-bs-target="#modal1"></div>
-              <div class='pulse-button bt2-pulse botaoCheck' data-bs-toggle="modal" data-bs-target="#modal2"></div>
-              <div class='pulse-button bt3-pulse botaoCheck' data-bs-toggle="modal" data-bs-target="#modal3"></div>
-              <div class='pulse-button bt4-pulse botaoCheck' data-bs-toggle="modal" data-bs-target="#modal4"></div>
-              <div class='pulse-button bt5-pulse botaoCheck' data-bs-toggle="modal" data-bs-target="#modal5"></div>
+            <div class="bg-website no-print">
+              <div class='pulse-button bt1-pulse botaoCheck no-print' data-bs-toggle="modal" data-bs-target="#modal1">
+              </div>
+              <div class='pulse-button bt2-pulse botaoCheck no-print' data-bs-toggle="modal" data-bs-target="#modal2">
+              </div>
+              <div class='pulse-button bt3-pulse botaoCheck no-print' data-bs-toggle="modal" data-bs-target="#modal3">
+              </div>
+              <div class='pulse-button bt4-pulse botaoCheck no-print' data-bs-toggle="modal" data-bs-target="#modal4">
+              </div>
+              <div class='pulse-button bt5-pulse botaoCheck no-print' data-bs-toggle="modal" data-bs-target="#modal5">
+              </div>
             </div>
-
             <!-- Modal 1 -->
-            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <div class="modal fade no-print" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered no-print">
+                <div class="modal-content no-print">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Header Section</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -999,9 +1005,10 @@
               </div>
             </div>
             <!-- Modal 2 -->
-            <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <div class="modal fade no-print" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered no-print">
+                <div class="modal-content no-print">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel2">Courses Page</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1015,9 +1022,10 @@
               </div>
             </div>
             <!-- Modal 3 -->
-            <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <div class="modal fade no-print" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered no-print">
+                <div class="modal-content no-print">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel3">Company Story</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1034,9 +1042,10 @@
               </div>
             </div>
             <!-- Modal 4 -->
-            <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <div class="modal fade no-print" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered no-print">
+                <div class="modal-content no-print">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel4">Tagline</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1054,9 +1063,10 @@
               </div>
             </div>
             <!-- Modal 5 -->
-            <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <div class="modal fade no-print" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered no-print">
+                <div class="modal-content no-print">
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Footer</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1070,8 +1080,35 @@
                 </div>
               </div>
             </div>
+            <div class="only-print">
+              <h5>Header Section</h5>
+              <p>Home Page:</p>
+              <p>1. Header Section: Clean and minimalist design; logo of SonicLearn Education; Navigation menu:
+                Home, Courses, About Us, Contact.</p>
+              <p>Contact:</p>
+              <p>1. Contact Form: you can contact by: +351 5634 9872</p>
+              <p>2. Social Media Links: @SocialLearnEducation</p>
+              <h5>Courses Page</h5>
+              <p>- Courses Page:</p>
+              <p>Filter and Search: User-friendly filters for sorting courses by subject, level, and popularity;
+                search bar for quick course look-up.</p>
+              <h5>Company Story</h5>
+              <p>Website Name: SonicLearn Education</p>
+              <p>1. Company Story: SonicLearn Education: A passionate educator named Dr. Olivia Swift had a vision
+                to revolutionize the way students learn. Driven by a deep commitment to providing accessible and
+                effective education for all, she founded SonicLearn Education.</p>
+              <h5>Tagline</h5>
+              <p>Tagline: "Transforming Education with Sound, Interaction, and Speed"</p>
+              <p>2. Educational Philosophy: SonicLearn Education's educational philosophy is rooted in the belief
+                that education should be dynamic, adaptive, and accessible to all learners. The company has
+                developed a holistic approach to learning, emphasizing the integration of audio, interactivity,
+                and speed to create a transformative educational experience.</p>
+              <h5>Footer</h5>
+              <p>Quick Links: Links to important pages, including Privacy Policy and Terms of Service; copyright
+                information and company address.</p>
+            </div>
 
-            <div class="accordion" id="accordionExample" style="margin-top: 20px;">
+            <div class="accordion no-print" id="accordionExample" style="margin-top: 20px;">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -1135,13 +1172,47 @@
               </div>
             </div>
 
+            <div class="only-print">
+              <h4>Speed Optimization</h4>
+              <p> Emphasis on website speed with efficient coding and optimized media files:
+              </p>
+              <p> The speed of the SonicLearn platform contributes to the efficiency of learning. Fast-loading
+                content and quick response times ensure that students can access information promptly, maximizing
+                their study time. In a fast-paced digital era, users expect swift and seamless experiences.
+                SonicLearn's commitment to speed not only enhances the user experience but also contributes to
+                overall user satisfaction and positive perceptions of the platform.
+              </p>
+              <h4>Audio</h4>
+              <p>Engagement and Retention: Incorporating audio elements into educational content can enhance
+                engagement and retention. By combining audio with visuals and interactive elements, SonicLearn
+                creates a multimodal learning experience, addressing the diverse needs and preferences of
+                students.</p>
+              <p>Audio components cater to different learning styles, benefiting auditory learners. It also
+                makes
+                educational content more accessible to individuals with visual impairments, creating an
+                inclusive
+                learning environment.</p>
+              <h4>Interactivity</h4>
+              <p>Active Learning: Interactive elements, such as quizzes, simulations, and games, promote
+                active
+                learning. Students are actively involved in the learning process, which enhances
+                understanding and
+                retention compared to passive learning.</p>
+              <p>Personalization: Interactivity allows for personalized learning experiences. SonicLearn's
+                adaptive learning platform can tailor content based on individual student progress and
+                preferences, ensuring that each learner receives a customized educational journey.</p>
+            </div>
+
             <div class="box-atividade fundo-escuro">
               <div class="caixa-destaque icone-practice">
                 <p><strong>Practice it
                   </strong></p>
-                <p>You are going to analyze a company’s website. The name of the company is SonicLearn Education. On the
-                  website you will have to identify the main features as Home, Courses, About Us, Contact. Also, you
-                  have to describe the neccessities and the prefferences of the site’s creator in relation to
+                <p>You are going to analyze a company’s website. The name of the company is SonicLearn
+                  Education. On the
+                  website you will have to identify the main features as Home, Courses, About Us, Contact.
+                  Also, you
+                  have to describe the neccessities and the prefferences of the site’s creator in relation
+                  to
                   interactivity, audio and speed optimization.</p>
               </div>
             </div>
