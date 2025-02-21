@@ -7,10 +7,25 @@ body {
   background-color: #fff;
 }
 
+a.img-zoom {
+  position: relative;
+}
+
+.lupa {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 60px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
 .fundo-tecnicos {
   border-bottom: none !important;
 }
-
 
 table.senac td {
   text-align: center !important;
@@ -652,6 +667,10 @@ li {
     margin-top: -25px;
     margin-bottom: -25px;
   }
+
+  .lupa {
+    right: 110px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -664,5 +683,9 @@ li {
     margin-left: -240px;
     margin-bottom: -100px;
     margin-top: -105px;
+  }
+
+  .lupa {
+    right: 10px !important;
   }
 }
