@@ -53,6 +53,10 @@ h4 i {
   font-weight: bold;
 }
 
+.espaco_imagem {
+  padding: 0px 40px 40px;
+}
+
 table.senac td {
   text-align: center !important;
 }
@@ -581,8 +585,13 @@ li {
   margin-top: 0;
 }
 
-.game-titulo {
+/* .game-titulo {
   width: auto;
+  border-radius: 0px;
+} */
+.game-titulo {
+  width: 299px;
+  height: 70px;
   border-radius: 0px;
 }
 
@@ -599,10 +608,65 @@ li {
   color: #fff;
 }
 
-@media screen and (max-width: 780px) {}
+@media screen and (max-width: 780px) {
+
+  /* .fundo-escuro .icone-practice {
+    background-position: center top;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 140px;
+    margin-right: 100px;
+  }
+  .fundo-branco {
+    background-color: #fff;
+    padding: 10px 40px;
+    padding-right: 110px;
+    border-radius: 15px;
+    color: #000;
+  }
+   .fundo-escuro .icone-practice .normal {
+    background-position: 10px 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .fundo-branco .normal {
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: #000;
+  }  */
+  .espaco_imagem {
+    padding: 0px 10px 40px;
+  }
+
+  .game-titulo {
+    width: 195px;
+    height: 65px;
+    border-radius: 0px;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .caixa-destaque code {
     word-break: break-word;
+  }
+
+  .game-titulo {
+    width: 290px;
+    height: 65px;
+    border-radius: 0px;
+  }
+
+  .painel_layout {
+    position: relative;
+    margin: -95px 0px -70px -120px !important;
+    width: 598px;
+    height: 624px;
+    background-image: url(../img/painel/painel.png);
+    scale: 0.55;
+  }
+
+  .imagem_mob {
+    display: none;
   }
 }
