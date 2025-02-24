@@ -119,7 +119,7 @@ button, a {
   outline:none !important
 }
 table.senac th{
-	background-color:#8e44ad;
+	background-color:#2875C6;
 	text-align:center;
 	padding:0.5em;
 	border:1px solid;
@@ -338,4 +338,18 @@ div.print table.senac th{
 }
 div.print table.senac th p{
   color: #fff !important;
+}
+
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin-bottom: 30px;
+}
+.d-block {
+  display: block !important;
 }
