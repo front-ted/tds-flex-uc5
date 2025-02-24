@@ -131,7 +131,7 @@
               <div class="container">
                 <h3>Network solution </h3>
                 <p>Welcome to the network solution game. Guess the letters and discover the words. </p>
-                <div class="espera-video">ESPERA ODA</div>
+                <div class="espera-video no-print" aria-hidden="true">ESPERA ODA</div>
                   
                 <div class="box-atividade fundo-branco">
                   <div class="">
@@ -249,13 +249,17 @@
                 <br><br>
 
                 <div class="box-atividade bg-escuro fundo-branco">
-                  <div class="row">
+                  <div class="row no-print" aria-hidden="true">
                     <div class="col-sm-3 col-xs-12">
                       <img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4 ico-practice">
                     </div>
                     <div class="col-sm-9 col-xs-12">
                       <p>Imagine you work as an IT consultant for a company, and you have been hired to solve some network problems to different kinds of clients. Each client has a different problem. In pairs or groups, choose a number to open the card, analyze your client profile and try to solve the problems using LANs, WANs and VPNs. Present your solutions to the big group: </p>
                     </div>
+                  </div>
+                  <div class="acessivel print">
+                    <p><b>Practice it</b></p>
+                    <p>Imagine you work as an IT consultant for a company, and you have been hired to solve some network problems to different kinds of clients. Each client has a different problem. In pairs or groups, choose a number to open the card, analyze your client profile and try to solve the problems using LANs, WANs and VPNs. Present your solutions to the big group: </p>
                   </div>
 
                   <p>Click or tap to view content.</p>
@@ -389,67 +393,80 @@
                 <div class="destaque fundo-escuro">
                   <p style="padding: 40px 0px 0px; text-align: center;"><strong>Repeaters – Bridges – Routers – Gateways – Hubs - Wireless Access Points </strong></p>
                 </div>
-                  <p>Read and listen to the conversation about network hardware. What kind of problems does she have? </p>
-                  <p> Click to listen to the audio. </p>
-                  
-                  <!--
-                  <div class="bg-podcast no-print audio">
-                    <div class="d-flex justify-content-center flex-column align-items-center">
-                        <div class="audio-player no-print">
-                            <audio>
-                                <source src="podcast/podcast-suporte_ti.mp3" type="audio/mpeg">
-                            </audio>
-                            <div class="row">
-                                <div class="timestamp">00:00 | 00:00</div>
-                                <div class="barra">
-                                    <input type="range" value="0" max="4140" step="any">
+                <p class="no-print" aria-hidden="true">Read and listen to the conversation about network hardware. What kind of problems does she have? </p>
+                <p class="acessivel print">Read to the conversation about network hardware. What kind of problems does she have?</p>
+                <p class="no-print">Click to listen to the audio. </p>
+                
+                <!--
+                <div class="bg-podcast no-print audio">
+                  <div class="d-flex justify-content-center flex-column align-items-center">
+                      <div class="audio-player no-print">
+                          <audio>
+                              <source src="podcast/podcast-suporte_ti.mp3" type="audio/mpeg">
+                          </audio>
+                          <div class="row">
+                              <div class="timestamp">00:00 | 00:00</div>
+                              <div class="barra">
+                                  <input type="range" value="0" max="4140" step="any">
+                              </div>
+                              <div class="botoes">
+                                  <button title="Tocar" class="btn-play btn-player"></button>
+                                  <button title="Pause" class="btn-pause btn-player"></button>
+                                  <button title="Transcrição" data-bs-toggle="modal" data-bs-target="#modal-transcricao-audio2" class="btn-transcricao btn-player"></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                -->
+
+                <div class="div-podcast no-print" aria-hidden="true">
+                  <audio controls="controls">
+                    <source src="podcast/podcast-suporte_ti.mp3" type="audio/mp3">
+                  </audio>
+                  <button class="bt-transcricao" title="Transcrição" data-bs-toggle="modal" data-bs-target="#modal-transcricao-audio2"></button>
+                </div>
+                
+                <div class="modal fade no-print" id="modal-transcricao-audio2" tabindex="-1"
+                        aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content no-print">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
                                 </div>
-                                <div class="botoes">
-                                    <button title="Tocar" class="btn-play btn-player"></button>
-                                    <button title="Pause" class="btn-pause btn-player"></button>
-                                    <button title="Transcrição" data-bs-toggle="modal" data-bs-target="#modal-transcricao-audio2" class="btn-transcricao btn-player"></button>
+                                <div class="modal-body">
+                                  <p>Client: Hi, I've been having trouble with my office network. Some devices seem to be struggling to connect, and the internet speed is terrible. </p>
+                                  <p>IT Support: I understand. Let's start by identifying the issue. Did you try power-cycling your router? Sometimes, that can help refresh the connection. </p>
+                                  <p>Client: Yes, I did that, but it didn’t improve. The problem seems to persist, especially during busy hours. </p>
+                                  <p>IT Support: Got it. Let's check the network configuration. Could you let me know if all devices are affected or if it's specific ones? </p>
+                                  <p>Client: It seems to be affecting most devices, but some are worse than others. </p>
+                                  <p>IT Support: Alright, we might need to inspect the network hardware. Can you confirm if you have any repeaters, bridges, or additional access points in your setup? </p>
+                                  <p>Client: Yes, we have a few access points and a bridge connecting two segments. </p>
+                                  <p>IT Support: Okay. We may need to ensure proper configuration and check for any signal interference. I'll guide you through some steps. Are you able to access the configuration interface for those devices? </p>
+                                  <p>Client: I think so. Where should I start? </p>
+                                  <p>IT Support: Great. Let's begin by checking the configuration settings for your access points and bridge. We'll make sure they're optimized for your office setup. I'll guide you through the process step by step. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  </div>
-                  -->
-
-                  <div class="div-podcast">
-                    <audio controls="controls">
-                      <source src="podcast/podcast-suporte_ti.mp3" type="audio/mp3">
-                    </audio>
-                    <button class="bt-transcricao" title="Transcrição" data-bs-toggle="modal" data-bs-target="#modal-transcricao-audio2"></button>
-                  </div>
-                  
-                  <div class="modal fade no-print" id="modal-transcricao-audio2" tabindex="-1"
-                          aria-labelledby="modal-transcricao-audio1" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered">
-                              <div class="modal-content no-print">
-                                  <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Transcrição</h5>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                          aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <p>Client: Hi, I've been having trouble with my office network. Some devices seem to be struggling to connect, and the internet speed is terrible. </p>
-                                    <p>IT Support: I understand. Let's start by identifying the issue. Did you try power-cycling your router? Sometimes, that can help refresh the connection. </p>
-                                    <p>Client: Yes, I did that, but it didn’t improve. The problem seems to persist, especially during busy hours. </p>
-                                    <p>IT Support: Got it. Let's check the network configuration. Could you let me know if all devices are affected or if it's specific ones? </p>
-                                    <p>Client: It seems to be affecting most devices, but some are worse than others. </p>
-                                    <p>IT Support: Alright, we might need to inspect the network hardware. Can you confirm if you have any repeaters, bridges, or additional access points in your setup? </p>
-                                    <p>Client: Yes, we have a few access points and a bridge connecting two segments. </p>
-                                    <p>IT Support: Okay. We may need to ensure proper configuration and check for any signal interference. I'll guide you through some steps. Are you able to access the configuration interface for those devices? </p>
-                                    <p>Client: I think so. Where should I start? </p>
-                                    <p>IT Support: Great. Let's begin by checking the configuration settings for your access points and bridge. We'll make sure they're optimized for your office setup. I'll guide you through the process step by step. </p>
-                                  </div>
-                                  <div class="modal-footer">
-                                      <button type="button" class="btn btn-secondary"
-                                          data-bs-dismiss="modal">Fechar</button>
-                                  </div>
-                              </div>
-                          </div>
-                  </div>
+                </div>
+                <div class="acessivel print">
+                  <p>Client: Hi, I've been having trouble with my office network. Some devices seem to be struggling to connect, and the internet speed is terrible. </p>
+                  <p>IT Support: I understand. Let's start by identifying the issue. Did you try power-cycling your router? Sometimes, that can help refresh the connection. </p>
+                  <p>Client: Yes, I did that, but it didn’t improve. The problem seems to persist, especially during busy hours. </p>
+                  <p>IT Support: Got it. Let's check the network configuration. Could you let me know if all devices are affected or if it's specific ones? </p>
+                  <p>Client: It seems to be affecting most devices, but some are worse than others. </p>
+                  <p>IT Support: Alright, we might need to inspect the network hardware. Can you confirm if you have any repeaters, bridges, or additional access points in your setup? </p>
+                  <p>Client: Yes, we have a few access points and a bridge connecting two segments. </p>
+                  <p>IT Support: Okay. We may need to ensure proper configuration and check for any signal interference. I'll guide you through some steps. Are you able to access the configuration interface for those devices? </p>
+                  <p>Client: I think so. Where should I start? </p>
+                  <p>IT Support: Great. Let's begin by checking the configuration settings for your access points and bridge. We'll make sure they're optimized for your office setup. I'll guide you through the process step by step. </p>
+                </div>
                 
                 <div class="caixa-practice bg-escuro">
                   <div class="">
@@ -638,122 +655,119 @@
                   <li>Oops! Yesterday, I broke my mom’s vase.</li>
                 </ul>
 
-                <div class="caixa-practice bg-claro">
+                <div class="caixa-practice bg-claro no-print">
                   <p><strong>Let’s practice.</strong></p>
                   <p>According to the grammar presented, complete the exercises below:</p>
                   <p>Write the sentences in the simple past form:</p>
                   
                   <!--ASSOCIAR COLUNAS-->
-                  <div class="game-associar-colunas no-print nao-imprimir">
+                  <div class="game-associar-colunas02 no-print nao-imprimir">
                     <div class="row">
                       <div class="col-12 col-md-6 col-sm-8 flexs itens"> 
-                        <button data-resp="8" class="item item8">
-                          <p>aaaaaaaaaa</p>
+                        <button data-resp02="1" class="item02 item1">
+                          <p>We don’t like onions.</p>
                         </button>
-                        <button data-resp="9" class="item item9">
-                          <p>aaaaaaaaaa</p>
+                        <button data-resp02="2" class="item02 item2">
+                          <p>Stewart lives in Toronto.</p>
                         </button>
-                        <button data-resp="10" class="item item10">
-                          <p>aaaaaaaaaa</p>
+                        <button data-resp02="3" class="item02 item3">
+                          <p>Do you swim?</p>
                         </button>
-                        <button data-resp="11" class="item item11">
-                          <p>aaaaaaaaaa</p>
+                        <button data-resp02="4" class="item02 item4">
+                          <p>I run fast in the park.</p>
                         </button>
-                        <button data-resp="12" class="item item12">
-                          <p>aaaaaaaaaa</p>
+                        <button data-resp02="5" class="item02 item5">
+                          <p>Does she enjoy sports?</p>
                         </button>
                       </div>
                       <div class="col-12 col-md-6 col-sm-4 flexs">
-                        <button type="button" data-resp="8" class="resp resp8">
+                        <button type="button" data-resp02="1" class="resp02 resp1">
                           <div class="txtacao"><i class="fas fa-question"></i></div>
-                          <p>password</p>
+                          <p>We didn’t like onions</p>
                         </button>
 
-                        <button type="button" data-resp="9" class="resp resp9">
+                        <button type="button" data-resp02="2" class="resp02 resp2">
                           <div class="txtacao"><i class="fas fa-question"></i></div>
-                          <p>keycard</p>
+                          <p>Stewart in Toronto</p>
                         </button>
 
-                        <button type="button" data-resp="10" class="resp resp10">
+                        <button type="button" data-resp02="3" class="resp02 resp3">
                           <div class="txtacao"><i class="fas fa-question"></i></div>
-                          <p>log out</p>
+                          <p>Did you swim?</p>
                         </button>
 
-                        <button type="button" data-resp="11" class="resp resp11">
+                        <button type="button" data-resp02="4" class="resp02 resp4">
                           <div class="txtacao"><i class="fas fa-question"></i></div>
-                          <p>antivirus</p>
+                          <p>I ran fast in the park</p>
                         </button>
 
-                        <button type="button" data-resp="12" class="resp resp12">
+                        <button type="button" data-resp02="5" class="resp02 resp5">
                           <div class="txtacao"><i class="fas fa-question"></i></div>
-                          <p>firewall</p>
+                          <p>Did she enjoy sports?</p>
                         </button>
                       </div>
                     </div>
-
-                    <!-- Modal -->
-                    <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_errou" tabindex="-1"
-                      aria-labelledby="associarColunasErrou" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="associarColunasErrou">Resposta incorreta</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-12 col-lg-4">
-                                <img src="../assets/atividades/relacionar_colunas/resposta_neg.svg" class="img-fluid" alt="">
-                              </div>
-                              <div class="col-12 col-lg-8">
-                                <p>Ops, tente novamente!</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Modal -->
-                    <div class="modal fade associar_colunas_modal no-print nao-imprimir" id="associar_colulas_acertou"
-                      tabindex="-1" aria-labelledby="associarColunasAcertou" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="associarColunasAcertou">Resposta correta</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col-12 col-lg-4">
-                                <img src="../assets/atividades/relacionar_colunas/resposta_pos.svg" class="img-fluid" alt="">
-                              </div>
-                              <div class="col-12 col-lg-8">
-                                <p>Muito bem! Você acertou!</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
                   </div>
                   
                 </div>
 
-                <div class="box-atividade fundo-branco" style="margin: 20px 0px;">
-                  <div class="caixa-destaque icone-practice">
-                    <p><strong>Computer Network Technology</strong></p>
-                    <p>Look at the image below. Do you know what these activities are?</p>
-                    <figure class="my-5">
-                      <div class="figure-img mb-4">
-                          <img class="img-fluid d-block mx-auto" src="img/img03.png">
-                      </div>
-                    </figure>
-                    <figcaption class="figure-caption text-center">
-                      Accessed on: 30 jan. 2024.
-                    </figcaption>
+                <div class="caixa-practice bg-escuro" style="margin: 20px 0px;">
+                  <div class="row no-print" aria-hidden="true">
+                    <div class="col-sm-3 col-xs-12">
+                      <img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4 ico-practice">
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                      <br>
+                      <p><b>Find someone who. In pairs or in grous, talk to your classmates and find out who did the activities below. Then, share with the whole class:</b></p>
+                    </div>
+                  </div>
+                  <div class="acessivel print">
+                    <p><b>Practice it</b></p>
+                    <p><b>Find someone who. In pairs or in grous, talk to your classmates and find out who did the activities below. Then, share with the whole class:</b></p>
+                  </div>
+                  <div class='table-responsive'>
+                    <table class='senac borda-destaque'>
+                      <tbody>
+                        <tr>
+                          <th>HINT – DID YOU...?</th>
+                          <th>NAME</th>
+                        </tr>
+                        <tr>
+                          <td>Drank coffee this morning.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Watched a movie yesterday.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Played a sport last week.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Took a trip last summer.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Skipped breakfast.</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Caught a cold last winter.</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
+
+                <p><strong>Computer Network Technology</strong></p>
+                <p>Look at the image below. Do you know what these activities are?</p>
+                <figure class="my-5">
+                  <div class="figure-img mb-4">
+                      <img class="img-fluid d-block mx-auto" src="img/img03.png">
+                  </div>
+                </figure>
                 <p>
                   Doing these actions of downloading and uploading is necessary to have a good speed of internet.
                 </p>
@@ -765,52 +779,66 @@
                      Have you ever done a speed test?
                   </li>
                 </ul>
-                <div class="box-atividade fundo-escuro">
-                  <div class="caixa-destaque icone-practice">
+                <div class="caixa-practice bg-escuro">
+                  <div class="row no-print" aria-hidden="true">
+                    <div class="col-sm-3 col-xs-12">
+                      <img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4 ico-practice">
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                      <br>
+                      <strong><p>You are going to learn more about computer networking technology. In pairs or trios, choose a term from the topic computer networking technology and explain what these terms mean. If it is possible, give some examples for each term.  </strong></p>
+                    </div>
+                  </div>
+                  <div class="acessivel print">
                     <p><strong>Practice it</strong></p>
                     <strong><p>You are going to learn more about computer networking technology. In pairs or trios, choose a term from the topic computer networking technology and explain what these terms mean. If it is possible, give some examples for each term.  </strong></p>
-
-                    <figure class="my-5">
-                      <div class="figure-img mb-4">
-                          <img class="img-fluid d-block mx-auto" src="img/nuvem.png">
-                      </div>
-                    </figure>
                   </div>
-                </div>
-                <p>
-                  Based on the terms learned before, look at the advantages and disadvantages chart below. Describe the different types of internet connections that you use and how they can be used in different situations.
-                </p>
-                
-                <table class="table-responsive table">
-                  <thead>
-                      <tr>
+                  <p>Based on the terms learned before, look at the advantages and disadvantages chart below. Describe the different types of internet connections that you use and how they can be used in different situations.</p>
+                  <div class="table-responsive">
+                    <table class="senac borda-destaque">
+                      <thead>
+                        <tr>
                           <th>ADVANTAGE</th>
                           <th>DISADVANTAGE</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>A good point about</td>
-                      <td>A drawback of</td>
-                    </tr>
-                    <tr>
-                      <td>A positive aspect</td>
-                      <td>A negative effect of</td>
-                    </tr>
-                    <tr>
-                      <td>A benefit of</td>
-                      <td>An objection to</td>
-                    </tr>
-                  </tbody>
-                </table>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>A good point about</td>
+                          <td>A drawback of</td>
+                        </tr>
+                        <tr>
+                          <td>A positive aspect</td>
+                          <td>A negative effect of</td>
+                        </tr>
+                        <tr>
+                          <td>A benefit of</td>
+                          <td>An objection to</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
                 
-                <div class="box-atividade fundo-branco">
-                  <div class="caixa-destaque icone-practice">
+                
+                <div class="caixa-practice bg-escuro">
+                  <div class="row no-print" aria-hidden="true">
+                    <div class="col-sm-3 col-xs-12">
+                      <img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4 ico-practice">
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                      <p>Use the advantages and disadvantages chart above to describe the different types of internet connections that you use and how they can be used in different situations.
+                        Also, reflect on how internet speed affects different online activities. For example, how does it impact streaming, online gaming, or remote work?
+                      </p>
+                      <p>Share any tips or tricks you've discovered to optimize your connection for specific activities.</p>
+                    </div>
+                  </div>
+                  <div class="acessivel print">
                     <p><strong>Practice it</strong></p>
                     <p>Use the advantages and disadvantages chart above to describe the different types of internet connections that you use and how they can be used in different situations.
                       Also, reflect on how internet speed affects different online activities. For example, how does it impact streaming, online gaming, or remote work?
                     </p>
-                    <p> Share any tips or tricks you've discovered to optimize your connection for specific activities.</p>
+                    <p>Share any tips or tricks you've discovered to optimize your connection for specific activities.</p>
                   </div>
                 </div>
               </div>
@@ -833,42 +861,50 @@
                   <li>What kind of company is it?</li>
                   <li>Have you ever visited this company?</li>
                 </ul>
-                <div class="box-atividade fundo-branco">
-                  <div class="caixa-destaque icone-practice">
+
+                <div class="caixa-practice bg-escuro">
+                  <div class="row no-print" aria-hidden="true">
+                    <div class="col-sm-3 col-xs-12">
+                      <img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4 ico-practice">
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                      <br>
+                      <p>Now, as you know the company mentioned before, can you think of the places you worked and work? Do you remember all the names of these places you worked until now? What was your position? Create a list naming the companies and how long you worked at them. After that, share your information with your classmates.</p>
+                    </div>
+                  </div>
+                  <div class="acessivel print">
                     <p><strong>Practice it</strong></p>
-                    <p>Now, as you know the company mentioned before, can you think of the places you worked and work? Do you remember all the names of these places you worked until now? What was your position? Create a list naming the companies and how long you worked at them. After that, share your information with your classmates: 
-                    </p>
+                    <p>Now, as you know the company mentioned before, can you think of the places you worked and work? Do you remember all the names of these places you worked until now? What was your position? Create a list naming the companies and how long you worked at them. After that, share your information with your classmates.</p>
                   </div>
                 </div>
                 
-                <p>Do you know the meaning of the abbreviation SWOT? </p>
+                <p>Do you know the meaning of the abbreviation <b>SWOT</b>? </p>
                 <p>It is an abbreviation for strengths, weaknesses, opportunities, and threats: a method for examining an organization, product.</p>
                 <p>Look at the image below about the TESCO SWOT – 2024.</p>
                 <div class="box-info">
-                    <div class="row">
-                      <div class="col-12 col-md-6"><img src="img/o_mob.png" alt=""></div>
-                      <div class="col-12 col-md-6">
-                          <p>Tesco’s strengths</p>
-                          <p>Broad product range, Strong brand image, Innovative technology, Sustainability initiatives.</p>
-                      </div>
-                    </div>
-                    
                   <div class="row">
-                    <div class="col-12 col-md-6">  <img src="img/s_mob.png" alt=""></div>
+                    <div class="col-12 col-md-6"><img src="img/s_mob.png" alt=""></div>
+                    <div class="col-12 col-md-6">
+                        <p>Tesco’s strengths</p>
+                        <p>Broad product range, Strong brand image, Innovative technology, Sustainability initiatives.</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-md-6">  <img src="img/w_mob.png" alt=""></div>
                     <div class="col-12 col-md-6">
                         <p>Tesco’s weaknesses</p>
                         <p>Poor online delivery service, Lack of investment in new store formats, Failed ventures into foreign markets.</p>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-6"><img src="img/t_mob.png" alt=""></div>
+                    <div class="col-12 col-md-6"><img src="img/o_mob.png" alt=""></div>
                     <div class="col-12 col-md-6">
                       <p>Tesco’s opportunities</p>
                       <p>Sustainability, Technology integration, Health and Online grocery delivery.</p>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-12 col-md-6 "><img src="img/w_mob.png" alt=""></div>
+                    <div class="col-12 col-md-6 "><img src="img/t_mob.png" alt=""></div>
                     <div class="col-12 col-md-6 ">
                       <p>Tesco’s threats</p>
                       <p>Intense competition, Cybersecurity threats, Changing consumer preferences.</p>
@@ -876,14 +912,21 @@
                   </div>
                 </div>
                 
-                <div class="box-atividade fundo-branco" style="margin-top: 40px;">
-                  <div class="caixa-destaque icone-practice">
+                <div class="caixa-practice bg-escuro">
+                  <div class="row no-print" aria-hidden="true">
+                    <div class="col-sm-3 col-xs-12">
+                      <img src="img/practice_it.png" class="img-fluid d-block mx-auto mt-4 ico-practice">
+                    </div>
+                    <div class="col-sm-9 col-xs-12">
+                      <br>
+                      <p>Make a 10-minute presentation about the companies you worked before using the SWOT (strengths, weaknesses, opportunities, threats). Present it to the big group. This structure can help you to reflect on various aspect of your work. </p>
+                    </div>
+                  </div>
+                  <div class="acessivel print">
                     <p><strong>Practice it</strong></p>
                     <p>Make a 10-minute presentation about the companies you worked before using the SWOT (strengths, weaknesses, opportunities, threats). Present it to the big group. This structure can help you to reflect on various aspect of your work. </p>
                   </div>
                 </div>
-
-
 
               </div>
             </div>

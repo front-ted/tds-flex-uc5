@@ -1,7 +1,7 @@
-.game-associar-colunas .itens{
+.game-associar-colunas .itens, .game-associar-colunas02 .itens{
     counter-reset: itens;
 }
-.game-associar-colunas button.item {
+.game-associar-colunas button.item, .game-associar-colunas02 button.item02 {
     padding: 10px 20px;
     border-radius: 10px;
     color: #000;
@@ -17,8 +17,8 @@
     counter-increment: itens;
     transition: all .4s;
 }
-.game-associar-colunas button.item:hover, .game-associar-colunas button.selecionado,
-.resp:hover, .resp.selecionado {
+.game-associar-colunas button.item:hover, .game-associar-colunas02 button.item02:hover, .game-associar-colunas button.selecionado,
+.game-associar-colunas02 button.selecionado, .resp:hover, .resp.selecionado, .resp02:hover, .resp02.selecionado {
     color: #000;
     background:#fff !important;
     transform: scale(1.03);
@@ -27,7 +27,7 @@
     -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
     cursor: pointer;
 }
-.game-associar-colunas button.item::before {
+.game-associar-colunas button.item::before, .game-associar-colunas02 button.item02::before {
     content: counter(itens, decimal);
     font-size: 14px;
     font-family: rubik;
@@ -36,14 +36,14 @@
     border-radius: 40px;
     padding: 0 7px;
 }
-.item p {
+.item p, .item02 p {
     text-align: center;
     width: 100%;
     padding: 0px;
     margin: 0px;
     font-size: 16px;
 }
-.game-associar-colunas button.item.acertou {
+.game-associar-colunas button.item.acertou, .game-associar-colunas02 button.item02.acertou {
     border:#008086;
     background-color: #008086;
     border-color: #008086;
@@ -52,11 +52,11 @@
     -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
     -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
 }
-.item.errou {
+.item.errou, .item02.errou {
     border:#cd6667;
     background-color: #cd6667;
 }
-.resp {
+.resp, .resp02 {
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 16px;
@@ -71,14 +71,14 @@
     transition: all .4s;
 }
 
-.resp p {
+.resp p, .resp02 p {
     margin: 0px;
     padding: 0px;
     text-align: center;
     width: 100%;
     font-size: 16px;
 }
-.resp.acertou {
+.resp.acertou, .resp02.acertou {
     background-color: #008086;
     color: #ffffff;
     border: 3px solid #008086;
@@ -87,20 +87,20 @@
     -webkit-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
     -moz-box-shadow: 10px 10px 9px -8px rgba(0,0,0,0.47);
 }
-.resp.errou {
+.resp.errou, .resp02.errou {
     border-radius: 20px;
     padding: 20px;
     background-color: #cd6667;
     border-color: #cd6667 !important;
     color: #ffffff;
 }
-.resp.errou button, .resp.acertou button {
+.resp.errou button, .resp.acertou button, .resp02.errou button, .resp02.acertou button {
     color: white;
 }
-.resp.errou button{
+.resp.errou button, .resp02.errou button{
     border-color: #fff !important;
 }
-.resp.acertou button{
+.resp.acertou button, .resp02.acertou button{
     border-color: #008086 !important;
 }
 .txtacao {
@@ -111,11 +111,11 @@
     border-radius: 40px;
     font-size: 16px;
 }
-.resp.acertou .txtacao {
+.resp.acertou .txtacao, .resp02.acertou .txtacao {
     border: 3px solid #fff;
     color: white;
 }
-.resp.errou .txtacao {
+.resp.errou .txtacao, .resp02.errou .txtacao {
     border: 3px solid #fff;
     color: white;
 }
