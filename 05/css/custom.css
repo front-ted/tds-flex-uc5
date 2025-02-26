@@ -600,13 +600,93 @@ li {
 }
 
 /*  */
-.game-associar-colunas2 {
-  padding: 40px;
-}
 
 .bloco7 .table {
   color: #fff;
 }
+
+
+
+.caixa-practice{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 40px auto;
+  color: #333;
+}
+.borda-destaque{
+  border-color: #2875C6 !important;
+  padding: 5px 20px !important;
+}
+
+.bg-escuro{
+  background-color: #004b90;
+  color: #fff !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-escuro .borda-destaque{
+  border-color: #fff !important;
+  padding: 5px 20px !important;
+}
+
+div.caixa-practice.bg-escuro table{
+  color: #fff !important;
+}
+
+.bg-escuro .feedbacks p{
+  color: #fff !important;
+}
+
+.feedbacks i{
+  font-size: 30px !important;
+}
+
+.bg-claro{
+  background-color: #fff;
+  color: #333 !important;
+  padding: 10px 30px 20px 30px;
+}
+.bg-claro .multipla-escolha button::before{
+  color: #333;
+}
+
+table.borda-destaque td{
+  text-align: center;
+  border: #2875C6 solid 1px;
+}
+
+.espera-video{
+  width: 640px;
+  height: 360px;
+  margin: 40px auto;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+.video-youtube {
+  width: 640px;
+  height: 360px;
+  margin: 50px auto;
+  display: block;
+}
+
+
+.game-associar-colunas2 {
+  padding: 20px;
+}
+.game-associar-colunas button.item{
+  padding: 5px 10px;
+}
+.game-associar-colunas .itens p{
+  text-align: left;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
 
 @media screen and (max-width: 780px) {
 
@@ -647,6 +727,27 @@ li {
 }
 
 @media screen and (max-width: 480px) {
+  .bloco1 .container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  div.flexs.itens{
+    margin-bottom: 30px;
+  }
+
+  .video-youtube, .espera-video {
+    width: 320px;
+    height: 180px;
+  }
+
+  .ico-practice{
+    max-width: 130px;
+  }
+
   .caixa-destaque code {
     word-break: break-word;
   }

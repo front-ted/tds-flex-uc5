@@ -595,6 +595,15 @@ table.borda-destaque td{
   
 }
 @media screen and (max-width: 480px){
+  .bloco1 .container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  
   .caixa-destaque code{
     word-break: break-word;
   }
