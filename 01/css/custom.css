@@ -125,6 +125,9 @@ li {
   margin-top: 80px;
   color: #fff;
 }
+.bloco1 h2, .bloco1 h3{
+  color: #fff;
+}
 .bloco2,.bloco4,.bloco6,.bloco8,.bloco10,.bloco12{
   background: rgb(228,240,255);
   background: linear-gradient(180deg, rgba(228,240,255,1) 0%, rgba(158,181,204,1) 100%);

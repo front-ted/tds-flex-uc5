@@ -354,3 +354,7 @@ div.print table.senac th p{
 .d-block {
   display: block !important;
 }
+
+.text-center{
+  text-align: center !important;
+}

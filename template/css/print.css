@@ -506,6 +506,10 @@ h5 {
     page-break-inside: avoid;
   }
 
+  .text-center{
+    text-align: center !important;
+  }
+
   
  /* FIM-/TAGS .print e .no-print */
 
