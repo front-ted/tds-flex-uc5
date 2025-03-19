@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.preload {
+  display: none;
+}
+
+.obj-sentenca-wrapper .tela {
+  position: absolute;
+}
+.obj-sentenca-wrapper .img-exercicio {
+  max-width: 450px;
+  margin: 15px auto;
+}
+.obj-sentenca-wrapper .check-answer-btn, .obj-sentenca-wrapper .restart-btn {
+  display: block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 3px #333;
+  color: #333;
+}
+.obj-sentenca-wrapper .check-answer-btn.hidden, .obj-sentenca-wrapper .restart-btn.hidden {
+  display: none;
+}
+.obj-sentenca-wrapper .check-answer-btn.disabled, .obj-sentenca-wrapper .restart-btn.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+  box-shadow: none;
+}
+.obj-sentenca-wrapper .check-answer-btn:hover, .obj-sentenca-wrapper .restart-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 5px 1px #333;
+}
+.obj-sentenca-wrapper .slot .correct.inside-slot {
+  background-color: rgb(143, 255, 47);
+  pointer-events: none;
+  position: relative;
+}
+.obj-sentenca-wrapper .slot .correct.inside-slot::after {
+  content: "";
+  background-image: url("../img/check.svg");
+  background-color: white;
+  border-radius: 100%;
+  background-size: 21px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.obj-sentenca-wrapper .tela-final {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.obj-sentenca-wrapper .tela-final .msg {
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+  padding: 35px;
+}
+.obj-sentenca-wrapper .tela-final .msg h4 {
+  margin-bottom: 20px;
+}
+.obj-sentenca-wrapper .tela-final .msg p {
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */

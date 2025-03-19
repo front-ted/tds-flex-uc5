@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrasta e solta</title>
+
+    <!-- NÃO LEVAR PARA O MATERIAL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- NÃO LEVAR PARA O MATERIAL -->
+
+    <link rel="stylesheet" href="assets/js/dragula.css">
+    <link rel="stylesheet" href="assets/css/game-custom.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <div class="obj-sentenca-wrapper">
+        <div id="content-game">
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/singing.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-1" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-2" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-3" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card" data-target="slot-1">
+                        He
+                    </div>
+                    <div id="card-3" class="card correct" data-target="slot-1">
+                        She
+                    </div>
+                    <div id="card-5" class="card" data-target="slot-1">
+                        They
+                    </div>
+
+
+                    <div id="card-8" class="card" data-target="slot-2">
+                        Am
+                    </div>
+                    <div id="card-10" class="card correct" data-target="slot-2">
+                        Is
+                    </div>
+                    <div id="card-11" class="card" data-target="slot-2">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card" data-target="slot-3">
+                        Writing
+                    </div>
+                    <div id="card-4" class="card correct" data-target="slot-3">
+                        Singing
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-3">
+                        Dancing
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/gaming.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-4" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-5" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-6" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card correct" data-target="slot-4">
+                        He
+                    </div>
+                    <div id="card-3" class="card" data-target="slot-4">
+                        It
+                    </div>
+                    <div id="card-5" class="card" data-target="slot-4">
+                        We
+                    </div>
+
+
+                    <div id="card-8" class="card" data-target="slot-5">
+                        Am
+                    </div>
+                    <div id="card-10" class="card correct" data-target="slot-5">
+                        Is
+                    </div>
+                    <div id="card-11" class="card" data-target="slot-5">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card correct" data-target="slot-6">
+                        Playing computer games
+                    </div>
+                    <div id="card-4" class="card" data-target="slot-6">
+                        Swimming in the ocean
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-6">
+                        Dancing pop
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/running.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-7" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-8" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-9" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card" data-target="slot-7">
+                        I
+                    </div>
+                    <div id="card-3" class="card" data-target="slot-7">
+                        She
+                    </div>
+                    <div id="card-5" class="card correct" data-target="slot-7">
+                        They
+                    </div>
+
+
+                    <div id="card-8" class="card" data-target="slot-8">
+                        Am
+                    </div>
+                    <div id="card-10" class="card" data-target="slot-8">
+                        Is
+                    </div>
+                    <div id="card-11" class="card correct" data-target="slot-8">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card" data-target="slot-9">
+                        Reading a book
+                    </div>
+                    <div id="card-4" class="card" data-target="slot-9">
+                        Walking the dog
+                    </div>
+                    <div id="card-6" class="card correct" data-target="slot-9">
+                        Running in the park
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/working.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-10" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-11" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-12" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card correct" data-target="slot-10">
+                        I
+                    </div>
+                    <div id="card-3" class="card" data-target="slot-10">
+                        We
+                    </div>
+                    <div id="card-5" class="card" data-target="slot-10">
+                        They
+                    </div>
+
+
+                    <div id="card-8" class="card correct" data-target="slot-11">
+                        Am
+                    </div>
+                    <div id="card-10" class="card" data-target="slot-11">
+                        Is
+                    </div>
+                    <div id="card-11" class="card" data-target="slot-11">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card" data-target="slot-12">
+                        Taking a shower
+                    </div>
+                    <div id="card-4" class="card correct" data-target="slot-12">
+                        Working from home
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-12">
+                        Watching TV
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/cooking.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-13" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-14" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-15" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card" data-target="slot-13">
+                        I
+                    </div>
+                    <div id="card-3" class="card correct" data-target="slot-13">
+                        We
+                    </div>
+                    <div id="card-5" class="card" data-target="slot-13">
+                        He
+                    </div>
+
+
+                    <div id="card-8" class="card" data-target="slot-14">
+                        Am
+                    </div>
+                    <div id="card-10" class="card" data-target="slot-14">
+                        Is
+                    </div>
+                    <div id="card-11" class="card correct" data-target="slot-14">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card correct" data-target="slot-15">
+                        Cooking lunch
+                    </div>
+                    <div id="card-4" class="card" data-target="slot-15">
+                        Studying English
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-15">
+                        Cleaning the house
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/listening.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-16" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-17" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-18" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card correct" data-target="slot-16">
+                        You
+                    </div>
+                    <div id="card-3" class="card" data-target="slot-16">
+                        He
+                    </div>
+                    <div id="card-5" class="card" data-target="slot-16">
+                        It
+                    </div>
+
+
+                    <div id="card-8" class="card" data-target="slot-17">
+                        Am
+                    </div>
+                    <div id="card-10" class="card" data-target="slot-17">
+                        Is
+                    </div>
+                    <div id="card-11" class="card correct" data-target="slot-17">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card" data-target="slot-18">
+                        Washing the dishes
+                    </div>
+                    <div id="card-4" class="card correct" data-target="slot-18">
+                        Listening to music
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-18">
+                        Using the computer
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid game-body no-print">
+                <div class="row">
+                    <img class="img-exercicio" src="assets/img/cat-sleeping.jpg" alt="">
+                </div>
+                <div id="slots" class="slots col-12 mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-19" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-20" class="slot">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-3 mb-3">
+                            <div id="slot-21" class="slot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-itens-container card-pile">
+
+                    <div id="card-1" class="card correct" data-target="slot-19">
+                        It
+                    </div>
+                    <div id="card-3" class="card" data-target="slot-19">
+                        You
+                    </div>
+                    <div id="card-5" class="card" data-target="slot-19">
+                        They
+                    </div>
+
+
+                    <div id="card-8" class="card" data-target="slot-20">
+                        Am
+                    </div>
+                    <div id="card-10" class="card correct" data-target="slot-20">
+                        Is
+                    </div>
+                    <div id="card-11" class="card" data-target="slot-20">
+                        Are
+                    </div>
+
+
+                    <div id="card-2" class="card correct" data-target="slot-21">
+                        Sleeping
+                    </div>
+                    <div id="card-4" class="card" data-target="slot-21">
+                        Playing alone
+                    </div>
+                    <div id="card-6" class="card" data-target="slot-21">
+                        Drinking milk
+                    </div>
+
+                </div>
+                <button class="check-answer-btn disabled">Check Answer</button>
+            </div>
+            <div class="container-fluid tela-final game-body no-print">
+                <div class="msg">
+                    <h4>Congratulations!</h4>
+                    <p>You successfully completed the challenge. <br>You can play again by clicking the button below:
+                    </p>
+                    <button class="restart-btn">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalCorreto" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-check    "></i> Good job! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Good job! Your answer is correct.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalErrado" tabindex="-1" aria-labelledby="bgmodal-passou" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="modal-title" id="bgmodal-passou"><i class="fas fa-times    "></i> Oops! </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Oops! That selection of words is not correct. Try again!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- NÃO LEVAR PARA O MATERIAL -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <!-- NÃO LEVAR PARA O MATERIAL -->
+
+
+    <script src='assets/js/dragula.js'></script>
+    <script src="assets/js/game-custom.js"></script>
+
+</body>
+
+</html>
